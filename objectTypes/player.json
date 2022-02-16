@@ -1,0 +1,113 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 964264988764512,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "right",
+			"type": "boolean",
+			"desc": "",
+			"sid": 561066217472264
+		},
+		{
+			"name": "normGrav",
+			"type": "number",
+			"desc": "",
+			"sid": 424838078451542
+		},
+		{
+			"name": "speedMulti",
+			"type": "number",
+			"desc": "",
+			"sid": 547539242888235
+		},
+		{
+			"name": "dashSpeed",
+			"type": "number",
+			"desc": "",
+			"sid": 542977325082482
+		},
+		{
+			"name": "isDashing",
+			"type": "boolean",
+			"desc": "",
+			"sid": 421664863773577
+		},
+		{
+			"name": "direction",
+			"type": "number",
+			"desc": "0 - left, 1 - up, 2 - right, 3 - down",
+			"sid": 913413361509957
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 552778958498892
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 441788288850858
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 304365665298915
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6358117,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 220252383739901,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 164,
+						"originX": 0.5,
+						"originY": 0.4817073170731707,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 997941,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 974068467805157,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
