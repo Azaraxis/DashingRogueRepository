@@ -1,19 +1,19 @@
 {
-	"name": "Platforming2",
+	"name": "Sprite3",
 	"plugin-id": "Sprite",
-	"sid": 362873435489288,
+	"sid": 110927182962373,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 596200166382762
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 493733195547056
 		},
 		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 360902566358825
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 720977539390354
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +29,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 524644,
+						"imageSpriteId": 958880,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 976798745924898,
+				"sid": 465142890954515,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

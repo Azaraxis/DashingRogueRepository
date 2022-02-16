@@ -93,12 +93,20 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "00ru6f0qjnc",
 	"objectTypes": {
 		"items": [
-			"Platforming",
+			"Platforming3",
 			"Text",
 			"WinText",
 			"Sprite",
@@ -106,14 +114,15 @@
 			"player",
 			"PlatformStopper90",
 			"PlatformStopper270",
-			"Platforming2",
+			"Platforming",
 			"MovingSpikes",
 			"Keyboard",
 			"ExitSign",
 			"Exit",
 			"Audio",
 			"Sprite2",
-			"Shadow"
+			"Shadow",
+			"Sprite3"
 		],
 		"subfolders": []
 	},
@@ -125,7 +134,10 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Layout 2",
+			"Layout 3",
+			"Layout 4"
 		],
 		"subfolders": []
 	},

@@ -426,7 +426,44 @@
 					}
 				}
 			],
-			"sid": 328578674526831
+			"sid": 328578674526831,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 257703534773118,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "player",
+							"sid": 223579223401563,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite3",
+							"sid": 662363006361578,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 845128754122097,
+					"disabled": true
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -837,13 +874,98 @@
 					"id": "set-position",
 					"objectClass": "player",
 					"sid": 896062025225975,
+					"disabled": true,
 					"parameters": {
 						"x": "1721",
 						"y": "1254"
 					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 120132698394145,
+					"parameters": {
+						"layout": "Layout 3"
+					}
 				}
 			],
 			"sid": 653030331112843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 151865035818728
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Sprite3",
+					"sid": 181697884287831,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "player",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 667590128860325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 163564362347749,
+					"parameters": {
+						"key": 49
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 433755559090455,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 684162579305713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 976048496753099,
+					"parameters": {
+						"key": 50
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 877921801809603,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 483734486102134
 		}
 	],
 	"sid": 325422612367472
