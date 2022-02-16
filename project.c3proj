@@ -40,6 +40,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -64,14 +72,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
@@ -82,6 +82,14 @@
 			"type": "behavior",
 			"id": "custom",
 			"name": "Custom",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -103,7 +111,9 @@
 			"Keyboard",
 			"ExitSign",
 			"Exit",
-			"Audio"
+			"Audio",
+			"Sprite2",
+			"Shadow"
 		],
 		"subfolders": []
 	},

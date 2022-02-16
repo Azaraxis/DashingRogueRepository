@@ -1,14 +1,14 @@
 {
-	"name": "Platforming",
+	"name": "Shadow",
 	"plugin-id": "Sprite",
-	"sid": 666608851808502,
+	"sid": 781361464805139,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 673158363478521
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 686287421602337
 		}
 	],
 	"effectTypes": [],
@@ -18,18 +18,38 @@
 				"frames": [
 					{
 						"width": 250,
-						"height": 250,
+						"height": 164,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4089506,
+						"imageSpriteId": 1560647,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.996,
+								0,
+								0.996,
+								0.5,
+								0.996,
+								0.996,
+								0.5,
+								0.996,
+								0,
+								0.996,
+								0,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 582197872908127,
+				"sid": 362217311189049,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -536,6 +536,63 @@
 						"animation": "\"Animation 2\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 678380214508019,
+					"parameters": {
+						"seconds": "0.075"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 727478255112934,
+					"parameters": {
+						"object": "Shadow",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 902424931624787,
+					"parameters": {
+						"seconds": "0.075"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 446062814815864,
+					"parameters": {
+						"object": "Shadow",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 666711674631646,
+					"parameters": {
+						"seconds": "0.075"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 467875635381088,
+					"parameters": {
+						"object": "Shadow",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
 				}
 			],
 			"sid": 698300264102488
