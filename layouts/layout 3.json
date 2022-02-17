@@ -10,7 +10,7 @@
 					"type": "player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -53,10 +53,10 @@
 					"world": {
 						"x": 51,
 						"y": 2315,
-						"width": 44.644485558085854,
-						"height": 44.644485558085854,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 4.464448555808585,
+						"height": 3.9287147291115545,
+						"originX": 0.48,
+						"originY": 0.45454545454545453,
 						"color": [
 							1,
 							1,

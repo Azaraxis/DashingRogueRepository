@@ -299,9 +299,43 @@
 					"parameters": {
 						"control": "right"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 320601141111621,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 404912875374471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 322302697038828,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 550218659315973,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 865292594964750
 		},
 		{
 			"eventType": "block",
@@ -324,9 +358,43 @@
 					"parameters": {
 						"control": "left"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 841681825224361,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 614398411691610
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 873130224483712,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 522972617309519,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 370308253308419
 		},
 		{
 			"eventType": "block",
@@ -387,7 +455,7 @@
 				{
 					"id": "set-angle",
 					"objectClass": "player",
-					"sid": 322846942390862,
+					"sid": 262731187133730,
 					"parameters": {
 						"angle": "180"
 					}
