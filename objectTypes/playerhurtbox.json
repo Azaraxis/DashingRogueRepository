@@ -1,16 +1,10 @@
 {
-	"name": "Sprite3",
+	"name": "PlayerHurtbox",
 	"plugin-id": "Sprite",
-	"sid": 110927182962373,
+	"sid": 302177214261700,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 493733195547056
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 958880,
+						"imageSpriteId": 5170753,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 465142890954515,
+				"sid": 137935120983125,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

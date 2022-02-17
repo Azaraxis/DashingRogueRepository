@@ -1043,10 +1043,10 @@
 					"world": {
 						"x": 102.8,
 						"y": 699.4545454545455,
-						"width": 63.5,
-						"height": 59.08,
-						"originX": 0.48,
-						"originY": 0.45454545454545453,
+						"width": 53.34,
+						"height": 51.02363636363636,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
 						"color": [
 							1,
 							1,
@@ -1113,11 +1113,6 @@
 							"properties": {
 								"enabled": false
 							}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": true
-							}
 						}
 					},
 					"world": {
@@ -1170,8 +1165,8 @@
 					"type": "OutsideTileMap",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 16,
+						"tile-height": 16,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
@@ -1191,8 +1186,8 @@
 							"max-height": 30,
 							"data": "1590x0"
 						},
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 16,
+						"tile-height": 16,
 						"tile-x-offset": 0,
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
@@ -1218,12 +1213,12 @@
 					"type": "InsideTileMap",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 16,
+						"tile-height": 16,
 						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1,
 						"tile-x-drawing-offset": 0,
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
@@ -1239,12 +1234,12 @@
 							"max-height": 30,
 							"data": "1590x0"
 						},
-						"tile-width": 32,
-						"tile-height": 32,
+						"tile-width": 16,
+						"tile-height": 16,
 						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1
 					},
 					"world": {
 						"x": 0,

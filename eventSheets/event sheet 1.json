@@ -529,8 +529,7 @@
 							}
 						}
 					],
-					"sid": 845128754122097,
-					"disabled": true
+					"sid": 845128754122097
 				}
 			]
 		},
@@ -972,18 +971,18 @@
 			],
 			"actions": [
 				{
-					"id": "pin-to-object-properties",
-					"objectClass": "Sprite3",
-					"sid": 181697884287831,
-					"behaviorType": "Pin",
+					"id": "add-child",
+					"objectClass": "player",
+					"sid": 489886518524892,
 					"parameters": {
-						"pin-to": "player",
-						"x": true,
-						"y": true,
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
+						"child": "Sprite3",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": true,
+						"transform-z-elevation": true,
+						"destroy-with-parent": true
 					}
 				}
 			],
