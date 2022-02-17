@@ -268,11 +268,11 @@
 					}
 				},
 				{
-					"id": "set-angle",
+					"id": "set-mirrored",
 					"objectClass": "player",
-					"sid": 493225744865841,
+					"sid": 322543844736431,
 					"parameters": {
-						"angle": "0"
+						"state": "not-mirrored"
 					}
 				}
 			],
@@ -453,11 +453,11 @@
 					}
 				},
 				{
-					"id": "set-angle",
+					"id": "set-mirrored",
 					"objectClass": "player",
-					"sid": 262731187133730,
+					"sid": 510915910914304,
 					"parameters": {
-						"angle": "180"
+						"state": "mirrored"
 					}
 				}
 			],
@@ -489,6 +489,7 @@
 					"id": "set-angle",
 					"objectClass": "player",
 					"sid": 644616251513005,
+					"disabled": true,
 					"parameters": {
 						"angle": "270"
 					}
@@ -559,6 +560,7 @@
 					"id": "set-angle",
 					"objectClass": "player",
 					"sid": 407368941973796,
+					"disabled": true,
 					"parameters": {
 						"angle": "90"
 					}
