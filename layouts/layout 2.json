@@ -22,7 +22,14 @@
 					},
 					"uid": 45,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"ownData": {
 						"tilemapData": {
 							"width": 106,
@@ -70,7 +77,14 @@
 					},
 					"uid": 44,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"ownData": {
 						"tilemapData": {
 							"width": 106,
@@ -87,7 +101,7 @@
 						"tile-y-spacing": 1
 					},
 					"world": {
-						"x": 0,
+						"x": 2,
 						"y": 0,
 						"width": 1708,
 						"height": 960,
