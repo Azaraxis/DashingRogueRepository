@@ -423,13 +423,7 @@
 					},
 					"uid": 63,
 					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 74,
 						"y": 495.5643254686723,

@@ -518,15 +518,6 @@
 							"parameters": {
 								"state": "disabled"
 							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Sprite3",
-							"sid": 662363006361578,
-							"behaviorType": "ScrollTo",
-							"parameters": {
-								"state": "enabled"
-							}
 						}
 					],
 					"sid": 845128754122097

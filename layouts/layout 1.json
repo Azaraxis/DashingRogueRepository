@@ -183,13 +183,7 @@
 					},
 					"uid": 33,
 					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 74,
 						"y": 495.5643254686723,
@@ -364,7 +358,7 @@
 						},
 						"BoundToLayout": {
 							"properties": {
-								"bound-by": "edge"
+								"bound-by": "origin"
 							}
 						}
 					},
