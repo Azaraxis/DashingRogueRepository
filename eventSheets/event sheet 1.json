@@ -282,6 +282,130 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 905167712605571,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 902303810549061,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 521890949652382,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "player",
+					"sid": 552610086315282,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 601668706057084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 345074154141286
+				}
+			],
+			"actions": [],
+			"sid": 608873425908059,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 577870699589644,
+							"parameters": {
+								"instance-variable": "DashCDforShadow"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 486531919878769,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "player2",
+							"sid": 958293067675765,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 783702953814692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 268602382949484,
+							"parameters": {
+								"instance-variable": "DashCDforShadow"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 798300272887224,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "player2",
+							"sid": 842152927366734,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 242972414502618
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 476625998903540,
@@ -308,23 +432,33 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "player2",
-					"sid": 984343708965457,
-					"parameters": {
-						"animation": "\"Run\"",
-						"from": "beginning"
-					}
 				}
 			],
 			"sid": 404912875374471,
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [],
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 569670864293978,
+							"parameters": {
+								"instance-variable": "isDashing"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player2",
+							"sid": 175606906209608,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 163566260792842
 				}
 			]
@@ -350,18 +484,37 @@
 						"animation": "\"Idle\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "player2",
-					"sid": 396612683946258,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
-					}
 				}
 			],
-			"sid": 865292594964750
+			"sid": 865292594964750,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 643557004476048,
+							"parameters": {
+								"instance-variable": "isDashing"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player2",
+							"sid": 566476610426544,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 776664177062919,
+					"disabled": true
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -393,18 +546,36 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "player2",
-					"sid": 442897821456617,
-					"parameters": {
-						"animation": "\"Run\"",
-						"from": "beginning"
-					}
 				}
 			],
-			"sid": 614398411691610
+			"sid": 614398411691610,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 405675749926803,
+							"parameters": {
+								"instance-variable": "isDashing"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player2",
+							"sid": 272483913980404,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 702860804805413
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -432,6 +603,7 @@
 					"id": "set-animation",
 					"objectClass": "player2",
 					"sid": 729933295337448,
+					"disabled": true,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
@@ -461,51 +633,21 @@
 					"parameters": {
 						"control": "jump"
 					}
-				}
-			],
-			"sid": 316031902523044
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 740628381166439,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "simulate-control",
-					"objectClass": "player",
-					"sid": 678859915239360,
-					"behaviorType": "Platform",
-					"parameters": {
-						"control": "left"
-					}
 				},
 				{
-					"id": "set-instvar-value",
-					"objectClass": "player",
-					"sid": 297720567356671,
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 809404791068204,
 					"parameters": {
-						"instance-variable": "direction",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-mirrored",
-					"objectClass": "player",
-					"sid": 510915910914304,
-					"parameters": {
-						"state": "mirrored"
+						"audio-file": "sounds_quick-jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
 					}
 				}
 			],
-			"sid": 397031031018796
+			"sid": 316031902523044,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -616,9 +758,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 970650894295486,
+					"sid": 776808193930184,
 					"parameters": {
-						"audio-file": "zooom",
+						"audio-file": "sounds_dash",
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
@@ -630,6 +772,15 @@
 					"sid": 930861324073557,
 					"parameters": {
 						"instance-variable": "isDashing",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 753324578478949,
+					"parameters": {
+						"instance-variable": "DashCDforShadow",
 						"value": "true"
 					}
 				},
@@ -795,6 +946,15 @@
 					}
 				},
 				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 344482044028474,
+					"parameters": {
+						"instance-variable": "DashCDforShadow",
+						"value": "false"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 488170762043351,
@@ -805,7 +965,7 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "player",
-					"sid": 223665582668953,
+					"sid": 582738519605292,
 					"parameters": {
 						"instance-variable": "isDashing",
 						"value": "false"

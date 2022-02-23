@@ -22,7 +22,8 @@
 						"speedMulti": 100,
 						"dashSpeed": 1250,
 						"isDashing": false,
-						"direction": 0
+						"direction": 0,
+						"DashCDforShadow": false
 					},
 					"behaviors": {
 						"Platform": {

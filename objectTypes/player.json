@@ -39,6 +39,12 @@
 			"type": "number",
 			"desc": "0 - left, 1 - up, 2 - right, 3 - down",
 			"sid": 913413361509957
+		},
+		{
+			"name": "DashCDforShadow",
+			"type": "boolean",
+			"desc": "",
+			"sid": 619994038252416
 		}
 	],
 	"behaviorTypes": [

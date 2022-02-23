@@ -164,6 +164,16 @@
 					"name": "zooom.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 128613921318755
+				},
+				{
+					"name": "sounds_dash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 136152236936345
+				},
+				{
+					"name": "sounds_quick-jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 293296801412714
 				}
 			],
 			"subfolders": []
