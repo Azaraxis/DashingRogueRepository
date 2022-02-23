@@ -133,46 +133,6 @@
 					}
 				},
 				{
-					"type": "Shadow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 32,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 0.25,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 137,
-						"y": 194,
-						"width": 35,
-						"height": 22.96,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sprite3",
 					"properties": {
 						"initially-visible": false,
@@ -453,6 +413,75 @@
 						"height": 64,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0.25,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 137,
+						"y": 194,
+						"width": 32,
+						"height": 32,
+						"originX": 0.4722222222222222,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1666,
+						"y": 705,
+						"width": 48.821197032054556,
+						"height": 48.821197032054556,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
