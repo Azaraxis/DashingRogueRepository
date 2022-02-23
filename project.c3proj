@@ -127,8 +127,7 @@
 			"InsideTileMap",
 			"PlayerHitbox",
 			"PlayerHurtbox",
-			"Sprite6",
-			"player2"
+			"Sprite6"
 		],
 		"subfolders": []
 	},
@@ -164,6 +163,16 @@
 					"name": "zooom.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 128613921318755
+				},
+				{
+					"name": "quick-jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 502971153263946
+				},
+				{
+					"name": "dash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 555989118182793
 				}
 			],
 			"subfolders": []
@@ -306,5 +315,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "Layout 1"
+	"firstLayout": null
 }
