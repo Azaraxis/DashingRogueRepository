@@ -308,9 +308,26 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player2",
+					"sid": 984343708965457,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
 				}
 			],
-			"sid": 404912875374471
+			"sid": 404912875374471,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 163566260792842
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -329,6 +346,15 @@
 					"id": "set-animation",
 					"objectClass": "player",
 					"sid": 550218659315973,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player2",
+					"sid": 396612683946258,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
@@ -367,6 +393,15 @@
 						"animation": "\"Run\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player2",
+					"sid": 442897821456617,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 614398411691610
@@ -388,6 +423,15 @@
 					"id": "set-animation",
 					"objectClass": "player",
 					"sid": 522972617309519,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player2",
+					"sid": 729933295337448,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
@@ -646,9 +690,9 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "player",
-					"sid": 727478255112934,
+					"sid": 801882964251616,
 					"parameters": {
-						"object": "Shadow",
+						"object": "player2",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
@@ -665,9 +709,9 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "player",
-					"sid": 446062814815864,
+					"sid": 222819507362577,
 					"parameters": {
-						"object": "Shadow",
+						"object": "player2",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
@@ -684,9 +728,9 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "player",
-					"sid": 467875635381088,
+					"sid": 606113450768336,
 					"parameters": {
-						"object": "Shadow",
+						"object": "player2",
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
@@ -1029,6 +1073,54 @@
 			],
 			"sid": 483734486102134,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "player2",
+					"sid": 814709050973447
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 462159692121415,
+					"parameters": {
+						"object": "player2",
+						"expression": "player2.UID",
+						"comparison": 4,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "player2",
+					"sid": 257366338320019,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player2",
+					"sid": 211886912911645,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player2",
+					"sid": 970875566504107,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 733648709141622
 		}
 	],
 	"sid": 325422612367472

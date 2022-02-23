@@ -127,7 +127,8 @@
 			"InsideTileMap",
 			"PlayerHitbox",
 			"PlayerHurtbox",
-			"Sprite6"
+			"Sprite6",
+			"player2"
 		],
 		"subfolders": []
 	},
