@@ -1,0 +1,97 @@
+{
+	"name": "Torch",
+	"plugin-id": "Sprite",
+	"sid": 578709222467748,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 2,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7563589,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 22,
+						"originX": 0.45454545454545453,
+						"originY": 1.8636363636363635,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8342852,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 10,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 1.9047619047619047,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6375378,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 10,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 1.7916666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9368685,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 26,
+						"originX": 0.5454545454545454,
+						"originY": 1.7307692307692308,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3975612,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 10,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 2,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2923042,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 763983109015649,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

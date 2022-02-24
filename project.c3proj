@@ -131,7 +131,8 @@
 			"player2",
 			"InsideTileMap2",
 			"BackgroundTilemap",
-			"Sprite4"
+			"Sprite4",
+			"Torch"
 		],
 		"subfolders": []
 	},
