@@ -130,7 +130,8 @@
 			"Sprite6",
 			"player2",
 			"InsideTileMap2",
-			"BackgroundTilemap"
+			"BackgroundTilemap",
+			"Sprite4"
 		],
 		"subfolders": []
 	},
