@@ -132,7 +132,8 @@
 			"InsideTileMap2",
 			"BackgroundTilemap",
 			"Sprite4",
-			"Torch"
+			"Torch",
+			"BackgroundTilemap2"
 		],
 		"subfolders": []
 	},
