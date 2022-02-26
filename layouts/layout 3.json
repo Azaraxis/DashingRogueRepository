@@ -4414,11 +4414,6 @@
 								"enabled": true
 							}
 						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge"
@@ -6295,6 +6290,103 @@
 						"height": 19,
 						"originX": 0.5,
 						"originY": 2,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zoomtrigger1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {
+						"zoomtrigger": 1.5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 239,
+						"y": 2265,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zoomtrigger2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 68,
+					"instanceVariables": {
+						"zoomtarget2": 0.75
+					},
+					"behaviors": {},
+					"world": {
+						"x": 118,
+						"y": 2009,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 92,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 82.43134093555126,
+						"y": 2293.760512484201,
+						"width": 0.09785949078357703,
+						"height": 0.07186899099815491,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

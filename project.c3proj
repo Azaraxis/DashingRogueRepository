@@ -64,14 +64,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
@@ -98,6 +90,14 @@
 			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -133,7 +133,10 @@
 			"BackgroundTilemap",
 			"Sprite4",
 			"Torch",
-			"BackgroundTilemap2"
+			"BackgroundTilemap2",
+			"Zoomtrigger2",
+			"Zoomtrigger1",
+			"Camera"
 		],
 		"subfolders": []
 	},

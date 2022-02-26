@@ -455,11 +455,6 @@
 								"enabled": true
 							}
 						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "origin"
@@ -697,6 +692,41 @@
 						"height": 32,
 						"originX": 0.47619047619047616,
 						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 69,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 30.449376473851466,
+						"y": 720.7932046254148,
+						"width": 0.09785949078357703,
+						"height": 0.07186899099815491,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

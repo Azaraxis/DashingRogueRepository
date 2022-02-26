@@ -345,11 +345,6 @@
 								"enabled": true
 							}
 						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge"
@@ -831,7 +826,43 @@
 			"name": "Layer 1",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 75,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 70.92492582053039,
+						"y": 643.6460612266743,
+						"width": 0.097859,
+						"height": 0.071869,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 978301150889881,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

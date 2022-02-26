@@ -2,6 +2,26 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "target",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 971227794842434
+		},
+		{
+			"eventType": "variable",
+			"name": "current_zoom",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 872474105493827
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -695,17 +715,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "player",
-							"sid": 223579223401563,
-							"behaviorType": "ScrollTo",
-							"parameters": {
-								"state": "disabled"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 845128754122097,
 					"disabled": true
 				}
@@ -1281,6 +1291,255 @@
 				}
 			],
 			"sid": 733648709141622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 538236724846988
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 200876910778002,
+					"parameters": {
+						"x": "lerp(Self.X,player.X,0.1)",
+						"y": "lerp(Self.y,player.y,0.1)"
+					}
+				}
+			],
+			"sid": 436674465165080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 147105148196272
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Zoomtrigger1",
+					"sid": 936545325869534,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Zoomtrigger2",
+					"sid": 838317804745961,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 371750754255261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 207465858074441,
+					"parameters": {
+						"variable": "current_zoom",
+						"comparison": 2,
+						"value": "target"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 703442759098750,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 285317521605977,
+							"parameters": {
+								"interval-seconds": "0.01"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 148610686429944,
+							"parameters": {
+								"variable": "current_zoom",
+								"value": "0.01"
+							}
+						},
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 689250067138032,
+							"parameters": {
+								"scale": "current_zoom"
+							}
+						}
+					],
+					"sid": 632084307749508
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 981336680624370,
+					"parameters": {
+						"variable": "current_zoom",
+						"comparison": 4,
+						"value": "target"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 377222420457015,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 924952415711333,
+							"parameters": {
+								"interval-seconds": "0.01"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 581405287757946,
+							"parameters": {
+								"variable": "current_zoom",
+								"value": "0.01"
+							}
+						},
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 709481303559739,
+							"parameters": {
+								"scale": "current_zoom"
+							}
+						}
+					],
+					"sid": 254986306637753
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "player",
+					"sid": 481814510449099,
+					"parameters": {
+						"object": "Zoomtrigger1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 809484749185185,
+					"parameters": {
+						"variable": "target",
+						"value": "Zoomtrigger1.zoomtrigger"
+					}
+				}
+			],
+			"sid": 498586704639564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 979088095910088
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 421695990105646,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 123429774494482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "player",
+					"sid": 316676131442654,
+					"parameters": {
+						"object": "Zoomtrigger2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 609529350704673,
+					"parameters": {
+						"variable": "target",
+						"value": "Zoomtrigger2.zoomtarget2"
+					}
+				}
+			],
+			"sid": 240598121638518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 240478300075729
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 364696680497611,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 458992462604219
 		}
 	],
 	"sid": 325422612367472

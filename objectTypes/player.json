@@ -54,11 +54,6 @@
 			"sid": 552778958498892
 		},
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 441788288850858
-		},
-		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 836683676528140
