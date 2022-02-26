@@ -161,10 +161,10 @@
 						{
 							"id": "set-vector-y",
 							"objectClass": "player",
-							"sid": 634790636300664,
+							"sid": 554535922874249,
 							"behaviorType": "Platform",
 							"parameters": {
-								"vector-y": "-player.dashSpeed"
+								"vector-y": "-player.dashSpeed*0.85"
 							}
 						},
 						{
