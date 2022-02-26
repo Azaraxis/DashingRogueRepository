@@ -1453,42 +1453,7 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "player",
-					"sid": 203929533971811,
-					"parameters": {
-						"object": "Zoomtrigger1"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "player",
-					"sid": 891536498564102,
-					"parameters": {
-						"object": "Zoomtrigger2"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 832250686344002,
-					"parameters": {
-						"variable": "target",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 900138362176721
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "player",
-					"sid": 620605526575895,
+					"sid": 481814510449099,
 					"parameters": {
 						"object": "Zoomtrigger1"
 					}
@@ -1498,14 +1463,36 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 376216705392789,
+					"sid": 809484749185185,
 					"parameters": {
 						"variable": "target",
 						"value": "Zoomtrigger1.zoomtrigger"
 					}
 				}
 			],
-			"sid": 554136465823123
+			"sid": 498586704639564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 979088095910088
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 421695990105646,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 123429774494482
 		},
 		{
 			"eventType": "block",
@@ -1513,7 +1500,7 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "player",
-					"sid": 249177565357418,
+					"sid": 316676131442654,
 					"parameters": {
 						"object": "Zoomtrigger2"
 					}
@@ -1523,14 +1510,36 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 734128410404460,
+					"sid": 609529350704673,
 					"parameters": {
 						"variable": "target",
 						"value": "Zoomtrigger2.zoomtarget2"
 					}
 				}
 			],
-			"sid": 483645510636426
+			"sid": 240598121638518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 240478300075729
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 364696680497611,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 458992462604219
 		}
 	],
 	"sid": 325422612367472
