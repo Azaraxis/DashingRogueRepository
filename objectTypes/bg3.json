@@ -1,0 +1,20 @@
+{
+	"name": "BG3",
+	"plugin-id": "TiledBg",
+	"sid": 226148171011562,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 256,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8177611,
+		"useCollisionPoly": true
+	}
+}
