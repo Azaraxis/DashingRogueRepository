@@ -1453,41 +1453,6 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "player",
-					"sid": 112244933829052,
-					"parameters": {
-						"object": "Zoomtrigger2"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "player",
-					"sid": 913555173398803,
-					"parameters": {
-						"object": "Zoomtrigger1"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 123704534989240,
-					"parameters": {
-						"variable": "target",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 387866071465295
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "player",
 					"sid": 481814510449099,
 					"parameters": {
 						"object": "Zoomtrigger1"
@@ -1506,6 +1471,28 @@
 				}
 			],
 			"sid": 498586704639564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 979088095910088
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 421695990105646,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 123429774494482
 		},
 		{
 			"eventType": "block",
@@ -1531,6 +1518,28 @@
 				}
 			],
 			"sid": 240598121638518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 240478300075729
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 364696680497611,
+					"parameters": {
+						"variable": "target",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 458992462604219
 		}
 	],
 	"sid": 325422612367472
