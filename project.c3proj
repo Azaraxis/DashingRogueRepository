@@ -149,12 +149,7 @@
 			"BG2",
 			"BG3",
 			"BG4",
-			"Sun",
-			"FinalTilemap",
-			"BackgroundTilemap3",
-			"Sprite5",
-			"rose",
-			"SolidFinalTileMap"
+			"Sun"
 		],
 		"subfolders": []
 	},
