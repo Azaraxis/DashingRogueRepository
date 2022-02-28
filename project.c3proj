@@ -201,6 +201,21 @@
 					"name": "sounds_quick-jump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 293296801412714
+				},
+				{
+					"name": "backgroundSound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 395078814319325
+				},
+				{
+					"name": "deathSound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 235347042810532
+				},
+				{
+					"name": "dash_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 241527940873969
 				}
 			],
 			"subfolders": []
