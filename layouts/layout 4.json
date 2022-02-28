@@ -302,6 +302,98 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 222,
+					"instanceVariables": {
+						"right": true,
+						"normGrav": 1500,
+						"speedMulti": 100,
+						"dashSpeed": 1250,
+						"isDashing": false,
+						"direction": 0,
+						"DashCDforShadow": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "origin"
+							}
+						}
+					},
+					"world": {
+						"x": 94.24342599549212,
+						"y": 859.4485349361385,
+						"width": 32,
+						"height": 32,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 223,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 94.243426,
+						"y": 859.448535,
+						"width": 0.09785949078357703,
+						"height": 0.07186899099815491,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 477220900307256,
@@ -341,5 +433,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Event sheet 1"
 }

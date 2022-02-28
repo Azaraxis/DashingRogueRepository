@@ -154,7 +154,8 @@
 			"BackgroundTilemap3",
 			"Sprite5",
 			"rose",
-			"SolidFinalTileMap"
+			"SolidFinalTileMap",
+			"waterDeathbox"
 		],
 		"subfolders": []
 	},

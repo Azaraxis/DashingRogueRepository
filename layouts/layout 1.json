@@ -397,6 +397,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "waterDeathbox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 224,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 490.9424030693366,
+						"y": 944.441920118888,
+						"width": 250,
+						"height": 14.621144854734325,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 245217934141791,
@@ -461,7 +490,7 @@
 							"height": 60,
 							"max-width": 181,
 							"max-height": 68,
-							"data": "1467x0,68,198x0,74,72x0,74,203x0,73,133x0,59,0,73,65x0,59,3x0,65,63x0,59,67x0,59,1898x0,47,39,2x47,2x39,2x47,39,47,2x39,54x0,39,3x47,39,47,39,2x47,39,3x47,39,56x0,39,11x47,55x0,3x39,2x47,39,2x47,2x39,47,39,47,54x0,39,4x47,3x39,47,2x39,3x47,53x0,4x39,47,39,8x47,39,54x0,2x39,4x47,39,4x47,3x39,56x0,39,2x47,2x39,2x47,39,2x47,2x39,57x0,2x47,3x39,47,39,3x47,39,7572x0"
+							"data": "4180x0,47,39,2x47,2x39,2x47,39,47,2x39,54x0,39,3x47,39,47,39,2x47,39,3x47,39,56x0,39,11x47,55x0,3x39,2x47,39,2x47,2x39,47,39,47,54x0,39,4x47,3x39,47,2x39,3x47,53x0,4x39,47,39,8x47,39,54x0,2x39,4x47,39,4x47,3x39,56x0,39,2x47,2x39,2x47,39,2x47,2x39,57x0,2x47,3x39,47,39,3x47,39,1550x0,3x1,65x0,1,67x0,1,37x0,30x1,614x0,1,5203x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -483,7 +512,7 @@
 							1,
 							1
 						],
-						"zElevation": 0
+						"zElevation": -1
 					}
 				},
 				{
@@ -819,7 +848,7 @@
 						},
 						"ScrollTo": {
 							"properties": {
-								"enabled": true
+								"enabled": false
 							}
 						},
 						"BoundToLayout": {

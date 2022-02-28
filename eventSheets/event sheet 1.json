@@ -1531,6 +1531,27 @@
 				}
 			],
 			"sid": 240598121638518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 317945967872063,
+					"parameters": {
+						"object": "waterDeathbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 266347536181056
+				}
+			],
+			"sid": 979327483686738
 		}
 	],
 	"sid": 325422612367472
