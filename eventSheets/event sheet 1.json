@@ -1017,7 +1017,7 @@
 			"actions": [
 				{
 					"id": "set-speed",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 460294356554138,
 					"behaviorType": "Custom",
 					"parameters": {
@@ -1027,11 +1027,30 @@
 				},
 				{
 					"id": "set-angle-of-motion",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 352777379109504,
 					"behaviorType": "Custom",
 					"parameters": {
 						"angle": "180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 628000226069637,
+					"behaviorType": "Custom",
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 401915237930972,
+					"behaviorType": "Custom",
+					"parameters": {
+						"which": "vertical",
+						"speed": "200"
 					}
 				}
 			],
@@ -1042,17 +1061,17 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 950610708788273,
 					"parameters": {
-						"object": "PlatformStopper90"
+						"object": "PlatformStopper180"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-angle-of-motion",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 338645090477945,
 					"behaviorType": "Custom",
 					"parameters": {
@@ -1067,17 +1086,17 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 334073197983849,
 					"parameters": {
-						"object": "PlatformStopper270"
+						"object": "PlatformStopper360"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-angle-of-motion",
-					"objectClass": "MovingSpikes",
+					"objectClass": "HorizontalMovingSpikes",
 					"sid": 343859545006548,
 					"behaviorType": "Custom",
 					"parameters": {
@@ -1119,7 +1138,7 @@
 					"objectClass": "player",
 					"sid": 375331808767760,
 					"parameters": {
-						"object": "MovingSpikes"
+						"object": "HorizontalMovingSpikes"
 					}
 				}
 			],
@@ -1552,6 +1571,77 @@
 				}
 			],
 			"sid": 979327483686738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 323359974749208,
+					"parameters": {
+						"object": "PlatformStopper90"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 195105327799028,
+					"behaviorType": "Custom",
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 305418232251754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 733743590101499,
+					"parameters": {
+						"object": "PlatformStopper270"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "VerticalMovingSpikes",
+					"sid": 407020504110755,
+					"behaviorType": "Custom",
+					"parameters": {
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 407909484792446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "player",
+					"sid": 909886963736906,
+					"parameters": {
+						"object": "VerticalMovingSpikes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 854435621291102
+				}
+			],
+			"sid": 698209532040362
 		}
 	],
 	"sid": 325422612367472

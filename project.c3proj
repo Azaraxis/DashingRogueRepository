@@ -120,10 +120,10 @@
 			"Sprite",
 			"Spike",
 			"player",
-			"PlatformStopper90",
-			"PlatformStopper270",
+			"PlatformStopper180",
+			"PlatformStopper360",
 			"Platforming",
-			"MovingSpikes",
+			"HorizontalMovingSpikes",
 			"Keyboard",
 			"ExitSign",
 			"Exit",
@@ -155,7 +155,10 @@
 			"Sprite5",
 			"rose",
 			"SolidFinalTileMap",
-			"waterDeathbox"
+			"waterDeathbox",
+			"VerticalMovingSpikes",
+			"PlatformStopper90",
+			"PlatformStopper270"
 		],
 		"subfolders": []
 	},

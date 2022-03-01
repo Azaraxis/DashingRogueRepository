@@ -1,7 +1,7 @@
 {
-	"name": "PlatformStopper270",
+	"name": "PlatformStopper180",
 	"plugin-id": "Sprite",
-	"sid": 930826732587482,
+	"sid": 416176099378665,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5677457,
+						"imageSpriteId": 1938002,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 377866832239821,
+				"sid": 164203652834270,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
