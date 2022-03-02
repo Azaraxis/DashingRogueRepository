@@ -33,17 +33,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 955602201962280,
-					"disabled": true,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 569979673069381,
 			"children": [
 				{
@@ -53,6 +43,7 @@
 							"id": "compare-instance-variable",
 							"objectClass": "player",
 							"sid": 532933516621745,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "direction",
 								"comparison": 0,
@@ -67,6 +58,14 @@
 								"instance-variable": "isDashing"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 775594799519329,
+							"parameters": {
+								"key": 39
+							}
 						}
 					],
 					"actions": [
@@ -102,9 +101,18 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 894888375652353,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "player",
 							"sid": 620498934023796,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "direction",
 								"comparison": 0,
@@ -154,9 +162,18 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 553025195528564,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "player",
 							"sid": 908878569784631,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "direction",
 								"comparison": 0,
@@ -206,9 +223,18 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 502608141052652,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "player",
 							"sid": 851044293705583,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "direction",
 								"comparison": 0,
