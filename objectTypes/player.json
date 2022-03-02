@@ -45,6 +45,18 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 619994038252416
+		},
+		{
+			"name": "checkpointX",
+			"type": "number",
+			"desc": "",
+			"sid": 444728029289333
+		},
+		{
+			"name": "checkpointY",
+			"type": "number",
+			"desc": "",
+			"sid": 843540764455395
 		}
 	],
 	"behaviorTypes": [

@@ -158,7 +158,8 @@
 			"waterDeathbox",
 			"VerticalMovingSpikes",
 			"PlatformStopper90",
-			"PlatformStopper270"
+			"PlatformStopper270",
+			"checkpointHitBox"
 		],
 		"subfolders": []
 	},

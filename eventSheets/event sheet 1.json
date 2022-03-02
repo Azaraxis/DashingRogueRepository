@@ -1024,9 +1024,14 @@
 			],
 			"actions": [
 				{
+					"callFunction": "respawn",
+					"sid": 582370077942739
+				},
+				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 352997933863434
+					"sid": 352997933863434,
+					"disabled": true
 				}
 			],
 			"sid": 846901072795453
@@ -1170,9 +1175,14 @@
 			],
 			"actions": [
 				{
+					"callFunction": "respawn",
+					"sid": 883378163189127
+				},
+				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 145001557341022
+					"sid": 145001557341022,
+					"disabled": true
 				}
 			],
 			"sid": 761404837919784
@@ -1591,9 +1601,8 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 266347536181056
+					"callFunction": "respawn",
+					"sid": 792725647592675
 				}
 			],
 			"sid": 979327483686738
@@ -1662,12 +1671,104 @@
 			],
 			"actions": [
 				{
+					"callFunction": "respawn",
+					"sid": 906732427767813
+				},
+				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 854435621291102
+					"sid": 854435621291102,
+					"disabled": true
 				}
 			],
 			"sid": 698209532040362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 547748326945505,
+					"parameters": {
+						"object": "checkpointHitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 933899239661002,
+					"parameters": {
+						"instance-variable": "checkpointX",
+						"value": "checkpointHitBox.ImagePointX(\"1\")"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 115906749802212,
+					"parameters": {
+						"instance-variable": "checkpointY",
+						"value": "checkpointHitBox.ImagePointY(\"1\")"
+					}
+				}
+			],
+			"sid": 201730076784234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 747519057616556
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 580183530038712,
+					"parameters": {
+						"instance-variable": "checkpointX",
+						"value": "player.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 546227358358635,
+					"parameters": {
+						"instance-variable": "checkpointY",
+						"value": "player.Y"
+					}
+				}
+			],
+			"sid": 757387152305716
+		},
+		{
+			"functionName": "respawn",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "player",
+					"sid": 609801006988267,
+					"parameters": {
+						"x": "player.checkpointX",
+						"y": "player.checkpointY"
+					}
+				}
+			],
+			"sid": 545379422917300
 		}
 	],
 	"sid": 325422612367472
