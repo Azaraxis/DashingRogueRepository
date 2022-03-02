@@ -1155,6 +1155,17 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 232286026766514,
+					"parameters": {
+						"audio-file": "sounds_quick-jump",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "player",
 					"sid": 582738519605292,
@@ -1914,6 +1925,17 @@
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 529766072879202,
+					"parameters": {
+						"audio-file": "deathSound",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "set-position",
 					"objectClass": "player",
