@@ -1,0 +1,27 @@
+{
+	"name": "Title",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "playbutton",
+					"sid": 101384875277446
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 889618549563536,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 383975906058401
+		}
+	],
+	"sid": 782816106394773
+}

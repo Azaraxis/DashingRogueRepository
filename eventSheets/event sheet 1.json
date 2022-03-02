@@ -22,6 +22,16 @@
 			"sid": 872474105493827
 		},
 		{
+			"eventType": "variable",
+			"name": "harder",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 423836042318244
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1860,6 +1870,15 @@
 					"parameters": {
 						"object": "checkpointHitBox"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 884235868356752,
+					"parameters": {
+						"variable": "harder"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1998,7 +2017,43 @@
 					}
 				}
 			],
-			"sid": 201401448300626
+			"sid": 201401448300626,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-checked",
+							"objectClass": "checkpoints",
+							"sid": 490532847079974
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 719143003697565,
+							"parameters": {
+								"variable": "harder",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 181929815546618
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "checkpoints",
+							"sid": 106821883858701
+						}
+					],
+					"sid": 259325077032939
+				}
+			]
 		}
 	],
 	"sid": 325422612367472
