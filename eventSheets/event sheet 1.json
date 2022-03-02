@@ -2099,14 +2099,12 @@
 			],
 			"actions": [
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 366364257003313,
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 422760447821975,
+					"behaviorType": "Platform",
 					"parameters": {
-						"audio-file": "backgroundSound",
-						"loop": "looping",
-						"volume": "-20",
-						"tag-optional": "\"\""
+						"input": "stop-ignoring"
 					}
 				}
 			],
@@ -2139,14 +2137,98 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "destroy",
+							"id": "set-checked",
 							"objectClass": "checkpoints",
-							"sid": 106821883858701
+							"sid": 810807057736518,
+							"disabled": true,
+							"parameters": {
+								"state": "unchecked"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "checkpoints",
+							"sid": 116806198341213,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 259325077032939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 487913857027360,
+							"disabled": true,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 501849333946052,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "backgroundSound",
+								"loop": "looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 542313049115613
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 724817963574890
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 863866594385003,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"TitleScreen\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 581373019205803,
+					"parameters": {
+						"audio-file": "backgroundSound",
+						"loop": "looping",
+						"volume": "-20",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-checked",
+					"objectClass": "checkpoints",
+					"sid": 454927932416400,
+					"parameters": {
+						"state": "unchecked"
+					}
+				}
+			],
+			"sid": 282276617475336
 		},
 		{
 			"eventType": "block",
@@ -2376,6 +2458,24 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 629194789819866,
+					"parameters": {
+						"variable": "deathCounter",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 199946425750139,
+					"parameters": {
+						"variable": "won",
+						"value": "false"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

@@ -21,6 +21,65 @@
 				}
 			],
 			"sid": 383975906058401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 674890202979987
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "checkpoints",
+					"sid": 356553590389336,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-checked",
+					"objectClass": "checkpoints",
+					"sid": 341973493618547,
+					"parameters": {
+						"state": "unchecked"
+					}
+				}
+			],
+			"sid": 269855209514907,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 111997497967783,
+							"parameters": {
+								"tag": "\"bg\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 609814201606022,
+							"parameters": {
+								"audio-file": "backgroundSound",
+								"loop": "looping",
+								"volume": "-20",
+								"tag-optional": "\"bg\""
+							}
+						}
+					],
+					"sid": 737375834271824
+				}
+			]
 		}
 	],
 	"sid": 782816106394773
