@@ -197,9 +197,9 @@
 						"tile-width": 16,
 						"tile-height": 16,
 						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1,
 						"tile-x-drawing-offset": 0,
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
@@ -220,18 +220,18 @@
 							"height": 60,
 							"max-width": 106,
 							"max-height": 60,
-							"data": "56x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,59x0,13,2763x0"
+							"data": "50x0,10,5x0,2,38x0,5x10,10x0,10,5x0,2,38x0,5x10,10x0,10,5x0,2,38x0,2x10,13x0,10,5x0,2,53x0,10,5x0,2,53x0,10,5x0,2,53x0,10,5x0,2,53x0,10,5x0,2,53x0,10,5x0,2,53x0,10,5x0,2,54x0,11,4x0,2,54x0,10,4x0,2,54x0,10,4x0,2,54x0,10,4x0,2,54x0,10,4x0,2,54x0,10,4x0,2,54x0,10,4x0,2,54x0,10,33,3x0,2,54x0,33,19,3x0,2,53x0,33,19,4x0,2,52x0,33,19,5x0,2,51x0,33,19,6x0,2,50x0,33,19,7x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,18,8x0,2,50x0,34,17,7x0,2,51x0,34,17,6x0,2,52x0,34,17,5x0,2,53x0,34,17,4x0,2,54x0,34,17,3x0,2,55x0,34,17,2x0,2,56x0,34,2x9,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,59x0,2,2763x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
 						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1
 					},
 					"world": {
-						"x": 2.6169623690555,
-						"y": 0.8723207896852045,
+						"x": 0,
+						"y": 0,
 						"width": 1708,
 						"height": 960,
 						"originX": 0,
@@ -392,6 +392,37 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zoomtrigger1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 236,
+					"instanceVariables": {
+						"zoomtrigger": 1.5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 390.8592035905888,
+						"y": 757.3380137509366,
+						"width": 803,
+						"height": 276,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
 						],
 						"angle": 0,
 						"zElevation": 0

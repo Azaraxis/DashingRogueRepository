@@ -40,6 +40,162 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 443219609814088,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 214471347147708,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 922350826130789,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 993259750876974,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "toDashing",
+							"sid": 426808029106435
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "player",
+							"sid": 591191141672961,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "(-player.dashSpeed*0.85)"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "player",
+							"sid": 771858266867063,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "player.dashSpeed/2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 259393970940725,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"callFunction": "toNormal",
+							"sid": 581369450515377
+						}
+					],
+					"sid": 303054902588407
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 101927459125329,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 302275855280681,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 247941036639895,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 826277027006048,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "toDashing",
+							"sid": 298794246139831
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "player",
+							"sid": 422773175186073,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "(-player.dashSpeed*0.85)"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "player",
+							"sid": 279623552661994,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "-player.dashSpeed/2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 461577800429932,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"callFunction": "toNormal",
+							"sid": 733307420347060
+						}
+					],
+					"sid": 782674718621278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-instance-variable",
 							"objectClass": "player",
 							"sid": 532933516621745,
@@ -1211,11 +1367,11 @@
 					}
 				},
 				{
-					"id": "go-to-layout",
+					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 120132698394145,
+					"sid": 155060036868160,
 					"parameters": {
-						"layout": "Layout 3"
+						"which": "next"
 					}
 				}
 			],
@@ -1766,9 +1922,61 @@
 						"x": "player.checkpointX",
 						"y": "player.checkpointY"
 					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "player",
+					"sid": 134336568992543,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "0"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "player",
+					"sid": 392345003745253,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "0"
+					}
 				}
 			],
 			"sid": 545379422917300
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 789883388660452
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 361472837519359,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Layout 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 366364257003313,
+					"parameters": {
+						"audio-file": "backgroundSound",
+						"loop": "looping",
+						"volume": "-20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 201401448300626
 		}
 	],
 	"sid": 325422612367472

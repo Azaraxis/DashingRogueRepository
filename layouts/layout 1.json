@@ -131,132 +131,6 @@
 					}
 				},
 				{
-					"type": "Text",
-					"properties": {
-						"text": "Teaches player about normal dashing",
-						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": 0,
-						"width": 352,
-						"height": 128,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text",
-					"properties": {
-						"text": "Teaches player about upwards dashing",
-						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 576,
-						"y": -32,
-						"width": 352,
-						"height": 128,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text",
-					"properties": {
-						"text": "Show player what the goal looks like",
-						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 28,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 960,
-						"y": 0,
-						"width": 352,
-						"height": 128,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sprite3",
 					"properties": {
 						"initially-visible": false,
@@ -315,61 +189,6 @@
 					}
 				},
 				{
-					"type": "BackgroundTilemap2",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 1,
-						"tile-x-spacing": 1,
-						"tile-y-spacing": 1,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 58,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 107,
-							"height": 60,
-							"max-width": 206,
-							"max-height": 163,
-							"data": "53x0,94x36,2x39,14x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,61x36,8,16,24,8,16,24,8,16,24,8,16,8,16,24,10x36,5,13,21,16x36,59x0,104x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,65x36,37,45,46hv,38hv,35x36,59x0,65x36,38,46,45hv,37hv,35x36,59x0,104x36,59x0,104x36,58x0,105x36,58x0,105x36,58x0,105x36,58x0,105x36,58x0,62x36,8,16,2x24,8,16,24,16,24,8,16,24,8,16,24,2x36,8,16,8,16,24,8,16,24,8,16,24,15x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,67x36,37,45,46hv,38hv,4x36,37,45,46hv,38hv,4x36,37,45,46hv,38hv,19x36,57x0,67x36,38,46,45hv,37hv,4x36,38,46,45hv,37hv,4x36,38,46,45hv,37hv,19x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,56x0,107x36,57x0,106x36,57x0,14x9,44hv,91x36,57x0,14x36,36hv,91x36,57x0,15x36hv,91x36,57x0,81x36,38,24x36,57x0,81x36,38,24x36,57x0,81x36,38,24x36,57x0,106x36,57x0,106x36,57x0,78x36,38,27x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,91x36,10,14x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,56x0,107x36,56x0,107x36,56x0,107x36,30x0,1,9,3,23x0,107x36,30x0,2,35,34,14x9,17,8x0,107x36,30x0,3,41,9x10,35,5x10,18,8x0,107x36,31x9,17,10,35,3x10,35,7x10,35,10,18,8x0,107x36,4x10,35,17x10,35,8x10,28,4x10,33,10x11,19,8x0,107x36,25x10,0,35,3x10,33,19,3x10,35,18,11x37,8x0,107x36,12x10,35,4x10,35,7x10,0,4x10,1,42,4x10,18,11x37,8x0,107x36,2x10,35,4x10,35,3x10,33,2x11,41,5x10,35,7x10,35,10,2,35,4x10,18,11x37,8x0,107x36,9x10,35,10,18,37,45,2,15x10,3,41,10,35,2x10,18,11x37,8x0,107x36,11x10,18,38,46,2,7x10,35,3x10,35,3x10,34,17,4x10,18,11x37,8x0,107x36,11x10,34,2x9,42,16x10,28,4x10,18,11x37,8x0,107x36,35,3x10,35,11x10,35,11x10,35,10,33,19,3x10,35,18,11x37,8x0,107x36,8x10,35,11x10,35,9x10,1,42,4x10,34,10x9,17,8x0,107x36,30x10,2,35,10,35,3x10,35,6x10,35,2x10,18,8x0,4x9,66x36,17,44hv,35x36,30x11,3,41,8x10,35,6x10,18,8x0,70x36,18,44hv,41x36,3x11,29x36,18x0,27x36,33,117x36,8x0,3x36,7x0,145x36,7x0,4x36,7x0,145x36,6x0,5x36,7x0,2146x36,18,162x36,18,162x36,18,553x36,2x9,12401x36,163x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 1,
-						"tile-x-spacing": 1,
-						"tile-y-spacing": 1
-					},
-					"world": {
-						"x": 0,
-						"y": -2,
-						"width": 1724.522258872744,
-						"height": 960,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sun",
 					"properties": {
 						"initially-visible": true,
@@ -424,6 +243,61 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackgroundTilemap2",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 107,
+							"height": 60,
+							"max-width": 206,
+							"max-height": 163,
+							"data": "53x0,94x36,2x39,14x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,61x36,8,16,24,8,16,24,8,16,24,8,16,8,16,24,10x36,5,13,21,16x36,59x0,104x36,59x0,104x36,59x0,84x36,37,45,46hv,38hv,16x36,59x0,84x36,38,46,45hv,37hv,16x36,59x0,85x36,5,13,21,16x36,59x0,104x36,59x0,65x36,37,45,46hv,38hv,35x36,59x0,65x36,38,46,45hv,37hv,35x36,59x0,104x36,59x0,104x36,58x0,105x36,58x0,105x36,58x0,105x36,58x0,105x36,58x0,62x36,8,16,2x24,8,16,24,16,24,8,16,24,8,16,24,2x36,8,16,8,16,24,8,16,24,8,16,24,15x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,67x36,37,45,46hv,38hv,4x36,37,45,46hv,38hv,4x36,37,45,46hv,38hv,19x36,57x0,67x36,38,46,45hv,37hv,4x36,38,46,45hv,37hv,4x36,38,46,45hv,37hv,19x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,56x0,107x36,57x0,106x36,57x0,14x9,44hv,91x36,57x0,14x36,36hv,91x36,57x0,15x36hv,91x36,57x0,81x36,38,24x36,57x0,81x36,38,24x36,57x0,81x36,38,24x36,57x0,106x36,57x0,106x36,57x0,78x36,38,27x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,91x36,10,14x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,57x0,106x36,56x0,107x36,56x0,107x36,56x0,107x36,30x0,1,9,3,23x0,107x36,30x0,2,35,34,14x9,17,8x0,107x36,30x0,3,41,9x10,35,5x10,18,8x0,107x36,31x9,17,10,35,3x10,35,7x10,35,10,18,8x0,107x36,4x10,35,17x10,35,8x10,28,4x10,33,10x11,19,8x0,107x36,26x10,35,3x10,33,19,3x10,35,18,11x37,8x0,107x36,12x10,35,4x10,35,12x10,1,42,4x10,18,11x37,8x0,107x36,2x10,35,4x10,35,3x10,33,2x11,41,5x10,35,7x10,35,10,2,35,4x10,18,11x37,8x0,107x36,9x10,35,10,18,37,45,2,15x10,3,41,10,35,2x10,18,11x37,8x0,107x36,11x10,18,38,46,2,7x10,35,3x10,35,3x10,34,17,4x10,18,11x37,8x0,107x36,11x10,34,2x9,42,16x10,28,4x10,18,11x37,8x0,107x36,35,3x10,35,11x10,35,11x10,35,10,33,19,3x10,35,18,11x37,8x0,107x36,8x10,35,11x10,35,9x10,1,42,4x10,34,10x9,17,8x0,107x36,30x10,2,35,10,35,3x10,35,6x10,35,2x10,18,8x0,4x9,66x36,17,44hv,35x36,30x11,3,41,8x10,35,6x10,18,8x0,70x36,18,44hv,41x36,3x11,29x36,18x0,27x36,33,117x36,8x0,3x36,7x0,145x36,7x0,4x36,7x0,145x36,6x0,5x36,7x0,2146x36,18,162x36,18,162x36,18,553x36,2x9,12401x36,163x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 1,
+						"tile-x-spacing": 1,
+						"tile-y-spacing": 1
+					},
+					"world": {
+						"x": 0,
+						"y": -2,
+						"width": 1724.522258872744,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
 						"zElevation": 0
 					}
 				}
@@ -491,7 +365,7 @@
 							"height": 60,
 							"max-width": 181,
 							"max-height": 68,
-							"data": "4180x0,47,39,2x47,2x39,2x47,39,47,2x39,54x0,39,3x47,39,47,39,2x47,39,3x47,39,56x0,39,11x47,55x0,3x39,2x47,39,2x47,2x39,47,39,47,54x0,39,4x47,3x39,47,2x39,3x47,53x0,4x39,47,39,8x47,39,54x0,2x39,4x47,39,4x47,3x39,56x0,39,2x47,2x39,2x47,39,2x47,2x39,57x0,2x47,3x39,47,39,3x47,39,1550x0,3x1,65x0,1,67x0,1,37x0,30x1,614x0,1,5203x0"
+							"data": "4180x0,47,39,2x47,2x39,2x47,39,47,2x39,54x0,39,3x47,39,47,39,2x47,39,3x47,39,56x0,39,11x47,55x0,3x39,2x47,39,2x47,2x39,47,39,47,54x0,39,4x47,3x39,47,2x39,3x47,53x0,4x39,47,39,8x47,39,54x0,2x39,4x47,39,4x47,3x39,56x0,39,2x47,2x39,2x47,39,2x47,2x39,57x0,2x47,3x39,47,39,3x47,39,1550x0,1,2x9,65x0,2,67x0,2,37x0,30x9,614x0,1,134x0,10,67x0,10,5000x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -502,7 +376,7 @@
 					},
 					"world": {
 						"x": 0,
-						"y": -2,
+						"y": 0,
 						"width": 1708,
 						"height": 960,
 						"originX": 0,
@@ -513,7 +387,7 @@
 							1,
 							1
 						],
-						"zElevation": -1
+						"zElevation": 0
 					}
 				},
 				{
@@ -667,7 +541,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Teaches player about normal dashing",
+						"text": "Press X to Dash!",
 						"enable-bbcode": true,
 						"font": "Impact",
 						"size": 20,
@@ -680,8 +554,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
@@ -690,51 +564,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 233,
-						"y": 672,
-						"width": 439,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text",
-					"properties": {
-						"text": "need some sort of tall tree or other obstacle to teach the player about vertical dashing",
-						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 20,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 4,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1232,
-						"y": 390,
-						"width": 480,
+						"x": 392,
+						"y": 660.834524,
+						"width": 184.1192850366495,
 						"height": 64,
 						"originX": 0,
 						"originY": 0,
