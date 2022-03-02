@@ -180,7 +180,11 @@
 			"TitleText",
 			"Button",
 			"playbutton",
-			"checkpoints"
+			"checkpoints",
+			"theEndForNow",
+			"deathText",
+			"BacktoMainMenuButton",
+			"Sprite7"
 		],
 		"subfolders": []
 	},

@@ -32,6 +32,26 @@
 			"sid": 423836042318244
 		},
 		{
+			"eventType": "variable",
+			"name": "deathCounter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 722060008096523
+		},
+		{
+			"eventType": "variable",
+			"name": "won",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 929141284299102
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -41,6 +61,15 @@
 					"parameters": {
 						"key": 88
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 448112529464436,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
@@ -458,6 +487,15 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 429541550751703,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -500,6 +538,15 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 383023363199434,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -618,6 +665,15 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 589933299394277,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 476625998903540,
@@ -685,6 +741,15 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 678336529817057,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -731,6 +796,15 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 291505451154050,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
+				},
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
@@ -799,6 +873,15 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 161920091060601,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1424,7 +1507,8 @@
 					}
 				}
 			],
-			"sid": 667590128860325
+			"sid": 667590128860325,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -1956,6 +2040,15 @@
 					}
 				},
 				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 425988247756612,
+					"parameters": {
+						"variable": "deathCounter",
+						"value": "1"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "player",
 					"sid": 609801006988267,
@@ -2054,6 +2147,245 @@
 					"sid": 259325077032939
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 931875500461205
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 321939065974959,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Layout 4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 678506610065167,
+					"parameters": {
+						"layer": "1",
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "deathText",
+					"sid": 632543381827099,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 615815417263530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 922183299080302,
+					"parameters": {
+						"object": "rose"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "wonnered",
+					"sid": 200950182032987
+				}
+			],
+			"sid": 966905299534455
+		},
+		{
+			"functionName": "wonnered",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-default-controls",
+					"objectClass": "player",
+					"sid": 225911452151910,
+					"disabled": true,
+					"behaviorType": "Platform",
+					"parameters": {
+						"default-controls": false
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 864977344845560,
+					"parameters": {
+						"variable": "won",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 760058173231004,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "player",
+					"sid": 409017079402295,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "0"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "player",
+					"sid": 828927903800333,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "player",
+					"sid": 696089669416925
+				}
+			],
+			"sid": 837691299532987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 169731457118306,
+					"parameters": {
+						"variable": "won"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 109764345714145
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 274183413534084,
+					"parameters": {
+						"layer": "1",
+						"opacity": "LayerOpacity(1)+1"
+					}
+				}
+			],
+			"sid": 234050037820948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 980541047241722
+				},
+				{
+					"id": "compare-layer-opacity",
+					"objectClass": "System",
+					"sid": 483220944693038,
+					"parameters": {
+						"layer": "1",
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "deathText",
+					"sid": 978870440607285,
+					"parameters": {
+						"text": "\"[outline=#000000]Total Deaths: \"&deathCounter"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "deathText",
+					"sid": 601652398254070,
+					"parameters": {
+						"opacity": "deathText.Opacity+1"
+					}
+				}
+			],
+			"sid": 694784068890990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "deathText",
+					"sid": 272923205280055,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "BacktoMainMenuButton",
+					"sid": 114752250886879,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 242371786798211
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BacktoMainMenuButton",
+					"sid": 487725201329421
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 221905617617507,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 858203677777333
 		}
 	],
 	"sid": 325422612367472
