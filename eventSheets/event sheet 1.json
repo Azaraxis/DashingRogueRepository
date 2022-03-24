@@ -422,9 +422,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 251883416033061
+							"id": "on-created",
+							"objectClass": "player2",
+							"sid": 834867061725920
 						}
 					],
 					"actions": [],
@@ -442,14 +442,9 @@
 									}
 								},
 								{
-									"id": "compare-instance-variable",
+									"id": "is-mirrored",
 									"objectClass": "player",
-									"sid": 763118824720994,
-									"parameters": {
-										"instance-variable": "direction",
-										"comparison": 0,
-										"value": "0"
-									}
+									"sid": 765127296856888
 								}
 							],
 							"actions": [
@@ -476,14 +471,10 @@
 									}
 								},
 								{
-									"id": "compare-instance-variable",
+									"id": "is-mirrored",
 									"objectClass": "player",
-									"sid": 334888095689017,
-									"parameters": {
-										"instance-variable": "direction",
-										"comparison": 0,
-										"value": "2"
-									}
+									"sid": 485332823463111,
+									"isInverted": true
 								}
 							],
 							"actions": [
