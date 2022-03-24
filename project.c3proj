@@ -206,7 +206,7 @@
 			"Layout 2",
 			"Layout 3",
 			"Layout 4",
-			"Layout 5"
+			"IntroCutsceneTest"
 		],
 		"subfolders": []
 	},
@@ -391,7 +391,7 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"
