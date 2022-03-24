@@ -2486,6 +2486,60 @@
 				}
 			],
 			"sid": 858203677777333
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 909073140144289
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Spotlight",
+					"sid": 919121032220657,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 298048971008892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 668441299171980,
+					"parameters": {
+						"object": "StopMoveTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 392247010947551,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Spotlight",
+					"sid": 210074002800327,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 205668209191016
 		}
 	],
 	"sid": 325422612367472

@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 28500,
+	"savedWithRelease": 28503,
 	"name": "DashingRouge",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Tilemap",
 			"name": "Tilemap",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -107,7 +107,7 @@
 			"id": "custom",
 			"name": "Custom",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -115,7 +115,7 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		},
 		{
@@ -123,7 +123,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r285",
+			"version": "r285.3",
 			"bundled": false
 		}
 	],
@@ -184,7 +184,12 @@
 			"theEndForNow",
 			"deathText",
 			"BacktoMainMenuButton",
-			"Sprite7"
+			"Sprite7",
+			"BlackGround",
+			"BlackBG",
+			"Lady",
+			"Spotlight",
+			"StopMoveTrigger"
 		],
 		"subfolders": []
 	},
@@ -200,14 +205,16 @@
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
-			"Layout 4"
+			"Layout 4",
+			"Layout 5"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Title"
+			"Title",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
