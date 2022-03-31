@@ -2001,7 +2001,7 @@
 							"objectClass": "player",
 							"sid": 990582605723022,
 							"parameters": {
-								"object": "Sprite"
+								"object": "ExitDoor"
 							}
 						}
 					],

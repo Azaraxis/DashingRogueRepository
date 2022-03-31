@@ -133,7 +133,7 @@
 			"Platforming3",
 			"Text",
 			"WinText",
-			"Sprite",
+			"ExitDoor",
 			"Spike",
 			"player",
 			"PlatformStopper180",

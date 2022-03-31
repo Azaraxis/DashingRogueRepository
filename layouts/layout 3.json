@@ -5960,7 +5960,7 @@
 					}
 				},
 				{
-					"type": "Sprite",
+					"type": "ExitDoor",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
