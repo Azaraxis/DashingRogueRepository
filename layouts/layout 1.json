@@ -147,8 +147,8 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 1376.445059423166,
-								"y": 552.3139127308923,
+								"x": 870,
+								"y": 552,
 								"width": 99.38960044362068,
 								"height": 94.57142897740948,
 								"originX": 0.5,
@@ -181,7 +181,7 @@
 						1
 					],
 					"isTransparent": true,
-					"parallaxX": 1,
+					"parallaxX": 0.5,
 					"parallaxY": 1,
 					"scaleRate": 1,
 					"forceOwnTexture": false,
