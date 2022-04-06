@@ -109,15 +109,17 @@
 								"live-preview": false
 							},
 							"uid": 625,
-							"instanceVariables": {},
+							"instanceVariables": {
+								"Off": false
+							},
 							"behaviors": {},
 							"world": {
 								"x": 186.31822885573195,
 								"y": 1512.2702020567688,
 								"width": 10,
-								"height": 19,
+								"height": 20,
 								"originX": 0.5,
-								"originY": 2,
+								"originY": 1,
 								"color": [
 									1,
 									1,

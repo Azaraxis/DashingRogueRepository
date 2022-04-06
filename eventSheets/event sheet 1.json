@@ -1892,9 +1892,9 @@
 						{
 							"id": "set-layer-opacity",
 							"objectClass": "System",
-							"sid": 118092750551249,
+							"sid": 225128962906760,
 							"parameters": {
-								"layer": "1",
+								"layer": "7",
 								"opacity": "0"
 							}
 						},
@@ -2212,9 +2212,9 @@
 						{
 							"id": "compare-layer-opacity",
 							"objectClass": "System",
-							"sid": 234905407733624,
+							"sid": 767575792154443,
 							"parameters": {
-								"layer": "1",
+								"layer": "7",
 								"comparison": 0,
 								"opacity": "100"
 							}
@@ -2261,9 +2261,9 @@
 						{
 							"id": "set-layer-opacity",
 							"objectClass": "System",
-							"sid": 243854712326889,
+							"sid": 405655451142658,
 							"parameters": {
-								"layer": "1",
+								"layer": "7",
 								"opacity": "LayerOpacity(1)+1"
 							}
 						}
@@ -2588,6 +2588,64 @@
 				}
 			],
 			"sid": 960303436469869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 984579879385280,
+					"parameters": {
+						"object": "Torch"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "player",
+					"sid": 305165262378859,
+					"parameters": {
+						"instance-variable": "isDashing"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Torch",
+					"sid": 377293823448038,
+					"parameters": {
+						"instance-variable": "Off",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 814008944279818
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Torch",
+					"sid": 475326815976001,
+					"parameters": {
+						"instance-variable": "Off"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Torch",
+					"sid": 444459157772889,
+					"parameters": {
+						"animation": "\"fireOut\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 282491008746535
 		}
 	],
 	"sid": 325422612367472
