@@ -68,9 +68,9 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 609814201606022,
+							"sid": 783923449066312,
 							"parameters": {
-								"audio-file": "backgroundSound",
+								"audio-file": "jascha-dachtera-arian-p-cosmic-revelation",
 								"loop": "looping",
 								"volume": "-20",
 								"tag-optional": "\"bg\""

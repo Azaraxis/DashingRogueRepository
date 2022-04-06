@@ -5689,7 +5689,9 @@
 						"direction": 0,
 						"DashCDforShadow": false,
 						"checkpointX": 0,
-						"checkpointY": 0
+						"checkpointY": 0,
+						"FootstepsBool": false,
+						"landingAudioBool": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -5715,9 +5717,9 @@
 					"world": {
 						"x": 84,
 						"y": 2309,
-						"width": 32,
+						"width": 25.904761904761905,
 						"height": 32,
-						"originX": 0.47619047619047616,
+						"originX": 0.47058823529411764,
 						"originY": 0.5263157894736842,
 						"color": [
 							1,

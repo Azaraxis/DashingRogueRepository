@@ -2351,6 +2351,243 @@
 				}
 			],
 			"sid": 205668209191016
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "audio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "player",
+							"sid": 443489900039301,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "player",
+							"sid": 110197355093535,
+							"behaviorType": "Platform",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 358075797584242,
+							"parameters": {
+								"instance-variable": "FootstepsBool",
+								"value": "false"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 174267858142599,
+							"parameters": {
+								"tag": "\"footsteps\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 376686423844286,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"land\""
+							}
+						}
+					],
+					"sid": 912542287175304,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "player",
+							"sid": 568345042871976,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "player",
+							"sid": 372043372611422,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 736640552245394,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 836276601601799,
+							"parameters": {
+								"instance-variable": "FootstepsBool",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 653865088455259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 949804092796320,
+							"parameters": {
+								"tag": "\"footsteps\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 358235994591660,
+							"parameters": {
+								"instance-variable": "FootstepsBool"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 118604196415936
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 419145514317445,
+							"parameters": {
+								"audio-file": "foot1",
+								"loop": "not-looping",
+								"volume": "-15",
+								"tag-optional": "\"footsteps\""
+							}
+						}
+					],
+					"sid": 790918791503595
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "player",
+							"sid": 904158140169582,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-falling",
+							"objectClass": "player",
+							"sid": 182126802873736,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 945336327729911,
+							"parameters": {
+								"instance-variable": "landingAudioBool",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 339419488857418,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "player",
+							"sid": 536025737275149,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-by-wall",
+							"objectClass": "player",
+							"sid": 941929386238692,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-by-wall",
+							"objectClass": "player",
+							"sid": 668545608523132,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "player",
+							"sid": 137582362049543,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 407556546899719,
+							"parameters": {
+								"instance-variable": "landingAudioBool"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 929792564890148,
+							"parameters": {
+								"instance-variable": "landingAudioBool",
+								"value": "false"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 796025727375509,
+							"parameters": {
+								"audio-file": "foot2",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"land\""
+							}
+						}
+					],
+					"sid": 877752264523908
+				}
+			],
+			"sid": 960303436469869
 		}
 	],
 	"sid": 325422612367472
