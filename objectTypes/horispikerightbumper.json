@@ -1,7 +1,7 @@
 {
-	"name": "PlatformStopper90",
+	"name": "HoriSpikeRightBumper",
 	"plugin-id": "Sprite",
-	"sid": 430821058636629,
+	"sid": 416176099378665,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2731635,
+						"imageSpriteId": 1938002,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 588290411502262,
+				"sid": 164203652834270,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

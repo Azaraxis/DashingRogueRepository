@@ -1403,7 +1403,7 @@
 							"objectClass": "HorizontalMovingSpikes",
 							"sid": 503925989499373,
 							"parameters": {
-								"object": "PlatformStopper180"
+								"object": "HoriSpikeRightBumper"
 							}
 						}
 					],
@@ -1428,7 +1428,7 @@
 							"objectClass": "HorizontalMovingSpikes",
 							"sid": 402985559364980,
 							"parameters": {
-								"object": "PlatformStopper360"
+								"object": "HoriSpikeLeftBumper"
 							}
 						}
 					],
@@ -1479,7 +1479,7 @@
 							"objectClass": "VerticalMovingSpikes",
 							"sid": 593334430638212,
 							"parameters": {
-								"object": "PlatformStopper90"
+								"object": "VertSpikeDownBumper"
 							}
 						}
 					],
@@ -1504,7 +1504,7 @@
 							"objectClass": "VerticalMovingSpikes",
 							"sid": 894003147929923,
 							"parameters": {
-								"object": "PlatformStopper270"
+								"object": "VertSpikeUpBumper"
 							}
 						}
 					],
