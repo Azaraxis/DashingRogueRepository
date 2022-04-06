@@ -2646,6 +2646,43 @@
 				}
 			],
 			"sid": 282491008746535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-left-right-key-down",
+					"objectClass": "Keyboard",
+					"sid": 563471166269343,
+					"parameters": {
+						"key": "left-shift"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 651017822097015,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 489681558046327
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 408161498072450,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 311102665642997
 		}
 	],
 	"sid": 325422612367472
