@@ -129,7 +129,7 @@
 									"height": 114,
 									"max-width": 188,
 									"max-height": 116,
-									"data": "647x0,2x10,34h,6x9h,42h,105x0,3x10,18h,6x0,2h,46x0,33,30x11,41,24x0,2x10,0,3x10,18h,6x0,2h,46x0,18,30x0,2,24x0,6x10,18h,6x0,2h,46x0,18,30x0,2,24x0,4x10,34h,9h,17h,6x0,1h,9h,42h,44x0,18,30x0,2,23x0,5x10,18h,10x0,2h,44x0,18,30x0,2,22x0,4x10,34h,9h,17h,10x0,1h,9h,42h,42x0,18,30x0,2,22x0,4x10,18h,14x0,2h,42x0,18,30x0,2,21x0,3x10,34h,9h,17h,14x0,1h,9h,42h,40x0,18,30x0,2,20x0,4x10,18h,18x0,2h,40x0,18,30x0,2,19x0,3x10,34h,9h,17h,18x0,1h,9h,42h,38x0,18,30x0,2,19x0,3x10,17h,22x0,2h,38x0,18,30x0,2,18x0,2x10,34h,9h,17h,22x0,1h,9h,42h,36x0,18,30x0,2,16x0,4x10,18h,26x0,2h,36x0,18,30x0,2,16x0,2x10,34h,9h,17h,26x0,1h,9h,42h,34x0,18,30x0,2,15x0,3x10,18h,30x0,2h,34x0,18,30x0,2,13x0,3x10,34h,9h,17h,30x0,1h,9h,42h,2x0,34h,12x9h,42h,16x0,18,12x0,1,2x9,17,14x0,2,12x0,4x10,18h,14x0,3h,6x11h,19h,12x0,2h,2x0,18h,12x0,2h,16x0,18,12x0,2,10,35,18,14x0,2,10x0,4x10,34h,9h,17h,14x0,2h,6x0,18h,12x0,1h,9h,42h,18h,12x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,10x0,4x10,18h,14x0,3h,11h,41h,6x0,33h,11h,19h,12x0,2h,18h,12x0,2h,14x0,2x10,18,12x0,2,35,10,18,14x0,2,8x0,4x10,34h,9h,17h,14x0,2h,10x0,18h,12x0,1h,17h,12x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,7x0,5x10,18h,14x0,3h,11h,41h,10x0,33h,11h,19h,24x0,2h,14x0,2x10,18,12x0,2,10,35,18,14x0,2,7x0,3x10,34h,9h,17h,14x0,2h,14x0,18h,24x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,7x0,3x10,18h,14x0,3h,11h,41h,14x0,33h,11h,19h,22x0,2h,14x0,2x10,18,12x0,2,35,10,18,14x0,2,8x0,34h,9h,17h,14x0,2h,18x0,18h,22x0,2h,14x0,2x10,34,12x9,42,2x10,18,14x0,2,8x0,18h,14x0,3h,11h,41h,18x0,33h,11h,19h,20x0,2h,14x0,17x10,35,18,14x0,2,8x0,18h,14x0,2h,22x0,18h,20x0,2h,14x0,18x10,18,14x0,2,8x0,18h,12x0,3h,11h,41h,22x0,33h,11h,19h,18x0,2h,14x0,2x10,33,15x11,19,14x0,2,8x0,18h,12x0,2h,26x0,18h,18x0,2h,14x0,2x10,18,30x0,2,8x0,18h,10x0,3h,11h,41h,26x0,33h,11h,19h,16x0,2h,14x0,2x10,18,30x0,2,8x0,18h,10x0,2h,30x0,18h,16x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,3h,11h,41h,30x0,33h,11h,19h,14x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,3x10h,31x0,18h,14x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,4x10h,30x0,33h,11h,19h,12x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,5x10h,31x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,6x10h,30x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,7x10h,29x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,8x10h,28x0,33h,12x11h,41h,16x0,18,30x0,2,8x0,18h,8x0,2h,10x10h,56x0,18,30x0,2,8x0,18h,8x0,2h,11x10h,55x0,18,30x0,2,8x0,18h,8x0,2h,12x10h,54x0,18,30x0,2,8x0,18h,8x0,2h,13x10h,53x0,18,30x0,2,8x0,18h,8x0,1h,9h,42h,12x10h,52x0,18,30x0,2,8x0,18h,10x0,2h,12x10h,52x0,18,30x0,2,8x0,18h,10x0,1h,9h,42h,10x10h,52x0,18,14x0,1,15x9,42,8x0,18h,12x0,2h,10x10h,52x0,18,14x0,2,10,23x0,18h,12x0,1h,9h,42h,8x10h,52x0,18,14x0,2,10,23x0,18h,14x0,2h,8x10h,52x0,18,14x0,2,10,23x0,18h,14x0,1h,9h,42h,6x10h,52x0,18,14x0,2,10,23x0,33h,11h,19h,14x0,2h,6x10h,52x0,18,14x0,2,10,23x0,2x10h,18h,14x0,1h,9h,42h,4x10h,52x0,18,14x0,2,2x10,22x0,2x10h,33h,11h,19h,14x0,2h,4x10h,52x0,18,14x0,2,3x10,23x0,2x10h,18h,14x0,1h,9h,42h,2x10h,52x0,18,14x0,2,4x10,22x0,2x10h,33h,11h,19h,14x0,2h,2x10h,52x0,18,14x0,2,5x10,23x0,2x10h,18h,14x0,1h,9h,42h,52x0,18,14x0,2,6x10,22x0,2x10h,33h,11h,19h,14x0,2h,52x0,18,14x0,2,7x10,23x0,2x10h,18h,14x0,1h,10x9h,17x11,41,24x0,18,14x0,2,8x10,22x0,2x10h,33h,11h,19h,40x0,2,24x0,18,14x0,2,22x10,10x0,2x10h,18h,40x0,2,24x0,18,14x0,2,23x10,9x0,2x10h,33h,11h,19h,38x0,2,24x0,18,14x0,3,18x11,9hv,41,4x10,10x0,2x10,18h,38x0,2,24x0,18,34x0,18hv,5x10,9x0,2x10h,33h,11h,19h,36x0,2,24x0,18,34x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,36x0,2,24x0,18,36x0,18hv,5x10,9x0,2x10h,33h,11h,19h,34x0,2,24x0,18,36x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,34x0,2,24x0,18,38x0,18hv,5x10,9x0,2x10h,33h,11h,19h,32x0,2,24x0,18,38x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,32x0,2,24x0,18,40x0,18hv,5x10,9x0,2x10h,33h,11h,19h,30x0,2,24x0,18,40x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,30x0,2,24x0,18,42x0,18hv,5x10,9x0,2x10h,33h,11h,21x9,17,7x0,2,24x0,18,42x0,17hv,9hv,34hv,4x10,10x0,2x10h,10,35,3x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,24x0,34,27x9,2x11hv,17,14x0,18hv,5x10,9x0,2x10h,21x10,18,7x0,2,47x0,7x10,18,14x0,17hv,9hv,34hv,4x10,11x0,2x10,35,3x10,35,3x10,35,3x10,35,3x10,35,10,18,7x0,2,47x0,7x10,41hv,11hv,3hv,14x0,18hv,5x10,10x0,20x10,18,7x0,2,47x0,9x10,2hv,14x0,17hv,9hv,34hv,4x10,9x0,35,3x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,47x0,9x10,41hv,11hv,3hv,14x0,18hv,5x10,8x0,20x10,18,7x0,2,47x0,11x10,2hv,14x0,17hv,9hv,34hv,3x10,8x0,2x10,35,3x10,35,3x10,35,3x10,35,3x10,35,10,18,7x0,2,47x0,11x10,41hv,11hv,3hv,14x0,18hv,3x10,8x0,20x10,18,7x0,2,47x0,13x10,2hv,14x0,17hv,9hv,34hv,9x0,4x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,47x0,13x10,41hv,11hv,3hv,14x0,2,9x0,20x10,18,7x0,2,47x0,15x10,2hv,14x0,2,9x0,2x10,35,3x10,35,3x10,35,33,8x11,19,7x0,2,47x0,15x10,41hv,11hv,3hv,12x0,2,9x0,11x10,18,16x0,2,47x0,17x10,2hv,12x0,2,20x0,18,16x0,2,47x0,17x10,41hv,11hv,3hv,10x0,2,20x0,18,16x0,2,47x0,19x10,2hv,10x0,2,20x0,18,16x0,2,47x0,19x10,41hv,11hv,3hv,8x0,2,20x0,18,16x0,2,47x0,21x10,3hv,8x0,2,20x0,18,16x0,2,47x0,18x10,3x10hv,2hv,8x0,2,20x0,18,16x0,2,27x0,33,12x0,33,3x11,9h,23x11,19,8x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,14x0,1,9,42,27x0,18,49x0,2,20x0,18,14x0,3,11,41,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,19x0,2x11h,28x9,42,20x0,18,16x0,2,27x0,18,9x0,40x11,2x2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,34,9,17,14x0,2,27x0,18,50x0,2,19x0,33,11,19,14x0,2,27x0,18,50x0,2,0,10,17x0,18,16x0,2,27x0,18,50x0,2,0,2x10,16x0,18,16x0,2,27x0,18,50x0,2,0,3x10,15x0,18,16x0,2,27x0,18,50x0,2,0,4x10,14x0,18,16x0,2,27x0,18,50x0,2,0,5x10,13x0,18,16x0,2,27x0,18,50x0,2,0,6x10,12x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2h,0,8x10h,10x0,18,16x0,2,27x0,18,50x0,2h,0,10x10h,8x0,18,16x0,2,27x0,18,50x0,2h,0,11x10h,7x0,18,16x0,2,27x0,18,50x0,2h,0,12x10h,6x0,18,16x0,2,27x0,18,50x0,2h,0,13x10h,5x0,18,16x0,2,27x0,18,50x0,2,3x0,12x10h,4x0,18,16x0,2,27x0,18,50x0,2,4x0,11x10h,4x0,18,16x0,2,27x0,18,50x0,2,5x0,10x10h,4x0,18,16x0,2,27x0,18,50x0,2,6x0,9x10h,4x0,18,16x0,2,27x0,18,50x0,2,7x0,8x10h,4x0,18,16x0,2,27x0,18,50x0,2,8x0,7x10h,4x0,18,16x0,2,27x0,18,50x0,2,9x0,6x10h,4x0,18,16x0,2,27x0,18,50x0,2,10x0,5x10h,4x0,18,16x0,2,27x0,18,50x0,2,11x0,4x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,12x0,3x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,13x0,2x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,14x0,10h,4x0,18,14x0,1,9,42,27x0,18,50x0,2h,19x0,18,14x0,3,11,41,27x0,18,50x0,2h,19x0,18,16x0,2,27x0,18,50x0,1h,19x11,19,16x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,42,27x0,34,11h,41x9,11h,22x9,11h,21x9,42,365x0"
+									"data": "647x0,2x10,34h,6x9h,42h,105x0,3x10,18h,6x0,2h,46x0,33,30x11,41,24x0,2x10,0,3x10,18h,6x0,2h,46x0,18,30x0,2,24x0,6x10,18h,6x0,2h,46x0,18,30x0,2,24x0,4x10,34h,9h,17h,6x0,1h,9h,42h,44x0,18,30x0,2,23x0,5x10,18h,10x0,2h,44x0,18,30x0,2,22x0,4x10,34h,9h,17h,10x0,1h,9h,42h,42x0,18,30x0,2,22x0,4x10,18h,14x0,2h,42x0,18,30x0,2,21x0,3x10,34h,9h,17h,14x0,1h,9h,42h,40x0,18,30x0,2,20x0,4x10,18h,18x0,2h,40x0,18,30x0,2,19x0,3x10,34h,9h,17h,18x0,1h,9h,42h,38x0,18,30x0,2,19x0,3x10,17h,22x0,2h,38x0,18,30x0,2,18x0,2x10,34h,9h,17h,22x0,1h,9h,42h,36x0,18,30x0,2,16x0,4x10,18h,26x0,2h,36x0,18,30x0,2,16x0,2x10,34h,9h,17h,26x0,1h,9h,42h,34x0,18,30x0,2,15x0,3x10,18h,30x0,2h,34x0,18,30x0,2,13x0,3x10,34h,9h,17h,30x0,1h,9h,42h,2x0,34h,12x9h,42h,16x0,18,12x0,1,2x9,17,14x0,2,12x0,4x10,18h,14x0,3h,6x11h,19h,12x0,2h,2x0,18h,12x0,2h,16x0,18,12x0,2,10,35,18,14x0,2,10x0,4x10,34h,9h,17h,14x0,2h,6x0,18h,12x0,1h,9h,42h,18h,12x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,10x0,4x10,18h,14x0,3h,11h,41h,6x0,33h,11h,19h,12x0,2h,18h,12x0,2h,14x0,2x10,18,12x0,2,35,10,18,14x0,2,8x0,4x10,34h,9h,17h,14x0,2h,10x0,18h,12x0,1h,17h,12x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,7x0,5x10,18h,14x0,3h,11h,41h,10x0,33h,11h,19h,24x0,2h,14x0,2x10,18,12x0,2,10,35,18,14x0,2,7x0,3x10,34h,9h,17h,14x0,2h,14x0,18h,24x0,2h,14x0,2x10,18,12x0,2,2x10,18,14x0,2,7x0,3x10,18h,14x0,3h,11h,41h,14x0,33h,11h,19h,22x0,2h,14x0,2x10,18,12x0,2,35,10,18,14x0,2,8x0,34h,9h,17h,14x0,2h,18x0,18h,22x0,2h,14x0,2x10,34,12x9,42,2x10,18,14x0,2,8x0,18h,14x0,3h,11h,41h,18x0,33h,11h,19h,20x0,2h,14x0,17x10,35,18,14x0,2,8x0,18h,14x0,2h,22x0,18h,20x0,2h,14x0,18x10,18,14x0,2,8x0,18h,12x0,3h,11h,41h,22x0,33h,11h,19h,18x0,2h,14x0,2x10,33,15x11,19,14x0,2,8x0,18h,12x0,2h,26x0,18h,18x0,2h,14x0,2x10,18,30x0,2,8x0,18h,10x0,3h,11h,41h,26x0,33h,11h,19h,16x0,2h,14x0,2x10,18,30x0,2,8x0,18h,10x0,2h,30x0,18h,16x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,3h,11h,41h,30x0,33h,11h,19h,14x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,3x10h,31x0,18h,14x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,4x10h,30x0,33h,11h,19h,12x0,2h,14x0,2x10,18,30x0,2,8x0,18h,8x0,2h,5x10h,31x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,6x10h,30x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,7x10h,29x0,18h,12x0,2h,16x0,18,30x0,2,8x0,18h,8x0,2h,8x10h,28x0,33h,12x11h,41h,16x0,18,30x0,2,8x0,18h,8x0,2h,10x10h,56x0,18,30x0,2,8x0,18h,8x0,2h,11x10h,55x0,18,30x0,2,8x0,18h,8x0,2h,12x10h,54x0,18,30x0,2,8x0,18h,8x0,2h,13x10h,53x0,18,30x0,2,8x0,18h,8x0,1h,9h,42h,12x10h,52x0,18,30x0,2,8x0,18h,10x0,2h,12x10h,52x0,18,30x0,2,8x0,18h,10x0,1h,9h,42h,10x10h,52x0,18,14x0,1,15x9,42,8x0,18h,12x0,2h,10x10h,52x0,18,14x0,2,10,23x0,18h,12x0,1h,9h,42h,8x10h,52x0,18,14x0,2,10,23x0,18h,14x0,2h,8x10h,52x0,18,14x0,2,10,23x0,18h,14x0,1h,9h,42h,6x10h,52x0,18,14x0,2,10,23x0,33h,11h,19h,14x0,2h,6x10h,52x0,18,14x0,2,10,23x0,2x10h,18h,14x0,1h,9h,42h,4x10h,52x0,18,14x0,2,2x10,22x0,2x10h,33h,11h,19h,14x0,2h,4x10h,52x0,18,14x0,2,3x10,23x0,2x10h,18h,14x0,1h,9h,42h,2x10h,52x0,18,14x0,2,4x10,22x0,2x10h,33h,11h,19h,14x0,2h,2x10h,52x0,18,14x0,2,5x10,23x0,2x10h,18h,14x0,1h,9h,42h,52x0,18,14x0,2,6x10,22x0,2x10h,33h,11h,19h,14x0,2h,52x0,18,14x0,2,7x10,23x0,2x10h,18h,14x0,1h,10x9h,17x11,41,24x0,18,14x0,2,8x10,22x0,2x10h,33h,11h,19h,40x0,2,24x0,18,14x0,2,22x10,10x0,2x10h,18h,40x0,2,24x0,18,14x0,2,23x10,9x0,2x10h,33h,11h,19h,38x0,2,24x0,18,14x0,3,18x11,9hv,41,4x10,10x0,2x10,18h,38x0,2,24x0,18,34x0,18hv,5x10,9x0,2x10h,33h,11h,19h,36x0,2,24x0,18,34x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,36x0,2,24x0,18,36x0,18hv,5x10,9x0,2x10h,33h,11h,19h,34x0,2,24x0,18,36x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,34x0,2,24x0,18,38x0,18hv,5x10,9x0,2x10h,33h,11h,19h,32x0,2,24x0,18,38x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,32x0,2,24x0,18,40x0,18hv,5x10,9x0,2x10h,33h,11h,19h,30x0,2,24x0,18,40x0,17hv,9hv,34hv,4x10,10x0,2x10h,18h,30x0,2,24x0,18,42x0,18hv,5x10,9x0,2x10h,33h,11h,21x9,17,7x0,2,24x0,18,42x0,17hv,9hv,34hv,4x10,10x0,2x10h,10,35,3x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,24x0,34,27x9,2x11hv,17,14x0,18hv,5x10,9x0,2x10h,21x10,18,7x0,2,47x0,7x10,18,14x0,17hv,9hv,34hv,4x10,11x0,2x10,35,3x10,35,3x10,35,3x10,35,3x10,35,10,18,7x0,2,47x0,7x10,41hv,11hv,3hv,14x0,18hv,5x10,10x0,20x10,18,7x0,2,47x0,9x10,2hv,14x0,17hv,9hv,34hv,4x10,9x0,35,3x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,47x0,9x10,41hv,11hv,3hv,14x0,18hv,5x10,8x0,20x10,18,7x0,2,47x0,11x10,2hv,14x0,17hv,9hv,34hv,3x10,8x0,2x10,35,3x10,35,3x10,35,3x10,35,3x10,35,10,18,7x0,2,47x0,11x10,41hv,11hv,3hv,14x0,18hv,3x10,8x0,20x10,18,7x0,2,47x0,13x10,2hv,14x0,17hv,9hv,34hv,9x0,4x10,35,3x10,35,3x10,35,3x10,35,3x10,18,7x0,2,47x0,13x10,41hv,11hv,3hv,14x0,2,9x0,20x10,18,7x0,2,47x0,15x10,2hv,14x0,2,9x0,2x10,35,3x10,35,3x10,35,33,8x11,19,7x0,2,47x0,15x10,41hv,11hv,3hv,12x0,2,9x0,11x10,18,16x0,2,47x0,17x10,2hv,12x0,2,20x0,18,16x0,2,47x0,17x10,41hv,11hv,3hv,10x0,2,20x0,18,16x0,2,47x0,19x10,2hv,10x0,2,20x0,18,16x0,2,47x0,19x10,41hv,11hv,3hv,8x0,2,20x0,18,16x0,2,47x0,21x10,3hv,8x0,2,20x0,18,16x0,2,47x0,18x10,3x10hv,2hv,8x0,2,20x0,18,16x0,2,27x0,33,16x11,9h,23x11,19,8x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,14x0,1,9,42,27x0,18,49x0,2,20x0,18,14x0,3,11,41,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,49x0,2,20x0,18,16x0,2,27x0,18,7x0,1,11x9,2x11h,28x9,42,20x0,18,16x0,2,27x0,18,7x0,3,41x11,2x2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,50x0,2,19x0,18,16x0,2,27x0,18,23x0,1,4x9,17,21x0,2,19x0,34,9,17,14x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2,19x0,33,11,19,14x0,2,27x0,18,23x0,2,4x10,18,21x0,2,0,10,17x0,18,16x0,2,27x0,18,23x0,2,10,35,2x10,18,21x0,2,0,2x10,16x0,18,16x0,2,27x0,18,23x0,2,4x10,18,21x0,2,0,3x10,15x0,18,16x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2,0,4x10,14x0,18,16x0,2,27x0,18,23x0,2,4x10,18,21x0,2,0,5x10,13x0,18,16x0,2,27x0,18,23x0,2,10,35,2x10,18,21x0,2,0,6x10,12x0,18,16x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2,0,7x10,11x0,18,16x0,2,27x0,18,23x0,3,4x11,19,21x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2,0,7x10,11x0,18,16x0,2,27x0,18,50x0,2h,0,8x10h,10x0,18,16x0,2,27x0,18,50x0,2h,0,10x10h,8x0,18,16x0,2,27x0,18,50x0,2h,0,11x10h,7x0,18,16x0,2,27x0,18,23x0,1,4x9,17,21x0,2h,0,12x10h,6x0,18,16x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2h,0,13x10h,5x0,18,16x0,2,27x0,18,23x0,2,4x10,18,21x0,2,3x0,12x10h,4x0,18,16x0,2,27x0,18,23x0,2,10,35,2x10,18,21x0,2,4x0,11x10h,4x0,18,16x0,2,27x0,18,23x0,2,4x10,18,21x0,2,5x0,10x10h,4x0,18,16x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2,6x0,9x10h,4x0,18,16x0,2,27x0,18,23x0,2,4x10,18,21x0,2,7x0,8x10h,4x0,18,16x0,2,27x0,18,23x0,2,10,35,2x10,18,21x0,2,8x0,7x10h,4x0,18,16x0,2,27x0,18,23x0,2,35,2x10,35,18,21x0,2,9x0,6x10h,4x0,18,16x0,2,27x0,18,23x0,3,4x11,19,21x0,2,10x0,5x10h,4x0,18,16x0,2,27x0,18,50x0,2,11x0,4x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,12x0,3x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,13x0,2x10h,4x0,18,16x0,2,27x0,2x18,49x0,2h,14x0,10h,4x0,18,14x0,1,9,42,27x0,18,50x0,2h,19x0,18,14x0,3,11,41,27x0,18,50x0,2h,19x0,18,16x0,2,27x0,18,50x0,1h,19x11,19,16x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,2,27x0,18,87x0,42,27x0,34,11h,41x9,11h,22x9,11h,21x9,42,365x0"
 								},
 								"tile-width": 16,
 								"tile-height": 16,
@@ -151,43 +151,6 @@
 									1,
 									1
 								],
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "VerticalMovingSpikes",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 542,
-							"instanceVariables": {},
-							"behaviors": {
-								"Custom": {
-									"properties": {
-										"stepping-mode": "none",
-										"pixels-per-step": 5,
-										"enabled": true
-									}
-								}
-							},
-							"world": {
-								"x": 1984,
-								"y": 288,
-								"width": 32,
-								"height": 160,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
 								"zElevation": 0
 							}
 						},
@@ -4805,10 +4768,10 @@
 						}
 					},
 					"world": {
-						"x": 1856,
+						"x": 1824,
 						"y": 416,
-						"width": 160,
-						"height": 32,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4902,8 +4865,8 @@
 					"world": {
 						"x": 2816,
 						"y": 416,
-						"width": 160,
-						"height": 32,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4938,9 +4901,9 @@
 					},
 					"world": {
 						"x": 1984,
-						"y": 880,
-						"width": 32,
-						"height": 128,
+						"y": 896,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4948,6 +4911,729 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 550,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2144,
+						"y": 416,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HoriSpikeLeftBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 551,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1728,
+						"y": 768,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 553,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2816,
+						"y": 768,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 554,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1824,
+						"y": 768,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 555,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2144,
+						"y": 768,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 542,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1984,
+						"y": 320,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 556,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1984,
+						"y": 608,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 557,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 320,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 558,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 608,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 559,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2688,
+						"y": 896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 560,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2560,
+						"y": 768,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HorizontalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 561,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2560,
+						"y": 416,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VertSpikeDownBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 562,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2688,
+						"y": 160,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VertSpikeUpBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 563,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2688,
+						"y": 992,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HoriSpikeRightBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 552,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2944,
+						"y": 768,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VertSpikeDownBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 564,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2336,
+						"y": 160,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VertSpikeUpBumper",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 565,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2336,
+						"y": 992,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 566,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2336,
+						"y": 320,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 567,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2336,
+						"y": 608,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "VerticalMovingSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 568,
+					"instanceVariables": {},
+					"behaviors": {
+						"Custom": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2336,
+						"y": 896,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zoomtrigger2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 569,
+					"instanceVariables": {
+						"zoomtarget2": 0.75
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2800,
+						"y": 1440,
+						"width": 288,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.1
 						],
 						"angle": 0,
 						"zElevation": 0
