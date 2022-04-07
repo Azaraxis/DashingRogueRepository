@@ -52,6 +52,16 @@
 			"sid": 929141284299102
 		},
 		{
+			"eventType": "variable",
+			"name": "GameTimePlayed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 294983949346093
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "PlayerMovement & DashShadow",
@@ -75,6 +85,15 @@
 							"sid": 757863895933931,
 							"parameters": {
 								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 996437418295242,
+							"parameters": {
+								"instance-variable": "noDash"
 							},
 							"isInverted": true
 						}
@@ -1179,6 +1198,24 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "set-ignoring-input",
+							"objectClass": "player",
+							"sid": 269599064182034,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 171525498029156,
+							"parameters": {
+								"instance-variable": "noDash",
+								"value": "true"
+							}
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 807076397777870,
@@ -1223,6 +1260,32 @@
 							"behaviorType": "Platform",
 							"parameters": {
 								"vector-y": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 295698865440320,
+							"parameters": {
+								"seconds": "0.35"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 671430765873076,
+							"parameters": {
+								"instance-variable": "noDash",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "player",
+							"sid": 150012988155339,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
 							}
 						}
 					],
@@ -2048,6 +2111,11 @@
 					],
 					"actions": [
 						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 679439919144178
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "player",
 							"sid": 387832632173895,
@@ -2683,6 +2751,40 @@
 				}
 			],
 			"sid": 311102665642997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 667064184829965,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 310420753961177,
+					"parameters": {
+						"variable": "won"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 909463442722656,
+					"parameters": {
+						"variable": "GameTimePlayed",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 430885563078223
 		}
 	],
 	"sid": 325422612367472

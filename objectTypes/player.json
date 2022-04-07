@@ -69,6 +69,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 641324877404907
+		},
+		{
+			"name": "noDash",
+			"type": "boolean",
+			"desc": "",
+			"sid": 625994542013691
 		}
 	],
 	"behaviorTypes": [
