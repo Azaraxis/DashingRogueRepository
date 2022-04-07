@@ -202,12 +202,12 @@
 	"layouts": {
 		"items": [
 			"TitleScreen",
-			"Layout 1",
-			"Layout 2",
-			"Layout 3",
-			"Layout 4",
+			"Level 1",
+			"Level 2",
+			"Level 3",
+			"Level 6",
 			"IntroCutsceneTest",
-			"Layout 5"
+			"Level 4"
 		],
 		"subfolders": []
 	},

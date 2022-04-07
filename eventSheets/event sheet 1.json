@@ -62,6 +62,16 @@
 			"sid": 294983949346093
 		},
 		{
+			"eventType": "variable",
+			"name": "level",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 596240881765736
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "PlayerMovement & DashShadow",
@@ -1943,11 +1953,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 452658265660276,
+							"sid": 360226629027878,
 							"parameters": {
 								"first-value": "LayoutName",
 								"comparison": 0,
-								"second-value": "\"Layout 4\""
+								"second-value": "\"Level 6\""
 							}
 						}
 					],
@@ -2080,11 +2090,20 @@
 							}
 						},
 						{
-							"id": "go-to-nextprevious-layout",
+							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 474705278730663,
+							"sid": 326519451893846,
 							"parameters": {
-								"which": "next"
+								"variable": "level",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 259329967724154,
+							"parameters": {
+								"layout": "\"Level \"&level"
 							}
 						}
 					],
@@ -2101,11 +2120,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 901245141364605,
+							"sid": 387674727488227,
 							"parameters": {
 								"first-value": "LayoutName",
 								"comparison": 0,
-								"second-value": "\"Layout 1\""
+								"second-value": "\"Level 1\""
 							}
 						}
 					],
