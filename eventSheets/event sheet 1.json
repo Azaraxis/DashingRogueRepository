@@ -2804,6 +2804,671 @@
 				}
 			],
 			"sid": 430885563078223
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cutscene",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 576788184589383
+		},
+		{
+			"eventType": "variable",
+			"name": "fade_in",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 325442533192321
+		},
+		{
+			"eventType": "variable",
+			"name": "fade_out",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 996852253250432
+		},
+		{
+			"eventType": "variable",
+			"name": "wait_time",
+			"type": "number",
+			"initialValue": "0.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 264061242274188
+		},
+		{
+			"eventType": "variable",
+			"name": "camera_action",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 457139253668348
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 706448543198954,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"callFunction": "fade",
+					"sid": 625675461237892
+				}
+			],
+			"sid": 475832850284326
+		},
+		{
+			"functionName": "fade",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 680411103792443,
+					"parameters": {
+						"object-to-create": "fade_ex",
+						"layer": "2",
+						"x": "960",
+						"y": "530",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "fade_ex",
+					"sid": 594826009119730,
+					"parameters": {
+						"width": "1925",
+						"height": "1087"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fade_ex",
+					"sid": 562882254412354,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "fade_ex",
+					"sid": 374059901640308,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "0"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "fade_ex",
+					"sid": 136888935515007,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "1"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "fade_ex",
+					"sid": 614685196796445,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 692412178447838
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "fade_ex",
+					"sid": 485424243967721,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 654676768364997,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 817333865541423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "cutscene1",
+					"sid": 965816778513547,
+					"parameters": {
+						"instance-variable": "opacitor",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 175188298437433,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-opacity",
+							"objectClass": "cutscene1",
+							"sid": 321648827348852,
+							"parameters": {
+								"comparison": 5,
+								"opacity": "100"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "cutscene1",
+							"sid": 119578480197301,
+							"parameters": {
+								"opacity": "Self.Opacity+1"
+							}
+						}
+					],
+					"sid": 401861193057442
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "cutscene1",
+					"sid": 925150595390614,
+					"parameters": {
+						"instance-variable": "opacitor",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cutscene1",
+					"sid": 301348402562899,
+					"parameters": {
+						"x": "ViewportWidth(3)/2",
+						"y": "ViewportHeight(3)/2"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "cutscene1",
+					"sid": 120046279495370,
+					"parameters": {
+						"width": "ViewportWidth(3)",
+						"height": "ViewportHeight(3)"
+					}
+				}
+			],
+			"sid": 340640189616864,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "cutscene1",
+					"sid": 911986074408443,
+					"parameters": {
+						"instance-variable": "opacitor",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 769050158995546,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-opacity",
+							"objectClass": "cutscene1",
+							"sid": 188834634349069,
+							"parameters": {
+								"comparison": 3,
+								"opacity": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "cutscene1",
+							"sid": 446024028291887,
+							"parameters": {
+								"opacity": "Self.Opacity-1"
+							}
+						}
+					],
+					"sid": 530832356070800
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 399704927369565
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "camera_action_text",
+					"sid": 512642298908221,
+					"parameters": {
+						"object": "sceneCamera",
+						"image-point-optional": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "camera_action_text",
+					"sid": 988658800049562,
+					"parameters": {
+						"text": "camera_action"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "sceneCamera",
+					"sid": 404974882206630,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 944706221354269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 603814549940042
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-object",
+					"objectClass": "System",
+					"sid": 272901040535930,
+					"parameters": {
+						"object": "sceneCamera"
+					}
+				}
+			],
+			"sid": 888590187700694
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 418158397832226
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-object",
+					"objectClass": "System",
+					"sid": 941847005549523,
+					"parameters": {
+						"object": "Camera"
+					}
+				}
+			],
+			"sid": 924082079853936
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 728218636255664,
+					"parameters": {
+						"variable": "camera_action",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "camera_action_text",
+					"sid": 345094201121102
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "cutscene1",
+					"sid": 623592890894996,
+					"parameters": {
+						"instance-variable": "opacitor",
+						"value": "1"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 515168533592502,
+					"parameters": {
+						"variable": "camera_action",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 392371473361412,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 745073308132223,
+					"parameters": {
+						"object-to-create": "sceneCamera",
+						"layer": "0",
+						"x": "player.X",
+						"y": "player.Y",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 346815255160454,
+					"parameters": {
+						"object-to-create": "camera_action_text",
+						"layer": "0",
+						"x": "sceneCamera.ImagePointX(89)",
+						"y": "sceneCamera.ImagePointY(-142)",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sceneCamera",
+					"sid": 339929717056289,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 757418407285514
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 309194288391118,
+					"parameters": {
+						"variable": "camera_action",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "sceneCamera",
+					"sid": 664453537006104,
+					"parameters": {
+						"distance": "12"
+					}
+				}
+			],
+			"sid": 858813005893468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 574810024316925,
+					"parameters": {
+						"variable": "camera_action",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 182929631347962,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "sceneCamera",
+					"sid": 902047036585532,
+					"parameters": {
+						"x": "Camera.x",
+						"y": "Camera.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "sceneCamera",
+					"sid": 823587859710277,
+					"parameters": {
+						"distance": "12"
+					}
+				}
+			],
+			"sid": 182664058886765
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 614662489599548
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 361522231121684,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "sceneCamera",
+					"sid": 385108899118778,
+					"parameters": {
+						"x": "Camera.x",
+						"y": "Camera.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "sceneCamera",
+					"sid": 588572454849105,
+					"parameters": {
+						"distance": "12"
+					}
+				}
+			],
+			"sid": 363423785589934,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "sceneCamera",
+					"sid": 670201407084838,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "350"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 324289618044225,
+					"parameters": {
+						"variable": "camera_action",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "sceneCamera",
+					"sid": 699545636127158
+				},
+				{
+					"id": "destroy",
+					"objectClass": "camera_action_text",
+					"sid": 226836143080180
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "cutscene1",
+					"sid": 217275825256378,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "opacitor",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 237484356754949,
+					"disabled": true,
+					"parameters": {
+						"variable": "camera_action",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Camera",
+					"sid": 326723435981423,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 810902352496255
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 223191846328290,
+					"parameters": {
+						"variable": "camera_action",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 968122677551324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 747159569623322
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Camera",
+					"sid": 467671259363705,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 792414273971361,
+					"parameters": {
+						"x": "427",
+						"y": "720"
+					}
+				}
+			],
+			"sid": 119684034365139
 		}
 	],
 	"sid": 325422612367472
