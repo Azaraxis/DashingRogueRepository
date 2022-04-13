@@ -964,10 +964,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "player",
-							"sid": 385330067358997,
+							"sid": 879079602978411,
 							"parameters": {
 								"object": "player2",
-								"layer": "LayerIndex(\"Game\")",
+								"layer": "player.LayerNumber",
 								"image-point": "0",
 								"create-hierarchy": false
 							}
@@ -983,10 +983,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "player",
-							"sid": 830043619722452,
+							"sid": 493707170328705,
 							"parameters": {
 								"object": "player2",
-								"layer": "LayerIndex(\"Game\")",
+								"layer": "player.LayerNumber",
 								"image-point": "0",
 								"create-hierarchy": false
 							}
@@ -1002,10 +1002,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "player",
-							"sid": 441254329589433,
+							"sid": 366368283637588,
 							"parameters": {
 								"object": "player2",
-								"layer": "LayerIndex(\"Game\")",
+								"layer": "player.LayerNumber",
 								"image-point": "0",
 								"create-hierarchy": false
 							}
