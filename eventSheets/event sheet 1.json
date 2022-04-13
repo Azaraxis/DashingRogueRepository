@@ -2993,10 +2993,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 540823375450575,
+					"sid": 268907097940533,
 					"parameters": {
 						"object-to-create": "sceneCamera",
-						"layer": "0",
+						"layer": "5",
 						"x": "ExitDoor.x",
 						"y": "ExitDoor.Y",
 						"create-hierarchy": false
@@ -3005,9 +3005,45 @@
 				{
 					"id": "set-visible",
 					"objectClass": "sceneCamera",
-					"sid": 330455977859762,
+					"sid": 157807551513249,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "sceneCamera",
+					"sid": 263041154627493,
+					"parameters": {
+						"instance-variable": "on",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 900072201855372,
+					"parameters": {
+						"instance-variable": "noDash",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 168994667917503,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Camera",
+					"sid": 773201663315641,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
 					}
 				},
 				{
@@ -3020,20 +3056,11 @@
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "Camera",
-					"sid": 882924704521285,
-					"behaviorType": "ScrollTo",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 549621572265088,
+					"sid": 644563889593419,
 					"parameters": {
-						"seconds": "1.0"
+						"seconds": "0.5"
 					}
 				},
 				{
@@ -3074,7 +3101,6 @@
 					"id": "scroll-to-object",
 					"objectClass": "System",
 					"sid": 876298379842852,
-					"disabled": true,
 					"parameters": {
 						"object": "sceneCamera"
 					}
@@ -3108,9 +3134,9 @@
 				{
 					"id": "move-forward",
 					"objectClass": "sceneCamera",
-					"sid": 251273425363901,
+					"sid": 820545567125722,
 					"parameters": {
-						"distance": "12"
+						"distance": "25"
 					}
 				}
 			],
@@ -3129,6 +3155,24 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "player",
+					"sid": 931232341460263,
+					"parameters": {
+						"instance-variable": "noDash",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 986680669422315,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
 				{
 					"id": "set-enabled",
 					"objectClass": "sceneCamera",
