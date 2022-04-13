@@ -3,8 +3,21 @@
 	"plugin-id": "Sprite",
 	"sid": 124839757209426,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "on",
+			"type": "boolean",
+			"desc": "",
+			"sid": 300734620376525
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 843654825108973
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

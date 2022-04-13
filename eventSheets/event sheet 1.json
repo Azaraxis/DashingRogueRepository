@@ -2856,7 +2856,16 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 298102835485206,
+					"parameters": {
+						"object": "ExitDoor"
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "wait",
@@ -2965,6 +2974,198 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 103102126715913
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 443198537543845,
+					"parameters": {
+						"first-value": "ExitDoor.Count",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 540823375450575,
+					"parameters": {
+						"object-to-create": "sceneCamera",
+						"layer": "0",
+						"x": "ExitDoor.x",
+						"y": "ExitDoor.Y",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sceneCamera",
+					"sid": 330455977859762,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "sceneCamera",
+					"sid": 275831878616967,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Camera",
+					"sid": 882924704521285,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 549621572265088,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "sceneCamera",
+					"sid": 113064697692290,
+					"parameters": {
+						"instance-variable": "on",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 245102703781812
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "sceneCamera",
+					"sid": 131404756691420,
+					"parameters": {
+						"instance-variable": "on"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "sceneCamera",
+					"sid": 250473461955098,
+					"parameters": {
+						"width": "ExitDoor.Width",
+						"height": "ExitDoor.height"
+					}
+				},
+				{
+					"id": "scroll-to-object",
+					"objectClass": "System",
+					"sid": 876298379842852,
+					"disabled": true,
+					"parameters": {
+						"object": "sceneCamera"
+					}
+				}
+			],
+			"sid": 809285166370729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "sceneCamera",
+					"sid": 246772188432998,
+					"parameters": {
+						"instance-variable": "on"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "sceneCamera",
+					"sid": 420346363003066,
+					"parameters": {
+						"x": "Camera.x",
+						"y": "Camera.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "sceneCamera",
+					"sid": 251273425363901,
+					"parameters": {
+						"distance": "12"
+					}
+				}
+			],
+			"sid": 756572015099769
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "sceneCamera",
+					"sid": 295435224252364,
+					"parameters": {
+						"object": "Camera"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "sceneCamera",
+					"sid": 634078013015789,
+					"disabled": true,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Camera",
+					"sid": 438361538980322,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "sceneCamera",
+					"sid": 861529208915334
+				}
+			],
+			"sid": 623027009247052
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 100565656602963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-instance-variable",
 					"objectClass": "cutscene1",
 					"sid": 965816778513547,
@@ -2977,6 +3178,7 @@
 			],
 			"actions": [],
 			"sid": 175188298437433,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -3002,7 +3204,8 @@
 							}
 						}
 					],
-					"sid": 401861193057442
+					"sid": 401861193057442,
+					"disabled": true
 				}
 			]
 		},
@@ -3059,6 +3262,7 @@
 			],
 			"actions": [],
 			"sid": 769050158995546,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -3084,7 +3288,8 @@
 							}
 						}
 					],
-					"sid": 530832356070800
+					"sid": 530832356070800,
+					"disabled": true
 				}
 			]
 		},
@@ -3124,49 +3329,8 @@
 					}
 				}
 			],
-			"sid": 944706221354269
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 603814549940042
-				}
-			],
-			"actions": [
-				{
-					"id": "scroll-to-object",
-					"objectClass": "System",
-					"sid": 272901040535930,
-					"parameters": {
-						"object": "sceneCamera"
-					}
-				}
-			],
-			"sid": 888590187700694
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 418158397832226
-				}
-			],
-			"actions": [
-				{
-					"id": "scroll-to-object",
-					"objectClass": "System",
-					"sid": 941847005549523,
-					"parameters": {
-						"object": "Camera"
-					}
-				}
-			],
-			"sid": 924082079853936
+			"sid": 944706221354269,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3247,7 +3411,8 @@
 					}
 				}
 			],
-			"sid": 757418407285514
+			"sid": 757418407285514,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3273,50 +3438,8 @@
 					}
 				}
 			],
-			"sid": 858813005893468
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 574810024316925,
-					"parameters": {
-						"variable": "camera_action",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 182929631347962,
-					"parameters": {
-						"seconds": "2"
-					}
-				},
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "sceneCamera",
-					"sid": 902047036585532,
-					"parameters": {
-						"x": "Camera.x",
-						"y": "Camera.Y"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "sceneCamera",
-					"sid": 823587859710277,
-					"parameters": {
-						"distance": "12"
-					}
-				}
-			],
-			"sid": 182664058886765
+			"sid": 858813005893468,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3421,7 +3544,8 @@
 					}
 				}
 			],
-			"sid": 810902352496255
+			"sid": 810902352496255,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3438,37 +3562,6 @@
 				}
 			],
 			"sid": 968122677551324
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 747159569623322
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "Camera",
-					"sid": 467671259363705,
-					"behaviorType": "ScrollTo",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 792414273971361,
-					"parameters": {
-						"x": "427",
-						"y": "720"
-					}
-				}
-			],
-			"sid": 119684034365139
 		}
 	],
 	"sid": 325422612367472

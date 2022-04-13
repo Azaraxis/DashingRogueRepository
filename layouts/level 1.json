@@ -782,7 +782,7 @@
 					"behaviors": {
 						"ScrollTo": {
 							"properties": {
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
