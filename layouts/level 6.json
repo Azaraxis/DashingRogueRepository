@@ -100,6 +100,39 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "BG3",
+							"properties": {
+								"initially-visible": true,
+								"origin": "top-left",
+								"wrap-horizontal": "repeat",
+								"wrap-vertical": "repeat",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0
+							},
+							"uid": 638,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": -10.999999999999995,
+								"y": 758.663528509859,
+								"width": 1943.3782139700693,
+								"height": 259.6428583526804,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 164899773498637,
@@ -866,8 +899,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 354.92706000419025,
-						"y": 765.6441235710846,
+						"x": 354.92706,
+						"y": 773.744859,
 						"width": 218.75255666299154,
 						"height": 43.46337401445544,
 						"originX": 0,
@@ -899,7 +932,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 354.0303932927602,
-						"y": 824.4190904457564,
+						"y": 867.9278684542742,
 						"width": 154.22274844542426,
 						"height": 24,
 						"originX": 0,
@@ -910,6 +943,90 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "totalTimeText",
+					"properties": {
+						"text": "[outline=#000000]Time: ",
+						"enable-bbcode": true,
+						"font": "Gill Sans",
+						"size": 16,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 637,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 354.92706,
+						"y": 741.890871,
+						"width": 218.75255666299154,
+						"height": 43.46337401445544,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "checkpointsText",
+					"properties": {
+						"text": "[outline=#000000]Checkpoints:",
+						"enable-bbcode": true,
+						"font": "Gill Sans",
+						"size": 16,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 639,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 354.92706,
+						"y": 804.8837323161687,
+						"width": 155.76197959989088,
+						"height": 62.57991730226206,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

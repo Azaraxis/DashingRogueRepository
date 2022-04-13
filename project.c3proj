@@ -193,7 +193,9 @@
 			"fade_ex",
 			"camera_action_text",
 			"cutscene1",
-			"sceneCamera"
+			"sceneCamera",
+			"totalTimeText",
+			"checkpointsText"
 		],
 		"subfolders": []
 	},
