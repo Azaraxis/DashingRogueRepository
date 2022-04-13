@@ -2215,6 +2215,14 @@
 							"parameters": {
 								"input": "stop-ignoring"
 							}
+						},
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 441422198918593,
+							"parameters": {
+								"scale": "current_zoom"
+							}
 						}
 					],
 					"sid": 225131145697369,
@@ -2296,6 +2304,37 @@
 							"sid": 323260884501338
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 296368802836630
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 795804181707139,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"Level 2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 242820350205706,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 981453878805184
 				},
 				{
 					"eventType": "block",
