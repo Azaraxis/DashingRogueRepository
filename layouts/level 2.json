@@ -5452,6 +5452,64 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BannerHold",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 557,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1124.0332113826737,
+						"y": 849.0819406265023,
+						"width": 51.48240535965283,
+						"height": 61.918406936021256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Banner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Invisible",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 558,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1123.7557225660707,
+						"y": 843.8300847680573,
+						"width": 33.19309728782673,
+						"height": 46.08792025369712,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 978301150889881,

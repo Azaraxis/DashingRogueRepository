@@ -195,7 +195,9 @@
 			"cutscene1",
 			"sceneCamera",
 			"totalTimeText",
-			"checkpointsText"
+			"checkpointsText",
+			"BannerHold",
+			"Banner"
 		],
 		"subfolders": []
 	},

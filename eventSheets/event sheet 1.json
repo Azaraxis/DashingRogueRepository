@@ -1340,6 +1340,15 @@
 								"instance-variable": "checkpointY",
 								"value": "checkpointHitBox.ImagePointY(\"1\")"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Banner",
+							"sid": 616575488743295,
+							"parameters": {
+								"animation": "\"checkpoint\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 129028990666430
