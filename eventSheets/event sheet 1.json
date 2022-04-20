@@ -4023,16 +4023,196 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "player",
-					"sid": 731071657510516,
+					"sid": 140233057709016,
 					"parameters": {
 						"object": "Dust",
-						"layer": "0",
-						"image-point": "0",
+						"layer": "player.LayerNumber",
+						"image-point": "1",
 						"create-hierarchy": false
 					}
 				}
 			],
 			"sid": 172158243923603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 508026198599429,
+					"disabled": true,
+					"parameters": {
+						"first-value": "player.Platform.VectorX",
+						"comparison": 3,
+						"second-value": "-330"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 111697902254638,
+					"disabled": true,
+					"parameters": {
+						"first-value": "player.Platform.VectorX",
+						"comparison": 5,
+						"second-value": "330"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 119580884992498,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "player",
+							"sid": 353085929659627,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "player",
+							"sid": 954547724275024,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 736566579278578,
+							"parameters": {
+								"interval-seconds": "0.2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "player",
+							"sid": 180492949414716,
+							"parameters": {
+								"object": "Dust",
+								"layer": "player.LayerNumber",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-timeout",
+							"objectClass": "Dust",
+							"sid": 279907696497525,
+							"parameters": {
+								"timeout": "0.25"
+							}
+						}
+					],
+					"sid": 157451745723866,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 935581081934793,
+									"parameters": {
+										"first-value": "player.Platform.VectorX",
+										"comparison": 3,
+										"second-value": "-330"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Dust",
+									"sid": 840067876301467,
+									"parameters": {
+										"angle": "45"
+									}
+								}
+							],
+							"sid": 250062398603658
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 150380158982857,
+									"parameters": {
+										"first-value": "player.Platform.VectorX",
+										"comparison": 5,
+										"second-value": "330"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Dust",
+									"sid": 714513128973343,
+									"parameters": {
+										"angle": "135"
+									}
+								}
+							],
+							"sid": 553595012976327
+						}
+					]
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Dust",
+					"sid": 713758086408330,
+					"parameters": {
+						"color": "rgbEx255(74,84,98)"
+					}
+				}
+			],
+			"sid": 913244812615996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 163680706996239,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Level 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Dust",
+					"sid": 832248861445317,
+					"parameters": {
+						"color": "rgbEx255(66,56,30)"
+					}
+				}
+			],
+			"sid": 148967224116257
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 484319516763586
 		}
 	],
 	"sid": 325422612367472

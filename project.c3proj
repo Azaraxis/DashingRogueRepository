@@ -104,14 +104,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "custom",
 			"name": "Custom",
 			"author": "Scirra",

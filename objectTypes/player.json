@@ -97,7 +97,7 @@
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.47058823529411764,
+						"originX": 0.5882352941176471,
 						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -116,12 +116,19 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 2
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.47058823529411764,
+						"originX": 0.5882352941176471,
 						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -140,12 +147,19 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 2
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.47058823529411764,
+						"originX": 0.5882352941176471,
 						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
@@ -164,6 +178,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 2
 					}
 				],
@@ -180,8 +201,8 @@
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7647058823529411,
-						"originY": 0.3888888888888889,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -199,13 +220,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7058823529411765,
-						"originY": 0.47058823529411764,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -223,13 +251,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.75,
-						"originY": 0.4473684210526316,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -247,13 +282,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7352941176470589,
-						"originY": 0.42105263157894735,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -271,13 +313,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7647058823529411,
-						"originY": 0.39473684210526316,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -295,13 +344,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7058823529411765,
-						"originY": 0.47368421052631576,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -319,13 +375,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7352941176470589,
-						"originY": 0.4473684210526316,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -343,13 +406,20 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					},
 					{
 						"width": 17,
 						"height": 19,
-						"originX": 0.7352941176470589,
-						"originY": 0.42105263157894735,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -367,6 +437,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
 						"duration": 1
 					}
 				],
