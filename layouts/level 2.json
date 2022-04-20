@@ -5851,6 +5851,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "DOOR",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Base",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 665,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2431.8210562794325,
+						"y": 204.39410088635367,
+						"width": 64.79198781558989,
+						"height": 103.05153108017603,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 978301150889881,

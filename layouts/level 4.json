@@ -6291,6 +6291,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "DOOR",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Base",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 667,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 424.5198410593887,
+						"y": 268.6325099123776,
+						"width": 72.74066463640753,
+						"height": 100.39557193474207,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 835640075935655,

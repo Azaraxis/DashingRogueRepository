@@ -197,7 +197,8 @@
 			"totalTimeText",
 			"checkpointsText",
 			"BannerHold",
-			"Banner"
+			"Banner",
+			"DOOR"
 		],
 		"subfolders": []
 	},
