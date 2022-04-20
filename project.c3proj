@@ -133,7 +133,6 @@
 			"Platforming3",
 			"Text",
 			"WinText",
-			"ExitDoor",
 			"Spike",
 			"player",
 			"HoriSpikeRightBumper",
@@ -198,7 +197,7 @@
 			"checkpointsText",
 			"BannerHold",
 			"Banner",
-			"DOOR"
+			"ExitDoor"
 		],
 		"subfolders": []
 	},

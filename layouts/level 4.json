@@ -307,6 +307,35 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "ExitDoor",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Base",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 667,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 424.5198410593887,
+								"y": 268.6325099123776,
+								"width": 73.19529379038508,
+								"height": 84.08129149534648,
+								"originX": 0.5,
+								"originY": 0.40049751243781095,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 945346688656244,
@@ -5188,35 +5217,6 @@
 					}
 				},
 				{
-					"type": "ExitDoor",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 201,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 426,
-						"y": 290,
-						"width": 48.821197032054556,
-						"height": 48.821197032054556,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "checkpointHitBox",
 					"properties": {
 						"initially-visible": false,
@@ -5696,35 +5696,6 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.75,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DOOR",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Base",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 667,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 424.5198410593887,
-						"y": 268.6325099123776,
-						"width": 72.74066463640753,
-						"height": 100.39557193474207,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,

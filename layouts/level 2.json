@@ -218,6 +218,35 @@
 								],
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "ExitDoor",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Base",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 665,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 2431.8210562794325,
+								"y": 204.39410088635367,
+								"width": 65.19693773943733,
+								"height": 86.30565727964742,
+								"originX": 0.5,
+								"originY": 0.40049751243781095,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 387494170430120,
@@ -987,7 +1016,7 @@
 					},
 					"world": {
 						"x": 544,
-						"y": 1568,
+						"y": 1443,
 						"width": 32,
 						"height": 96,
 						"originX": 0.5,
@@ -1082,7 +1111,7 @@
 					},
 					"world": {
 						"x": 928,
-						"y": 1568,
+						"y": 1725,
 						"width": 32,
 						"height": 96,
 						"originX": 0.5,
@@ -5135,35 +5164,6 @@
 						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "ExitDoor",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 4,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2432.2174207899307,
-						"y": 222.1202087402344,
-						"width": 48.821197032054556,
-						"height": 48.821197032054556,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 906529889396509,
@@ -5842,35 +5842,6 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.75,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DOOR",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Base",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 665,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2431.8210562794325,
-						"y": 204.39410088635367,
-						"width": 64.79198781558989,
-						"height": 103.05153108017603,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,

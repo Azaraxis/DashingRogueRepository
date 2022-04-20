@@ -160,35 +160,6 @@
 					}
 				},
 				{
-					"type": "ExitDoor",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 397,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1656,
-						"y": 575,
-						"width": 48.821197032054556,
-						"height": 48.821197032054556,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sun",
 					"properties": {
 						"initially-visible": true,
@@ -508,35 +479,6 @@
 						"width": 32,
 						"height": 32,
 						"originX": 0.4722222222222222,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ExitDoor",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 407,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1606,
-						"y": 372,
-						"width": 74.09269488056236,
-						"height": 160.15239025656103,
-						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,

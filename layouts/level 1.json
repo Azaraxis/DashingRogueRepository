@@ -532,6 +532,35 @@
 								],
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "ExitDoor",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Base",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 664,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 1607.2574750905342,
+								"y": 642.8789164557609,
+								"width": 165.92574497106025,
+								"height": 208.2142891942886,
+								"originX": 0.5,
+								"originY": 0.40049751243781095,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 175683113530694,
@@ -772,35 +801,6 @@
 					}
 				},
 				{
-					"type": "ExitDoor",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1605.6652115977752,
-						"y": 678.6480511010374,
-						"width": 74.09269488056236,
-						"height": 160.15239025656103,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "player2",
 					"properties": {
 						"initially-visible": true,
@@ -923,35 +923,6 @@
 						"y": 851.2181953069763,
 						"width": 250,
 						"height": 14.621144854734325,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DOOR",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Base",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 664,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1607.2574750905342,
-						"y": 642.8789164557609,
-						"width": 164.89515028179903,
-						"height": 248.61407664989682,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

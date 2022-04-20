@@ -2097,7 +2097,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player",
-							"sid": 550875588583377,
+							"sid": 739184430333102,
 							"parameters": {
 								"object": "ExitDoor"
 							}
@@ -2154,7 +2154,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player",
-							"sid": 990582605723022,
+							"sid": 293857993743172,
 							"parameters": {
 								"object": "ExitDoor"
 							}
@@ -2162,13 +2162,80 @@
 					],
 					"actions": [
 						{
-							"id": "set-position",
+							"id": "set-ignoring-input",
 							"objectClass": "player",
-							"sid": 359966952427200,
-							"disabled": true,
+							"sid": 303752906759523,
+							"behaviorType": "Platform",
 							"parameters": {
-								"x": "1721",
-								"y": "1254"
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "player",
+							"sid": 373508507481993,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "player",
+							"sid": 623529424386477,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "0"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "player",
+							"sid": 364620397904299,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "player",
+							"sid": 883785602245445
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 772761132170029,
+							"parameters": {
+								"variable": "won",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ExitDoor",
+							"sid": 535872668950297,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 331850781132742,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 402778802847958,
+							"parameters": {
+								"variable": "won",
+								"value": "false"
 							}
 						},
 						{
@@ -2190,6 +2257,31 @@
 						}
 					],
 					"sid": 192512436540992
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 504560186117871,
+							"parameters": {
+								"variable": "won"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-gravity",
+							"objectClass": "player",
+							"sid": 195652772171745,
+							"behaviorType": "Platform",
+							"parameters": {
+								"gravity": "0"
+							}
+						}
+					],
+					"sid": 320740019334614
 				},
 				{
 					"eventType": "block",
@@ -3023,7 +3115,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player",
-							"sid": 588564343198307,
+							"sid": 903210198480282,
 							"parameters": {
 								"object": "ExitDoor"
 							}
@@ -3040,7 +3132,10 @@
 						},
 						{
 							"callFunction": "fade",
-							"sid": 142488908662429
+							"sid": 142488908662429,
+							"parameters": [
+								false
+							]
 						}
 					],
 					"sid": 235020499377608
@@ -3051,17 +3146,25 @@
 					"functionCategory": "",
 					"functionReturnType": "none",
 					"functionIsAsync": false,
-					"functionParameters": [],
+					"functionParameters": [
+						{
+							"name": "out",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 865947619450225
+						}
+					],
 					"eventType": "function-block",
 					"conditions": [],
 					"actions": [
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 955977678916666,
+							"sid": 516168141884458,
 							"parameters": {
 								"object-to-create": "fade_ex",
-								"layer": "2",
+								"layer": "LayerIndex(\"Game\")",
 								"x": "960",
 								"y": "530",
 								"create-hierarchy": false
@@ -3070,46 +3173,105 @@
 						{
 							"id": "set-size",
 							"objectClass": "fade_ex",
-							"sid": 299424536059352,
+							"sid": 598350577510854,
 							"parameters": {
-								"width": "1925",
-								"height": "1087"
+								"width": "4000",
+								"height": "4000"
 							}
 						},
 						{
 							"id": "set-opacity",
 							"objectClass": "fade_ex",
-							"sid": 659783011005075,
+							"sid": 226658153820900,
 							"parameters": {
-								"opacity": "0"
+								"opacity": "100"
 							}
-						},
-						{
-							"id": "set-fade-out-time",
-							"objectClass": "fade_ex",
-							"sid": 506297575816398,
-							"behaviorType": "Fade",
-							"parameters": {
-								"fade-out-time": "0"
-							}
-						},
-						{
-							"id": "set-fade-in-time",
-							"objectClass": "fade_ex",
-							"sid": 181937421679197,
-							"behaviorType": "Fade",
-							"parameters": {
-								"fade-in-time": "1"
-							}
-						},
-						{
-							"id": "start-fade",
-							"objectClass": "fade_ex",
-							"sid": 541529385048208,
-							"behaviorType": "Fade"
 						}
 					],
-					"sid": 635080624108492
+					"sid": 635080624108492,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 127017297881262,
+									"parameters": {
+										"variable": "out"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "fade_ex",
+									"sid": 171723396171541,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "0"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "fade_ex",
+									"sid": 136777887519934,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "1"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "fade_ex",
+									"sid": 549989797053512,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 307807534123935
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 771698146195075,
+									"parameters": {
+										"variable": "out"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "fade_ex",
+									"sid": 721019748975644,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "1"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "fade_ex",
+									"sid": 339586430265474,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "0"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "fade_ex",
+									"sid": 106976134313889,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 756428957519745
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -3126,6 +3288,7 @@
 							"id": "go-to-nextprevious-layout",
 							"objectClass": "System",
 							"sid": 273167161568617,
+							"disabled": true,
 							"parameters": {
 								"which": "next"
 							}
@@ -3139,12 +3302,32 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 403755529743382
+							"sid": 378209593745107
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "fade",
+							"sid": 944715250868910,
+							"parameters": [
+								true
+							]
+						}
+					],
+					"sid": 409960533782139
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 825545561145836
 						},
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 448948315427556,
+							"sid": 866786643500274,
 							"parameters": {
 								"first-value": "ExitDoor.Count",
 								"comparison": 4,
@@ -3156,7 +3339,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 793469540839601,
+							"sid": 424574237849997,
 							"parameters": {
 								"object-to-create": "sceneCamera",
 								"layer": "5",
@@ -3229,7 +3412,7 @@
 						{
 							"id": "set-boolean-instvar",
 							"objectClass": "sceneCamera",
-							"sid": 971358243431824,
+							"sid": 669245534674801,
 							"parameters": {
 								"instance-variable": "on",
 								"value": "false"
@@ -3237,6 +3420,19 @@
 						}
 					],
 					"sid": 105325618085330
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "fade_ex",
+							"sid": 521776701646155,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [],
+					"sid": 904533682188274
 				},
 				{
 					"eventType": "block",
@@ -3254,7 +3450,7 @@
 						{
 							"id": "set-size",
 							"objectClass": "sceneCamera",
-							"sid": 397932314714386,
+							"sid": 823943929512916,
 							"parameters": {
 								"width": "ExitDoor.Width",
 								"height": "ExitDoor.height"
