@@ -75,6 +75,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 625994542013691
+		},
+		{
+			"name": "noAnim",
+			"type": "boolean",
+			"desc": "",
+			"sid": 386543677884632
 		}
 	],
 	"behaviorTypes": [
@@ -449,6 +455,369 @@
 				],
 				"sid": 974068467805157,
 				"name": "Run",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2111014,
+						"collisionPoly": {
+							"points": [
+								0.47058823529411764,
+								1,
+								0.7647058823529411,
+								1,
+								0.7647058823529411,
+								0.054655870445344125,
+								0.47058823529411764,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9940535,
+						"collisionPoly": {
+							"points": [
+								0.47058823529411764,
+								1,
+								0.7647058823529411,
+								1,
+								0.7647058823529411,
+								0.054655870445344125,
+								0.47058823529411764,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1033522,
+						"collisionPoly": {
+							"points": [
+								0.47058823529411764,
+								1,
+								0.7647058823529411,
+								1,
+								0.7647058823529411,
+								0.054655870445344125,
+								0.47058823529411764,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 2
+					}
+				],
+				"sid": 490651230860905,
+				"name": "IdleDashOff",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 872811,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7511874,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3632229,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2638620,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8396595,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7639657,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4779953,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 19,
+						"originX": 0.5882352941176471,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1306226,
+						"collisionPoly": {
+							"points": [
+								0.9411764705882353,
+								1,
+								0.6470588235294118,
+								1,
+								0.6470588235294118,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "dust",
+								"x": 0.5882352941176471,
+								"y": 0.9473684210526315
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 565884791929297,
+				"name": "RunDashOff",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

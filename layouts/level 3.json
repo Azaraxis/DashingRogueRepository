@@ -5777,7 +5777,8 @@
 						"checkpointY": 0,
 						"FootstepsBool": false,
 						"landingAudioBool": false,
-						"noDash": false
+						"noDash": false,
+						"noAnim": false
 					},
 					"behaviors": {
 						"Platform": {

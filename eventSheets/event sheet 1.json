@@ -524,6 +524,15 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 427540864575258,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 477961501171507,
@@ -610,6 +619,15 @@
 							}
 						},
 						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 300921151900766,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 352454344575738,
@@ -663,6 +681,15 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 893420210021040,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
@@ -750,6 +777,15 @@
 							}
 						},
 						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 605317961614319,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 227403832181379,
@@ -786,87 +822,167 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 862031050520635,
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 641892806856551,
 							"parameters": {
-								"key": 38
+								"animation": "\"Run\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 631366573113055,
+							"parameters": {
+								"instance-variable": "isDashing"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-instvar-value",
+							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 321059200437086,
+							"sid": 255529698951039,
 							"parameters": {
-								"instance-variable": "direction",
-								"value": "1"
+								"animation": "\"RunDashOff\"",
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-angle",
+							"id": "set-animation-frame",
 							"objectClass": "player",
-							"sid": 366043742774339,
-							"disabled": true,
+							"sid": 684243451775381,
 							"parameters": {
-								"angle": "270"
+								"frame-number": "player.AnimationFrame"
 							}
 						}
 					],
-					"sid": 964634658916593,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 658115379052319,
-									"parameters": {
-										"key": 38
-									}
-								}
-							],
-							"actions": [],
-							"sid": 530580505812420,
-							"disabled": true
-						}
-					]
+					"sid": 477149311792881
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 796493889976585,
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 898268940892516,
 							"parameters": {
-								"key": 40
+								"animation": "\"RunDashOff\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 308629664907439,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 975948800539965,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 273844319752702,
+							"parameters": {
+								"frame-number": "player.AnimationFrame"
+							}
+						}
+					],
+					"sid": 718430890583220
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 766451240741325,
+							"parameters": {
+								"animation": "\"Idle\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 598915946195520,
+							"parameters": {
+								"instance-variable": "isDashing"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-instvar-value",
+							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 415843451367138,
+							"sid": 958822796780352,
 							"parameters": {
-								"instance-variable": "direction",
-								"value": "3"
+								"animation": "\"IdleDashOff\"",
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-angle",
+							"id": "set-animation-frame",
 							"objectClass": "player",
-							"sid": 959121485621428,
-							"disabled": true,
+							"sid": 438493270852883,
 							"parameters": {
-								"angle": "90"
+								"frame-number": "player.AnimationFrame"
 							}
 						}
 					],
-					"sid": 623470728014592
+					"sid": 497069086356592
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 241664042234342,
+							"parameters": {
+								"animation": "\"IdleDashOff\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 127725217144015,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 640689358729904,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 584343675769521,
+							"parameters": {
+								"frame-number": "player.AnimationFrame"
+							}
+						}
+					],
+					"sid": 482868135216152
 				},
 				{
 					"functionName": "toDashing",
@@ -2162,53 +2278,16 @@
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "player",
-							"sid": 303752906759523,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "start-ignoring"
-							}
-						},
-						{
-							"id": "set-vector-x",
-							"objectClass": "player",
-							"sid": 373508507481993,
-							"behaviorType": "Platform",
-							"parameters": {
-								"vector-x": "0"
-							}
-						},
-						{
-							"id": "set-vector-y",
-							"objectClass": "player",
-							"sid": 623529424386477,
-							"behaviorType": "Platform",
-							"parameters": {
-								"vector-y": "0"
-							}
-						},
-						{
-							"id": "set-gravity",
-							"objectClass": "player",
-							"sid": 364620397904299,
-							"disabled": true,
-							"behaviorType": "Platform",
-							"parameters": {
-								"gravity": "0"
-							}
-						},
-						{
 							"id": "stop-animation",
 							"objectClass": "player",
 							"sid": 883785602245445
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 772761132170029,
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 450432504964658,
 							"parameters": {
-								"variable": "won",
+								"instance-variable": "noAnim",
 								"value": "true"
 							}
 						},
@@ -2224,17 +2303,17 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 331850781132742,
+							"sid": 182968346675211,
 							"parameters": {
 								"seconds": "1"
 							}
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 402778802847958,
+							"id": "set-boolean-instvar",
+							"objectClass": "player",
+							"sid": 845141556685813,
 							"parameters": {
-								"variable": "won",
+								"instance-variable": "noAnim",
 								"value": "false"
 							}
 						},
@@ -2262,15 +2341,42 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 504560186117871,
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 245078686638221,
 							"parameters": {
-								"variable": "won"
+								"instance-variable": "noAnim"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "player",
+							"sid": 303752906759523,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "player",
+							"sid": 373508507481993,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "player",
+							"sid": 623529424386477,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "0"
+							}
+						},
 						{
 							"id": "set-gravity",
 							"objectClass": "player",
@@ -3126,6 +3232,7 @@
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 769176434211377,
+							"disabled": true,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -3161,10 +3268,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 516168141884458,
+							"sid": 283926901742287,
 							"parameters": {
 								"object-to-create": "fade_ex",
-								"layer": "LayerIndex(\"Game\")",
+								"layer": "player.LayerNumber",
 								"x": "960",
 								"y": "530",
 								"create-hierarchy": false
@@ -3173,9 +3280,9 @@
 						{
 							"id": "set-size",
 							"objectClass": "fade_ex",
-							"sid": 598350577510854,
+							"sid": 488058369342337,
 							"parameters": {
-								"width": "4000",
+								"width": "8000",
 								"height": "4000"
 							}
 						},
@@ -3204,6 +3311,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "fade_ex",
+									"sid": 408732040982312,
+									"disabled": true,
+									"parameters": {
+										"opacity": "0"
+									}
+								},
 								{
 									"id": "set-fade-out-time",
 									"objectClass": "fade_ex",
@@ -3245,6 +3361,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-opacity",
+									"objectClass": "fade_ex",
+									"sid": 225105214863386,
+									"disabled": true,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
 									"id": "set-fade-out-time",
 									"objectClass": "fade_ex",
 									"sid": 721019748975644,
@@ -3285,6 +3410,11 @@
 					],
 					"actions": [
 						{
+							"id": "destroy",
+							"objectClass": "fade_ex",
+							"sid": 510594340586849
+						},
+						{
 							"id": "go-to-nextprevious-layout",
 							"objectClass": "System",
 							"sid": 273167161568617,
@@ -3294,7 +3424,37 @@
 							}
 						}
 					],
-					"sid": 532014545495574
+					"sid": 532014545495574,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "fade_ex",
+							"sid": 984127682313405,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "fade_ex",
+							"sid": 621046608151005
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 636044270652464,
+							"disabled": true,
+							"parameters": {
+								"which": "next"
+							}
+						}
+					],
+					"sid": 986040284612115,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
