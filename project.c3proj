@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -197,7 +205,8 @@
 			"checkpointsText",
 			"BannerHold",
 			"Banner",
-			"ExitDoor"
+			"ExitDoor",
+			"Dust"
 		],
 		"subfolders": []
 	},

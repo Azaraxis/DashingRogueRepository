@@ -696,6 +696,51 @@
 							1
 						]
 					}
+				},
+				{
+					"type": "Dust",
+					"properties": {
+						"rate": 10,
+						"spray-cone": 0,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 60,
+						"size": 8,
+						"opacity": 60,
+						"grow-rate": 0,
+						"x-randomiser": 25,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 5,
+						"grow-rate-randomiser": 0,
+						"acceleration": 0,
+						"gravity": 100,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 400,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 0.5
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 289,
+						"y": 1118,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5737607013013195,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 632258403001193,

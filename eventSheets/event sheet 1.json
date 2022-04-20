@@ -4008,6 +4008,31 @@
 				}
 			],
 			"sid": 968122677551324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "player",
+					"sid": 999393581099285,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "player",
+					"sid": 731071657510516,
+					"parameters": {
+						"object": "Dust",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 172158243923603
 		}
 	],
 	"sid": 325422612367472
