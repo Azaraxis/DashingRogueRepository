@@ -198,7 +198,8 @@
 			"BannerHold",
 			"Banner",
 			"ExitDoor",
-			"Dust"
+			"Dust",
+			"Title"
 		],
 		"subfolders": []
 	},
@@ -217,7 +218,8 @@
 			"Level 6",
 			"IntroCutsceneTest",
 			"Level 4",
-			"Level 5"
+			"Level 5",
+			"TitleScreen2"
 		],
 		"subfolders": []
 	},
