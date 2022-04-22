@@ -211,7 +211,6 @@
 	},
 	"layouts": {
 		"items": [
-			"TitleScreen",
 			"Level 1",
 			"Level 2",
 			"Level 3",
@@ -219,7 +218,7 @@
 			"IntroCutsceneTest",
 			"Level 4",
 			"Level 5",
-			"TitleScreen2"
+			"TitleScreen"
 		],
 		"subfolders": []
 	},
@@ -419,7 +418,7 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"

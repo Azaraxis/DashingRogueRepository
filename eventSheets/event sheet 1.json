@@ -2570,14 +2570,6 @@
 								"variable": "won",
 								"value": "false"
 							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 482163911481927,
-							"parameters": {
-								"layout": "TitleScreen"
-							}
 						}
 					],
 					"sid": 333286830849726
@@ -3196,14 +3188,6 @@
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 489681558046327
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 408161498072450,
-					"parameters": {
-						"layout": "TitleScreen"
-					}
 				}
 			],
 			"sid": 311102665642997
