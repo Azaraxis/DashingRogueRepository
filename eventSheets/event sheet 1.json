@@ -2570,6 +2570,14 @@
 								"variable": "won",
 								"value": "false"
 							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 424511951344112,
+							"parameters": {
+								"layout": "TitleScreen"
+							}
 						}
 					],
 					"sid": 333286830849726
