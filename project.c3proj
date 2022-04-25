@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -199,7 +207,8 @@
 			"Banner",
 			"ExitDoor",
 			"Dust",
-			"Title"
+			"Title",
+			"Gamepad"
 		],
 		"subfolders": []
 	},

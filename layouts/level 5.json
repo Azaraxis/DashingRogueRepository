@@ -301,8 +301,8 @@
 						}
 					},
 					"world": {
-						"x": 1601,
-						"y": 2232,
+						"x": 2398,
+						"y": 2729,
 						"width": 25.904761904761905,
 						"height": 32,
 						"originX": 0.5882352941176471,
@@ -8242,6 +8242,35 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Banner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Invisible",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1012,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2245.4990740943435,
+						"y": 2777.488571491925,
+						"width": 33.19309728782673,
+						"height": 46.08792025369712,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
