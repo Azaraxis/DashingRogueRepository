@@ -52,6 +52,66 @@
 			"sid": 374029466668636
 		},
 		{
+			"eventType": "variable",
+			"name": "nextAvailable",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 942497260575633
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog1",
+			"type": "string",
+			"initialValue": "Good Day M'Lady",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 142109571477996
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog2",
+			"type": "string",
+			"initialValue": "gaymer",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 289795094864601
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog3",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 239649399144591
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog4",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 220488899582050
+		},
+		{
+			"eventType": "variable",
+			"name": "dialog5",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 148104997291937
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Camera2",
@@ -389,6 +449,118 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 412282180135310,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 949774752928976,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 792361887152066,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 548175924802754,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 591686347380689,
+							"parameters": {
+								"animation": "\"DashUp\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 944860690202274,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 412136360100908
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 402902751026056,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 936162774460764,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 546566340337389,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 602720859942271,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 569598670974995,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 753279390306637
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -1516,6 +1688,97 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 658219922998820,
+					"parameters": {
+						"variable": "nextAvailable"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressXtoContinueTEXT",
+					"sid": 256002561216138,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 333293413723413
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 264704780733016,
+					"parameters": {
+						"variable": "nextAvailable"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressXtoContinueTEXT",
+					"sid": 438121681895945,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 303746375650227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 807855623370182,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 889288536764083,
+					"parameters": {
+						"variable": "nextAvailable"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 982443049409585,
+					"parameters": {
+						"variable": "dialogTreeNum",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 787806462881918,
+					"parameters": {
+						"variable": "nextAvailable",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 169479431896191
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-layer-opacity",
 					"objectClass": "System",
 					"sid": 404810729872414,
@@ -1562,14 +1825,107 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "theDialogText",
-					"sid": 858987239214599,
+					"sid": 283795608636087,
 					"parameters": {
-						"text": "\"yo lady hahahhahahahhahahahhah\"",
-						"duration": "0.1*len(\"yo lady hahahhahahahhahahahhah\")"
+						"text": "dialog1",
+						"duration": "0.1*len(dialog1)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 722599401115076,
+					"parameters": {
+						"seconds": "0.1*len(dialog1)"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 356591042123065,
+					"parameters": {
+						"variable": "nextAvailable",
+						"value": "true"
 					}
 				}
 			],
 			"sid": 580052195290124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 439266320815395,
+					"parameters": {
+						"variable": "nextAvailable"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-layer-opacity",
+					"objectClass": "System",
+					"sid": 777175184688535,
+					"parameters": {
+						"layer": "LayerIndex(\"UI\")",
+						"comparison": 0,
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 240411716880767
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 248584926233328,
+					"parameters": {
+						"variable": "cutsceneTriggered"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 433112901933968,
+					"parameters": {
+						"variable": "dialogTreeNum",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 968653373443754,
+					"parameters": {
+						"variable": "RogueOrLadytalk",
+						"value": "true"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "theDialogText",
+					"sid": 730551751832186,
+					"parameters": {
+						"text": "dialog2",
+						"duration": "0.1*len(dialog2)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 717035152857115,
+					"parameters": {
+						"seconds": "0.1*len(dialog2)"
+					}
+				}
+			],
+			"sid": 229754000774657
 		}
 	],
 	"sid": 666884442467552

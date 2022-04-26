@@ -205,7 +205,8 @@
 			"Gamepad",
 			"Zoomtrigger3cutscene",
 			"Spotlightplayer",
-			"theDialogText"
+			"theDialogText",
+			"PressXtoContinueTEXT"
 		],
 		"subfolders": []
 	},
