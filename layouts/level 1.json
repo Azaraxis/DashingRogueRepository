@@ -628,37 +628,7 @@
 					"global": false
 				}
 			],
-			"instances": [
-				{
-					"type": "Sprite3",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 33,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 74,
-						"y": 495.5643254686723,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 245217934141791,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -756,7 +726,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "XtutorialText",
 					"properties": {
 						"text": "Press X to Dash!",
 						"enable-bbcode": true,

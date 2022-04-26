@@ -1,9 +1,16 @@
 {
-	"name": "Sprite5",
+	"name": "Zoomtrigger3cutscene",
 	"plugin-id": "Sprite",
-	"sid": 666557877421453,
+	"sid": 632949806554614,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "zoomtarget3cutscene",
+			"type": "number",
+			"desc": "",
+			"sid": 887068866258959
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,12 +25,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1234523,
+						"imageSpriteId": 2000144,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 579203218886561,
+				"sid": 528288635334802,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

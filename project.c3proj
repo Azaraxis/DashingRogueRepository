@@ -8,16 +8,16 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -88,14 +88,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -106,6 +98,14 @@
 			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -138,8 +138,7 @@
 	"uniqueId": "00ru6f0qjnc",
 	"objectTypes": {
 		"items": [
-			"Platforming3",
-			"Text",
+			"XtutorialText",
 			"WinText",
 			"Spike",
 			"player",
@@ -151,18 +150,14 @@
 			"ExitSign",
 			"Exit",
 			"Audio",
-			"Sprite2",
 			"Shadow",
-			"Sprite3",
 			"OutsideTileMap",
 			"InsideTileMap",
 			"PlayerHitbox",
 			"PlayerHurtbox",
-			"Sprite6",
 			"player2",
 			"InsideTileMap2",
 			"BackgroundTilemap",
-			"Sprite4",
 			"Torch",
 			"BackgroundTilemap2",
 			"Zoomtrigger2",
@@ -175,7 +170,6 @@
 			"Sun",
 			"FinalTilemap",
 			"BackgroundTilemap3",
-			"Sprite5",
 			"rose",
 			"SolidFinalTileMap",
 			"waterDeathbox",
@@ -208,14 +202,19 @@
 			"ExitDoor",
 			"Dust",
 			"Title",
-			"Gamepad"
+			"Gamepad",
+			"Zoomtrigger3cutscene",
+			"Spotlightplayer",
+			"theDialogText"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"mainMenuSelectableObjects"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -235,7 +234,7 @@
 		"items": [
 			"Event sheet 1",
 			"Title",
-			"Event sheet 2"
+			"cutscene"
 		],
 		"subfolders": []
 	},

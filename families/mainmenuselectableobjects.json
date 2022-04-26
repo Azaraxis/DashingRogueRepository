@@ -1,0 +1,18 @@
+{
+	"name": "mainMenuSelectableObjects",
+	"plugin-id": "Button",
+	"sid": 693493861319935,
+	"instanceVariables": [
+		{
+			"name": "selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 727386319847174
+		}
+	],
+	"behaviorTypes": [],
+	"members": [
+		"checkpoints",
+		"playbutton"
+	]
+}

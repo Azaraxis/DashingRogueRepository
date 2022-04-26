@@ -2262,7 +2262,8 @@
 							}
 						}
 					],
-					"sid": 187582680747442
+					"sid": 187582680747442,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3196,6 +3197,14 @@
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 489681558046327
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 604937819079301,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
 				}
 			],
 			"sid": 311102665642997

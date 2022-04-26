@@ -220,35 +220,6 @@
 					}
 				},
 				{
-					"type": "Sprite3",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 858,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 74,
-						"y": 189,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "ExitDoor",
 					"properties": {
 						"initially-visible": true,
@@ -700,7 +671,9 @@
 						"id": ""
 					},
 					"uid": 868,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"selected": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 378,
@@ -730,7 +703,9 @@
 						"id": ""
 					},
 					"uid": 869,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"selected": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 349,

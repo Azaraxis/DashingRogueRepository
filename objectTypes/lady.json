@@ -9,54 +9,6 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 612772355172897
-		},
-		{
-			"name": "normGrav",
-			"type": "number",
-			"desc": "",
-			"sid": 158066929714529
-		},
-		{
-			"name": "speedMulti",
-			"type": "number",
-			"desc": "",
-			"sid": 121136410616280
-		},
-		{
-			"name": "dashSpeed",
-			"type": "number",
-			"desc": "",
-			"sid": 601945914558195
-		},
-		{
-			"name": "isDashing",
-			"type": "boolean",
-			"desc": "",
-			"sid": 306392161434812
-		},
-		{
-			"name": "direction",
-			"type": "number",
-			"desc": "0 - left, 1 - up, 2 - right, 3 - down",
-			"sid": 978253190082003
-		},
-		{
-			"name": "DashCDforShadow",
-			"type": "boolean",
-			"desc": "",
-			"sid": 380031639542600
-		},
-		{
-			"name": "checkpointX",
-			"type": "number",
-			"desc": "",
-			"sid": 566243838663949
-		},
-		{
-			"name": "checkpointY",
-			"type": "number",
-			"desc": "",
-			"sid": 479344141356019
 		}
 	],
 	"behaviorTypes": [],
