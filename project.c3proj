@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texte",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -25,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Clavier",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -41,7 +41,7 @@
 		{
 			"type": "plugin",
 			"id": "Tilemap",
-			"name": "Tuilage",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -49,7 +49,7 @@
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Arrière-plan Répété",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -57,7 +57,7 @@
 		{
 			"type": "plugin",
 			"id": "Mouse",
-			"name": "Souris",
+			"name": "Mouse",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -65,7 +65,7 @@
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Bouton",
+			"name": "Button",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -73,7 +73,7 @@
 		{
 			"type": "plugin",
 			"id": "Particles",
-			"name": "Particules",
+			"name": "Particles",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -81,7 +81,7 @@
 		{
 			"type": "plugin",
 			"id": "gamepad",
-			"name": "Manette",
+			"name": "Gamepad",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -89,7 +89,7 @@
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plate-forme",
+			"name": "Platform",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -97,7 +97,7 @@
 		{
 			"type": "behavior",
 			"id": "bound",
-			"name": "Limité à la scène",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -105,7 +105,7 @@
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solide",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -113,7 +113,7 @@
 		{
 			"type": "behavior",
 			"id": "custom",
-			"name": "Personnalisé",
+			"name": "Custom",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -121,7 +121,7 @@
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Fondu",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -129,7 +129,7 @@
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Défiler vers",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false

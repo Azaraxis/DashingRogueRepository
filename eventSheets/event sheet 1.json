@@ -372,6 +372,15 @@
 									"sid": 405184721997007
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "player",
+									"sid": 758126888095952,
+									"parameters": {
+										"animation": "\"DashUp\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-vector-y",
 									"objectClass": "player",
 									"sid": 868557406302297,
@@ -519,6 +528,118 @@
 							"sid": 584627212336673
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 722671708475185,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 821504041691046,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 980499304555940,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 486190435542730,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 711229755202759,
+							"parameters": {
+								"animation": "\"DashUp\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 366153602166095,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 852499100297003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 991783748752378,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 100917785717786,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 639292894793606,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 155826734652653,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 207635568622199,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 252826918750554
 				},
 				{
 					"eventType": "block",
@@ -824,9 +945,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "player",
-							"sid": 641892806856551,
+							"sid": 179906913762513,
 							"parameters": {
-								"animation": "\"Run\""
+								"animation": "\"DashUp\""
 							}
 						},
 						{
@@ -842,9 +963,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 255529698951039,
+							"sid": 660192080549771,
 							"parameters": {
-								"animation": "\"RunDashOff\"",
+								"animation": "\"DashUpOff\"",
 								"from": "beginning"
 							}
 						},
@@ -858,6 +979,89 @@
 						}
 					],
 					"sid": 477149311792881
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 696555032791888,
+							"parameters": {
+								"animation": "\"DashUpOff\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 580658708634651,
+							"parameters": {
+								"instance-variable": "isDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 795442157105092,
+							"parameters": {
+								"animation": "\"DashUp\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 939273261343828,
+							"parameters": {
+								"frame-number": "player.AnimationFrame"
+							}
+						}
+					],
+					"sid": 384452478089971
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 696743833361805,
+							"parameters": {
+								"animation": "\"Run\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
+							"sid": 598710091742621,
+							"parameters": {
+								"instance-variable": "isDashing"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 441710740733959,
+							"parameters": {
+								"animation": "\"RunDashOff\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "player",
+							"sid": 681133151853063,
+							"parameters": {
+								"frame-number": "player.AnimationFrame"
+							}
+						}
+					],
+					"sid": 960609146114145
 				},
 				{
 					"eventType": "block",
