@@ -647,6 +647,66 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "player",
+							"sid": 606413880539890,
+							"parameters": {
+								"instance-variable": "noAnim"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 401847779894003,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 746974749038451,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [],
+					"sid": 665442444096137,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "player",
+									"sid": 513613738751553,
+									"parameters": {
+										"instance-variable": "isDashing"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "player2",
+									"sid": 934262411702009,
+									"parameters": {
+										"animation": "\"DashUp\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 696639427298864
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "player",
 							"sid": 427540864575258,
 							"parameters": {
 								"instance-variable": "noAnim"
@@ -769,35 +829,7 @@
 							}
 						}
 					],
-					"sid": 694890836335315,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "player",
-									"sid": 750599899415661,
-									"parameters": {
-										"instance-variable": "isDashing"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "player2",
-									"sid": 895075014707153,
-									"parameters": {
-										"animation": "\"Idle\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 853211472807524,
-							"disabled": true
-						}
-					]
+					"sid": 694890836335315
 				},
 				{
 					"eventType": "block",
@@ -1640,6 +1672,14 @@
 								"variable": "harder"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "checkpointHitBox",
+							"sid": 166953252837881,
+							"parameters": {
+								"object": "Banner"
+							}
 						}
 					],
 					"actions": [
@@ -2407,6 +2447,15 @@
 							"id": "stop-animation",
 							"objectClass": "player",
 							"sid": 851034065578611
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 671806411603726,
+							"parameters": {
+								"variable": "plays",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 731453517721883
@@ -2637,85 +2686,7 @@
 							}
 						}
 					],
-					"sid": 225131145697369,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-checked",
-									"objectClass": "checkpoints",
-									"sid": 269051040737213
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 123681379209395,
-									"parameters": {
-										"variable": "harder",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 615898101177107
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-checked",
-									"objectClass": "checkpoints",
-									"sid": 621944840829414,
-									"disabled": true,
-									"parameters": {
-										"state": "unchecked"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "checkpoints",
-									"sid": 102577408568870,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 932662964210097
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 951556663212979,
-									"disabled": true,
-									"parameters": {
-										"variable": "won"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 617098934423621,
-									"disabled": true,
-									"parameters": {
-										"audio-file": "backgroundSound",
-										"loop": "looping",
-										"volume": "-20",
-										"tag-optional": "\"\""
-									}
-								}
-							],
-							"sid": 323260884501338
-						}
-					]
+					"sid": 225131145697369
 				},
 				{
 					"eventType": "block",
@@ -2759,24 +2730,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 580263552617451,
-							"parameters": {
-								"variable": "deathCounter",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 370283422559473,
-							"parameters": {
-								"variable": "won",
-								"value": "false"
-							}
-						},
-						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 424511951344112,
@@ -2785,7 +2738,8 @@
 							}
 						}
 					],
-					"sid": 333286830849726
+					"sid": 333286830849726,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -2803,14 +2757,86 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "BacktoMainMenuButton",
-							"sid": 621748872139791,
+							"objectClass": "PressXtoContinueTEXTENDING",
+							"sid": 396209821035988,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
 					"sid": 729450989329672
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 289978859299769,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "PressXtoContinueTEXTENDING",
+							"sid": 706970122799126
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 699892004341220,
+							"parameters": {
+								"variable": "deathCounter",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 874754961481270,
+							"parameters": {
+								"variable": "Ending",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "fade",
+							"sid": 483108667778380,
+							"parameters": [
+								false,
+								"LayerIndex(\"fadein\")"
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 894442891097356,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 811745658014697,
+							"parameters": {
+								"variable": "won",
+								"value": "false"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 441385882064409,
+							"parameters": {
+								"layout": "EndCutsceneText"
+							}
+						}
+					],
+					"sid": 744312285975125
 				},
 				{
 					"eventType": "block",
@@ -3444,9 +3470,10 @@
 						},
 						{
 							"callFunction": "fade",
-							"sid": 142488908662429,
+							"sid": 750952195792416,
 							"parameters": [
-								false
+								false,
+								"player.LayerNumber"
 							]
 						}
 					],
@@ -3465,6 +3492,13 @@
 							"initialValue": "false",
 							"comment": "",
 							"sid": 865947619450225
+						},
+						{
+							"name": "layerNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 595004357681787
 						}
 					],
 					"eventType": "function-block",
@@ -3473,10 +3507,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 283926901742287,
+							"sid": 129528754834941,
 							"parameters": {
 								"object-to-create": "fade_ex",
-								"layer": "player.LayerNumber",
+								"layer": "layerNum",
 								"x": "960",
 								"y": "530",
 								"create-hierarchy": false
@@ -3673,9 +3707,10 @@
 					"actions": [
 						{
 							"callFunction": "fade",
-							"sid": 944715250868910,
+							"sid": 989208153849391,
 							"parameters": [
-								true
+								true,
+								"player.LayerNumber"
 							]
 						}
 					],

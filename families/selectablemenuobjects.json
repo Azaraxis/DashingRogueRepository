@@ -1,0 +1,19 @@
+{
+	"name": "SelectableMenuObjects",
+	"plugin-id": "Sprite",
+	"sid": 407717371098105,
+	"instanceVariables": [
+		{
+			"name": "Selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 266372147190937
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"playButtonSprite",
+		"hardmodeButtonSprite"
+	]
+}

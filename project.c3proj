@@ -168,7 +168,6 @@
 			"BG3",
 			"BG4",
 			"Sun",
-			"FinalTilemap",
 			"BackgroundTilemap3",
 			"rose",
 			"SolidFinalTileMap",
@@ -206,7 +205,12 @@
 			"Zoomtrigger3cutscene",
 			"Spotlightplayer",
 			"theDialogText",
-			"PressXtoContinueTEXT"
+			"PressXtoContinueTEXTDIALOG",
+			"Cursor",
+			"playButtonSprite",
+			"hardmodeButtonSprite",
+			"PressXtoContinueTEXTENDING",
+			"cinematicBackgroundEND"
 		],
 		"subfolders": []
 	},
@@ -214,7 +218,7 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"mainMenuSelectableObjects"
+			"SelectableMenuObjects"
 		],
 		"subfolders": []
 	},
@@ -227,7 +231,8 @@
 			"IntroCutsceneTest",
 			"Level 4",
 			"Level 5",
-			"TitleScreen"
+			"TitleScreen",
+			"EndCutsceneText"
 		],
 		"subfolders": []
 	},

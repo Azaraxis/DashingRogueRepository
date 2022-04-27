@@ -861,9 +861,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 431.4047698224578,
-						"y": 795.2203276884989,
+						"y": 804.4458432079879,
 						"width": 159.68639933357866,
-						"height": 202.38902573563647,
+						"height": 220.84005677461454,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -977,7 +977,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 354.0303932927602,
-						"y": 867.9278684542742,
+						"y": 975.4560874881311,
 						"width": 154.22274844542426,
 						"height": 24,
 						"originX": 0,
@@ -1073,6 +1073,48 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "PressXtoContinueTEXTENDING",
+					"properties": {
+						"text": "[outline=#000000]Press X to Continue",
+						"enable-bbcode": true,
+						"font": "Gill Sans",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 1021,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 354.2903137207031,
+						"y": 863.7017659398957,
+						"width": 155.50191363426643,
+						"height": 52.23127948820661,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 516963617759720,
@@ -1084,6 +1126,39 @@
 				1,
 				1,
 				0.5
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "fadein",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 320699624261760,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
 			],
 			"backgroundColor": [
 				0.3686274509803922,

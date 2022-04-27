@@ -2,7 +2,7 @@
 	"name": "checkpoints",
 	"plugin-id": "Button",
 	"sid": 461415424988751,
-	"isGlobal": true,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": []
 }

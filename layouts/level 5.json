@@ -301,8 +301,8 @@
 						}
 					},
 					"world": {
-						"x": 2398,
-						"y": 2729,
+						"x": 2423,
+						"y": 2750,
 						"width": 25.904761904761905,
 						"height": 32,
 						"originX": 0.5882352941176471,
@@ -405,35 +405,6 @@
 						"height": 43.76873110389107,
 						"originX": 0.4,
 						"originY": 0.45454545454545453,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Banner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Invisible",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 907,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1280,
-						"y": 1024,
-						"width": 33.19309728782673,
-						"height": 46.08792025369712,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -8244,35 +8215,6 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Banner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Invisible",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1012,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2245.4990740943435,
-						"y": 2777.488571491925,
-						"width": 33.19309728782673,
-						"height": 46.08792025369712,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 226605982555095,
@@ -9346,6 +9288,122 @@
 							1,
 							1,
 							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "checkpointHitBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1019,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1171.2933528443564,
+						"y": 943,
+						"width": 158.69373389716839,
+						"height": 225.34287275459292,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BannerHold",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1020,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1173.2077692936755,
+						"y": 1025.2708722823102,
+						"width": 51.48240535965283,
+						"height": 61.918406936021256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Banner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Invisible",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 907,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1173.1233495469858,
+						"y": 1021.1612948719345,
+						"width": 33.19309728782673,
+						"height": 46.08792025369712,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Banner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Invisible",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1012,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2245.721023817174,
+						"y": 2781.537028004668,
+						"width": 33.19309728782673,
+						"height": 46.08792025369712,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

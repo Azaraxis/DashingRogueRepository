@@ -2,25 +2,14 @@
 	"name": "Title",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "playbutton",
-					"sid": 101384875277446
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 889618549563536,
-					"parameters": {
-						"layout": "Level 1"
-					}
-				}
-			],
-			"sid": 383975906058401
+			"eventType": "variable",
+			"name": "plays",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 829751401259157
 		},
 		{
 			"eventType": "block",
@@ -33,19 +22,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "checkpoints",
-					"sid": 356553590389336,
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 294061115817192,
 					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-checked",
-					"objectClass": "checkpoints",
-					"sid": 341973493618547,
-					"parameters": {
-						"state": "unchecked"
+						"sprite": "Cursor"
 					}
 				}
 			],
@@ -80,6 +61,473 @@
 					"sid": 737375834271824
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 931919551896571,
+					"parameters": {
+						"instance-variable": "active"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 735854513565680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 535882992347131,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 590273129271523,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 207526977064857,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 584259362001669,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "playButtonSprite",
+					"sid": 853386154244071,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 776485904080297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 784341445191372,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 260101899138947,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 460151049693887,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 509000474162450,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "playButtonSprite",
+					"sid": 278692559806590,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 874295627530034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 837982458300890,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 873248440617750,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 101761399554751,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "playButtonSprite",
+					"sid": 404565487112666,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 186620309864120,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 621144070006771
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 618809523908311,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 912352318676031,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 529622790749492,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "playButtonSprite",
+					"sid": 470415516056768,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 249475161759682,
+					"parameters": {
+						"instance-variable": "Selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 923921889191819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 764085295217157,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "playButtonSprite",
+					"sid": 216564413219333,
+					"parameters": {
+						"animation": "\"Selected\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 260863043186477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 744601779781709,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 878962358516307,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 596826334237058,
+					"parameters": {
+						"variable": "plays",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 450921496589190,
+					"parameters": {
+						"layout": "IntroCutsceneTest"
+					}
+				}
+			],
+			"sid": 344847939919721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 323461040080035,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 283866511600560,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 265017175999892,
+					"parameters": {
+						"variable": "plays",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 453356372707964,
+					"parameters": {
+						"layout": "Level 1"
+					}
+				}
+			],
+			"sid": 180105219469483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 641297092462699,
+					"parameters": {
+						"instance-variable": "Selected"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "playButtonSprite",
+					"sid": 664820457155208,
+					"parameters": {
+						"animation": "\"notSelected\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 711651749918822
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 310060488063874,
+					"parameters": {
+						"key": 88
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 448870440132717,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 814677230056951,
+					"parameters": {
+						"instance-variable": "active"
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 352645289548174,
+					"parameters": {
+						"variable": "harder"
+					}
+				}
+			],
+			"sid": 859959733645509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 323447172840747,
+					"parameters": {
+						"instance-variable": "Selected"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 852076480813285,
+					"parameters": {
+						"animation": "\"notSelected\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 320478379339821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 129229782623533,
+					"parameters": {
+						"instance-variable": "active"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 931789810963126,
+					"parameters": {
+						"animation": "\"Active\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 862560364660737
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 137462561156623,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 575652903187333,
+					"parameters": {
+						"animation": "\"Selected\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 357153405426783
 		}
 	],
 	"sid": 782816106394773
