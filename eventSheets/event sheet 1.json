@@ -2785,15 +2785,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 699892004341220,
-							"parameters": {
-								"variable": "deathCounter",
-								"value": "0"
-							}
-						},
-						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 874754961481270,
@@ -2816,6 +2807,15 @@
 							"sid": 894442891097356,
 							"parameters": {
 								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 786594124623898,
+							"parameters": {
+								"variable": "deathCounter",
+								"value": "0"
 							}
 						},
 						{
