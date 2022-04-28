@@ -23,16 +23,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "harder",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 423836042318244
-		},
-		{
-			"eventType": "variable",
 			"name": "deathCounter",
 			"type": "number",
 			"initialValue": "0",
@@ -1665,11 +1655,11 @@
 							}
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 128253259418945,
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "titleManager",
+							"sid": 707808519092530,
 							"parameters": {
-								"variable": "harder"
+								"instance-variable": "harder"
 							},
 							"isInverted": true
 						},
@@ -2905,11 +2895,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 245211224831328,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "titleManager",
+									"sid": 256639470892887,
 									"parameters": {
-										"variable": "harder"
+										"instance-variable": "harder"
 									},
 									"isInverted": true
 								}
@@ -2930,11 +2920,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 416573582883010,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "titleManager",
+									"sid": 281692413711091,
 									"parameters": {
-										"variable": "harder"
+										"instance-variable": "harder"
 									}
 								}
 							],

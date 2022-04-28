@@ -899,6 +899,13 @@
 					"uid": 1037,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Pixellate": {
+							"parameters": {
+								"size": 3
+							}
+						}
+					},
 					"world": {
 						"x": 251,
 						"y": 124,
@@ -941,6 +948,13 @@
 					"uid": 1038,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Pixellate": {
+							"parameters": {
+								"size": 3
+							}
+						}
+					},
 					"world": {
 						"x": 456,
 						"y": 160,

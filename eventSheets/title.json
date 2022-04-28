@@ -12,6 +12,16 @@
 			"sid": 829751401259157
 		},
 		{
+			"eventType": "variable",
+			"name": "harder",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 549973593446715
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -323,6 +333,14 @@
 					}
 				},
 				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "playButtonSprite",
+					"sid": 202724723190595,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 596826334237058,
@@ -419,7 +437,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 310060488063874,
+					"sid": 886501451854231,
 					"parameters": {
 						"key": 88
 					}
@@ -427,7 +445,7 @@
 				{
 					"id": "is-boolean-instance-variable-set",
 					"objectClass": "hardmodeButtonSprite",
-					"sid": 448870440132717,
+					"sid": 804627016453302,
 					"parameters": {
 						"instance-variable": "Selected"
 					}
@@ -437,7 +455,7 @@
 				{
 					"id": "toggle-boolean-instvar",
 					"objectClass": "hardmodeButtonSprite",
-					"sid": 814677230056951,
+					"sid": 869250045017908,
 					"parameters": {
 						"instance-variable": "active"
 					}
@@ -445,13 +463,13 @@
 				{
 					"id": "toggle-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 352645289548174,
+					"sid": 536775846096013,
 					"parameters": {
 						"variable": "harder"
 					}
 				}
 			],
-			"sid": 859959733645509
+			"sid": 532527047915697
 		},
 		{
 			"eventType": "block",
@@ -528,6 +546,90 @@
 				}
 			],
 			"sid": 357153405426783
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 143178869664907,
+					"parameters": {
+						"instance-variable": "active"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 658268764165510,
+					"parameters": {
+						"instance-variable": "Selected"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "hardmodeButtonSprite",
+					"sid": 984447677276086,
+					"parameters": {
+						"animation": "\"ActiveSelected\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 361673516122738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 765853537194250,
+					"parameters": {
+						"variable": "harder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "titleManager",
+					"sid": 809169354223875,
+					"parameters": {
+						"instance-variable": "harder",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 521479896295996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 984943439604483,
+					"parameters": {
+						"variable": "harder"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "titleManager",
+					"sid": 676487741575985,
+					"parameters": {
+						"instance-variable": "harder",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 750778346459018
 		}
 	],
 	"sid": 782816106394773

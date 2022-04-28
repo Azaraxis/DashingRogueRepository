@@ -5,5 +5,10 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": []
+	"effectTypes": [
+		{
+			"effectId": "pixellate",
+			"name": "Pixellate"
+		}
+	]
 }

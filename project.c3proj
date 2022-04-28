@@ -133,6 +133,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "00ru6f0qjnc",
@@ -210,7 +218,8 @@
 			"playButtonSprite",
 			"hardmodeButtonSprite",
 			"PressXtoContinueTEXTENDING",
-			"cinematicBackgroundEND"
+			"cinematicBackgroundEND",
+			"titleManager"
 		],
 		"subfolders": []
 	},
