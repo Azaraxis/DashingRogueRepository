@@ -135,7 +135,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog1",
 			"type": "string",
-			"initialValue": "Good Day M'Lady",
+			"initialValue": "M'Lady! Your rose.",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1697,7 +1697,30 @@
 					}
 				}
 			],
-			"sid": 709815872628179
+			"sid": 709815872628179,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "player",
+							"sid": 603875445330706
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "player",
+							"sid": 450963738378382,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 973648070437693
+				}
+			]
 		},
 		{
 			"eventType": "block",
