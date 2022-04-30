@@ -548,7 +548,8 @@
 					},
 					"uid": 422,
 					"instanceVariables": {
-						"right": true
+						"right": true,
+						"goInvis": false
 					},
 					"behaviors": {},
 					"world": {

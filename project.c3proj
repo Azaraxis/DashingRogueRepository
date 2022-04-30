@@ -219,7 +219,8 @@
 			"hardmodeButtonSprite",
 			"PressXtoContinueTEXTENDING",
 			"cinematicBackgroundEND",
-			"titleManager"
+			"titleManager",
+			"Particles"
 		],
 		"subfolders": []
 	},

@@ -145,7 +145,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog2",
 			"type": "string",
-			"initialValue": "Good Day M'Mandy",
+			"initialValue": "Well? When's the wedding?",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -155,7 +155,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog3",
 			"type": "string",
-			"initialValue": "Good Day M'Lady",
+			"initialValue": ". . .",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -165,7 +165,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog4",
 			"type": "string",
-			"initialValue": "Good Day M'Mandy",
+			"initialValue": "Creep.",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -175,7 +175,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog5",
 			"type": "string",
-			"initialValue": "Good Day M'Lady",
+			"initialValue": "I didn't even like you anyway...",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1578,9 +1578,119 @@
 						"variable": "dialogTreeNum",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 646995336595165,
+					"parameters": {
+						"variable": "cutsceneTriggered",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 595194588226935,
+					"parameters": {
+						"variable": "nextAvailable",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 128078621276252,
+					"parameters": {
+						"variable": "Xlockout",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "theDialogText",
+					"sid": 989252927065548,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 242391876792519,
+					"disabled": true,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 784086391891965,
+					"parameters": {
+						"layer": "LayerIndex(\"UI\")",
+						"opacity": "0"
+					}
 				}
 			],
-			"sid": 499002734839449
+			"sid": 499002734839449,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 845380326816049,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"IntroCutsceneTest\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 864802575607825,
+							"parameters": {
+								"variable": "Ending",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 312632026901286
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 803672928202217,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"EndCutsceneText\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 707142134126559,
+							"parameters": {
+								"variable": "Ending",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 787595747458662
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1889,6 +1999,30 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 773817918307714,
+					"parameters": {
+						"variable": "Xlockout"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PressXtoContinueTEXTDIALOG",
+					"sid": 383481313747158,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 472658300074086
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
 					"sid": 836904014396620,
@@ -1926,6 +2060,16 @@
 					"sid": 653785302013603,
 					"parameters": {
 						"variable": "Xlockout"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 549148145801187,
+					"disabled": true,
+					"parameters": {
+						"variable": "Ending"
 					},
 					"isInverted": true
 				}
@@ -2517,10 +2661,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 172929247265073,
+							"sid": 169429549463825,
 							"parameters": {
 								"variable": "dialogTreeNum",
-								"comparison": 0,
+								"comparison": 5,
 								"value": "5"
 							}
 						},
@@ -2690,6 +2834,72 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-layer-opacity",
+							"objectClass": "System",
+							"sid": 901501099896471,
+							"parameters": {
+								"layer": "LayerIndex(\"UI\")",
+								"comparison": 0,
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 702715653220188
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 132466691968370,
+							"parameters": {
+								"variable": "cutsceneTriggered"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 738127797118769,
+							"parameters": {
+								"variable": "dialogTreeNum",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 901003494963525,
+							"parameters": {
+								"variable": "Ending"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 211295774344876,
+							"parameters": {
+								"seconds": "(0.1*len(ENDdialog1)/2)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Lady",
+							"sid": 540287359561158,
+							"parameters": {
+								"instance-variable": "right",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 436747120492537
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 639880197153537,
@@ -2745,6 +2955,7 @@
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 673706569975708,
+							"disabled": true,
 							"parameters": {
 								"variable": "RogueOrLadytalk",
 								"value": "true"
@@ -2754,6 +2965,7 @@
 							"id": "typewriter-text",
 							"objectClass": "theDialogText",
 							"sid": 589702941406284,
+							"disabled": true,
 							"parameters": {
 								"text": "ENDdialog2",
 								"duration": "0.1*len(ENDdialog2)"
@@ -2763,21 +2975,102 @@
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 493601365313068,
+							"disabled": true,
 							"parameters": {
 								"seconds": "0.1*len(ENDdialog2)"
 							}
 						},
 						{
+							"id": "spawn-another-object",
+							"objectClass": "player",
+							"sid": 806811956313366,
+							"parameters": {
+								"object": "rose",
+								"layer": "player.LayerNumber",
+								"image-point": "2",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 679814059825554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-screen",
+							"objectClass": "rose",
+							"sid": 559300768250753
+						}
+					],
+					"actions": [
+						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 216266116245602,
+							"sid": 228654537495999,
+							"parameters": {
+								"variable": "Xlockout",
+								"value": "true"
+							}
+						},
+						{
+							"id": "move-forward",
+							"objectClass": "rose",
+							"sid": 467290615739898,
+							"parameters": {
+								"distance": "1"
+							}
+						}
+					],
+					"sid": 816904629372675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "rose",
+							"sid": 517305964814530,
+							"parameters": {
+								"object": "Lady"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "rose",
+							"sid": 239937039702329
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Lady",
+							"sid": 587561528683298,
+							"parameters": {
+								"animation": "\"IdleRose\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 799741973993933,
+							"parameters": {
+								"variable": "Xlockout",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 504682222962055,
 							"parameters": {
 								"variable": "nextAvailable",
 								"value": "true"
 							}
 						}
 					],
-					"sid": 679814059825554
+					"sid": 310664397618924
 				},
 				{
 					"eventType": "block",
@@ -2846,18 +3139,18 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "theDialogText",
-							"sid": 309193780570657,
+							"sid": 639694069401295,
 							"parameters": {
-								"text": "ENDdialog3",
-								"duration": "0.1*len(ENDdialog3)"
+								"text": "ENDdialog2",
+								"duration": "0.1*len(ENDdialog2)"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 822608225602550,
+							"sid": 867981599924470,
 							"parameters": {
-								"seconds": "0.1*len(ENDdialog3)"
+								"seconds": "0.1*len(ENDdialog2)"
 							}
 						},
 						{
@@ -2937,29 +3230,20 @@
 							}
 						},
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Lady",
-							"sid": 749536120506304,
-							"parameters": {
-								"instance-variable": "right",
-								"value": "false"
-							}
-						},
-						{
 							"id": "typewriter-text",
 							"objectClass": "theDialogText",
-							"sid": 820510586160786,
+							"sid": 162272375726758,
 							"parameters": {
-								"text": "ENDdialog4",
-								"duration": "0.1*len(ENDdialog4)"
+								"text": "ENDdialog3",
+								"duration": "0.1*len(ENDdialog3)"
 							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 979533026412592,
+							"sid": 256419488108405,
 							"parameters": {
-								"seconds": "0.1*len(ENDdialog4)"
+								"seconds": "0.1*len(ENDdialog3)"
 							}
 						},
 						{
@@ -3032,7 +3316,224 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 759234763380439,
+							"sid": 657536960845009,
+							"parameters": {
+								"variable": "RogueOrLadytalk",
+								"value": "true"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 381927023717294,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "theDialogText",
+							"sid": 815228468819347,
+							"parameters": {
+								"text": "ENDdialog4",
+								"duration": "0.1*len(ENDdialog4)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 168585801571875,
+							"parameters": {
+								"seconds": "0.1*len(ENDdialog4)"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "-> lady invis"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Lady",
+							"sid": 838160427823780,
+							"parameters": {
+								"animation": "\"IdleInvis\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Lady",
+							"sid": 205866253415057,
+							"parameters": {
+								"instance-variable": "goInvis",
+								"value": "true"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 207983421129403,
+							"parameters": {
+								"audio-file": "sounds_dash",
+								"loop": "not-looping",
+								"volume": "-20",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lady",
+							"sid": 413365741119958,
+							"parameters": {
+								"object": "Particles",
+								"layer": "Lady.LayerNumber",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Particles",
+							"sid": 383861229841323,
+							"parameters": {
+								"angle": "270"
+							}
+						}
+					],
+					"sid": 583530166136912
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Lady",
+							"sid": 613136696407555,
+							"parameters": {
+								"instance-variable": "goInvis"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 842019555302018,
+							"parameters": {
+								"variable": "Xlockout",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Lady",
+							"sid": 680586311263729,
+							"parameters": {
+								"opacity": "Lady.Opacity-1"
+							}
+						}
+					],
+					"sid": 162727354743077
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-opacity",
+							"objectClass": "Lady",
+							"sid": 143784910702959,
+							"parameters": {
+								"comparison": 3,
+								"opacity": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 267589351595621,
+							"parameters": {
+								"variable": "Xlockout",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 645160612058866,
+							"parameters": {
+								"variable": "nextAvailable",
+								"value": "true"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Lady",
+							"sid": 971330382862129
+						}
+					],
+					"sid": 894066891250765
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 481829775506632,
+							"parameters": {
+								"variable": "Ending"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 367467645236467,
+							"parameters": {
+								"variable": "nextAvailable"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-layer-opacity",
+							"objectClass": "System",
+							"sid": 956627858759570,
+							"parameters": {
+								"layer": "LayerIndex(\"UI\")",
+								"comparison": 0,
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 728874890570071
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 287381835688021,
+							"parameters": {
+								"variable": "cutsceneTriggered"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 205164679858641,
+							"parameters": {
+								"variable": "dialogTreeNum",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 576505001065527,
 							"parameters": {
 								"variable": "RogueOrLadytalk",
 								"value": "false"
@@ -3041,7 +3542,7 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "theDialogText",
-							"sid": 662962287428797,
+							"sid": 874598681970827,
 							"parameters": {
 								"text": "ENDdialog5",
 								"duration": "0.1*len(ENDdialog5)"
@@ -3050,7 +3551,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 442987333076703,
+							"sid": 161197822483155,
 							"parameters": {
 								"seconds": "0.1*len(ENDdialog5)"
 							}
@@ -3058,14 +3559,14 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 466119252759608,
+							"sid": 528613617231621,
 							"parameters": {
 								"variable": "nextAvailable",
 								"value": "true"
 							}
 						}
 					],
-					"sid": 583530166136912
+					"sid": 726414167085109
 				},
 				{
 					"eventType": "block",
@@ -3081,11 +3582,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 671367507784122,
+							"sid": 623308698085033,
 							"parameters": {
 								"variable": "dialogTreeNum",
-								"comparison": 0,
-								"value": "5"
+								"comparison": 5,
+								"value": "6"
 							}
 						},
 						{
@@ -3148,9 +3649,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 954327705272482,
+							"sid": 299900354583897,
 							"parameters": {
-								"layout": "Level 1"
+								"layout": "TitleScreen"
 							}
 						}
 					],

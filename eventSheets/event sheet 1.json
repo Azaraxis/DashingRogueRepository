@@ -2456,64 +2456,6 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player",
-							"sid": 739184430333102,
-							"parameters": {
-								"object": "ExitDoor"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 466792095540949,
-							"parameters": {
-								"first-value": "LayoutName",
-								"comparison": 0,
-								"second-value": "\"Level 4\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"type": "comment",
-							"text": "TEMPORARY"
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 684653113126267,
-							"parameters": {
-								"layout": "\"Level 6\""
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "player",
-							"sid": 398609800264457,
-							"disabled": true,
-							"parameters": {
-								"x": "1721",
-								"y": "1254"
-							}
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 313112589834678,
-							"parameters": {
-								"variable": "level",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 187582680747442,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "player",
 							"sid": 293857993743172,
 							"parameters": {
 								"object": "ExitDoor"
@@ -2689,11 +2631,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 795804181707139,
+							"sid": 132356291036298,
 							"parameters": {
 								"first-value": "LayoutName",
 								"comparison": 0,
-								"second-value": "\"Level 2\""
+								"second-value": "\"Level 3\""
 							}
 						}
 					],
@@ -3391,43 +3333,6 @@
 				}
 			],
 			"sid": 282491008746535
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-left-right-key-down",
-					"objectClass": "Keyboard",
-					"sid": 563471166269343,
-					"parameters": {
-						"key": "left-shift"
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 651017822097015,
-					"parameters": {
-						"key": 82
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 489681558046327
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 604937819079301,
-					"parameters": {
-						"layout": "TitleScreen"
-					}
-				}
-			],
-			"sid": 311102665642997
 		},
 		{
 			"eventType": "group",
@@ -4603,6 +4508,54 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 484319516763586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-left-right-key-down",
+					"objectClass": "Keyboard",
+					"sid": 978168156768504,
+					"parameters": {
+						"key": "left-shift"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 229703700835618,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 785520075948757,
+					"disabled": true
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 740233015614820,
+					"parameters": {
+						"variable": "Ending",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 438293485806467,
+					"parameters": {
+						"layout": "EndCutsceneText"
+					}
+				}
+			],
+			"sid": 221824531265967,
+			"disabled": true
 		}
 	],
 	"sid": 325422612367472

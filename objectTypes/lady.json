@@ -9,6 +9,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 612772355172897
+		},
+		{
+			"name": "goInvis",
+			"type": "boolean",
+			"desc": "",
+			"sid": 712985291271546
 		}
 	],
 	"behaviorTypes": [],
@@ -39,6 +45,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
 						"duration": 2
 					},
 					{
@@ -63,6 +76,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
 						"duration": 2
 					},
 					{
@@ -87,11 +107,226 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
 						"duration": 2
 					}
 				],
 				"sid": 105957079439550,
 				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3212878,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 817797,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9817161,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					}
+				],
+				"sid": 428000200544539,
+				"name": "IdleRose",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2923741,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4067388,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					},
+					{
+						"width": 21,
+						"height": 19,
+						"originX": 0.47619047619047616,
+						"originY": 0.5263157894736842,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 417737,
+						"collisionPoly": {
+							"points": [
+								0.38095238095238093,
+								1,
+								0.6190476190476192,
+								1,
+								0.6190476190476192,
+								0.05263157894736842,
+								0.38095238095238093,
+								0.05263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "smoke",
+								"x": 0.5238095238095238,
+								"y": 1.3157894736842106
+							}
+						],
+						"duration": 2
+					}
+				],
+				"sid": 620354624772162,
+				"name": "IdleInvis",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
