@@ -145,7 +145,7 @@
 			"eventType": "variable",
 			"name": "ENDdialog2",
 			"type": "string",
-			"initialValue": "Well? When's the wedding?",
+			"initialValue": "So? When's the wedding?",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
