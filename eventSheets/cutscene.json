@@ -1527,6 +1527,16 @@
 								"comparison": 0,
 								"second-value": "\"Level 1\""
 							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 187405178398091,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"EndCutsceneText\""
+							}
 						}
 					],
 					"actions": [
@@ -1539,7 +1549,8 @@
 							}
 						}
 					],
-					"sid": 826173311414987
+					"sid": 826173311414987,
+					"isOrBlock": true
 				}
 			],
 			"sid": 424846680072813
