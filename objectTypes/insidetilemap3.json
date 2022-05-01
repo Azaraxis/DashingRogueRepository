@@ -1,14 +1,14 @@
 {
-	"name": "InsideTileMap2",
+	"name": "InsideTileMap3",
 	"plugin-id": "Tilemap",
-	"sid": 835987152805422,
+	"sid": 910757899415266,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 325061146721550
+			"sid": 857407233888840
 		}
 	],
 	"effectTypes": [],
@@ -20,7 +20,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6530412,
+		"imageSpriteId": 1034899,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

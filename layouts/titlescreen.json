@@ -729,7 +729,17 @@
 					},
 					"uid": 870,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Ancre": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 418,
 						"y": 153,

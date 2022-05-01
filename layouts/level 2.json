@@ -1494,7 +1494,7 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "InsideTileMap2",
+							"type": "ImagesTileMap",
 							"properties": {
 								"initially-visible": true,
 								"tile-width": 16,
