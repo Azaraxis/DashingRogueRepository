@@ -925,7 +925,7 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "AlmendraDisplay-Regular",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -945,13 +945,6 @@
 					"uid": 1037,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Pixellate": {
-							"parameters": {
-								"size": 3
-							}
-						}
-					},
 					"world": {
 						"x": 251,
 						"y": 124,
@@ -974,7 +967,7 @@
 					"properties": {
 						"text": "Press X to continue. . .",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "AlmendraDisplay-Regular",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -994,13 +987,6 @@
 					"uid": 1038,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Pixellate": {
-							"parameters": {
-								"size": 3
-							}
-						}
-					},
 					"world": {
 						"x": 456,
 						"y": 160,

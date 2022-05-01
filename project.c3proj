@@ -16,6 +16,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -42,14 +50,6 @@
 			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Tilemap",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -133,14 +133,6 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "pixellate",
-			"name": "Pixellate",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
 		}
 	],
 	"uniqueId": "00ru6f0qjnc",
@@ -171,11 +163,6 @@
 			"Zoomtrigger2",
 			"Zoomtrigger1",
 			"Camera",
-			"BG1",
-			"BG2",
-			"BG3",
-			"BG4",
-			"Sun",
 			"BackgroundTilemap3",
 			"rose",
 			"SolidFinalTileMap",
@@ -189,8 +176,6 @@
 			"Button",
 			"playbutton",
 			"checkpoints",
-			"theEndForNow",
-			"deathText",
 			"BacktoMainMenuButton",
 			"Sprite7",
 			"BlackGround",
@@ -202,8 +187,6 @@
 			"camera_action_text",
 			"cutscene1",
 			"sceneCamera",
-			"totalTimeText",
-			"checkpointsText",
 			"BannerHold",
 			"Banner",
 			"ExitDoor",
@@ -217,12 +200,34 @@
 			"Cursor",
 			"playButtonSprite",
 			"hardmodeButtonSprite",
-			"PressXtoContinueTEXTENDING",
 			"cinematicBackgroundEND",
 			"titleManager",
 			"Particles"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"checkpointsText",
+					"deathText",
+					"PressXtoContinueTEXTENDING",
+					"theEndForNow",
+					"totalTimeText"
+				],
+				"subfolders": [],
+				"name": "endMenu"
+			},
+			{
+				"items": [
+					"BG1",
+					"BG2",
+					"BG3",
+					"BG4",
+					"Sun"
+				],
+				"subfolders": [],
+				"name": "Outside"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -318,7 +323,18 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "AlmendraDisplay-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 849763913224099
+				},
+				{
+					"name": "AlmendraSC-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 910233553755172
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

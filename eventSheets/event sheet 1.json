@@ -2793,17 +2793,17 @@
 						{
 							"id": "set-text",
 							"objectClass": "deathText",
-							"sid": 373175717755571,
+							"sid": 419219853173326,
 							"parameters": {
-								"text": "\"[outline=#000000]Total Deaths: \"&deathCounter"
+								"text": "\"Total Deaths: \"&deathCounter"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "totalTimeText",
-							"sid": 218509838894936,
+							"sid": 616769540864921,
 							"parameters": {
-								"text": "\"[outline=#000000]Time: \"&zeropad(floor(GameTimePlayed/60),1)&\":\"&zeropad(floor(GameTimePlayed%60),2)"
+								"text": "\"Time: \"&zeropad(floor(GameTimePlayed/60),1)&\":\"&zeropad(floor(GameTimePlayed%60),2)"
 							}
 						},
 						{

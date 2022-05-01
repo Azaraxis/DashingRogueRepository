@@ -766,7 +766,7 @@
 					"properties": {
 						"text": "Press X to Dash!",
 						"enable-bbcode": true,
-						"font": "Impact",
+						"font": "AlmendraDisplay-Regular",
 						"size": 20,
 						"line-height": 0,
 						"bold": false,
