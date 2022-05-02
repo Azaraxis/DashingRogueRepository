@@ -531,6 +531,15 @@
 							}
 						},
 						{
+							"id": "is-animation-playing",
+							"objectClass": "player",
+							"sid": 323006653888922,
+							"parameters": {
+								"animation": "\"Run\""
+							},
+							"isInverted": true
+						},
+						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "player",
 							"sid": 821504041691046,
@@ -567,17 +576,146 @@
 								"animation": "\"DashUp\"",
 								"from": "current-frame"
 							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "player",
-							"sid": 366153602166095,
-							"parameters": {
-								"frame-number": "0"
-							}
 						}
 					],
-					"sid": 852499100297003
+					"sid": 852499100297003,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "player",
+									"sid": 118347307183984,
+									"parameters": {
+										"animation": "\"DashUp\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "player",
+									"sid": 945699495535953,
+									"disabled": true
+								}
+							],
+							"sid": 741250013176449,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 493341365846431,
+											"parameters": {
+												"key": 37
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 218624433368816,
+											"parameters": {
+												"key": 39
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "respawn",
+											"sid": 568228607678186,
+											"disabled": true
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "player",
+											"sid": 340312099501347,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 374471007697961
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "player",
+									"sid": 216736120570305,
+									"parameters": {
+										"animation": "\"DashUp\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "player",
+									"sid": 934106234703751,
+									"disabled": true
+								}
+							],
+							"sid": 978476532204165,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 902191043114135,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 247828725820616,
+											"parameters": {
+												"key": 39
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "player",
+											"sid": 304829213256540,
+											"parameters": {
+												"animation": "\"Run\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"callFunction": "respawn",
+											"sid": 576279859024331,
+											"disabled": true
+										},
+										{
+											"id": "start-animation",
+											"objectClass": "player",
+											"sid": 143528120158591,
+											"disabled": true,
+											"parameters": {
+												"from": "current-frame"
+											}
+										}
+									],
+									"sid": 670147273211135,
+									"isOrBlock": true
+								}
+							]
+						}
+					]
 				},
 				{
 					"eventType": "block",
