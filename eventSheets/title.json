@@ -66,6 +66,18 @@
 								"volume": "-20",
 								"tag-optional": "\"bg\""
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 856482333225937,
+							"disabled": true,
+							"parameters": {
+								"audio-file": "back2",
+								"loop": "looping",
+								"volume": "-20",
+								"tag-optional": "\"bg\""
+							}
 						}
 					],
 					"sid": 737375834271824

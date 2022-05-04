@@ -81,6 +81,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 386543677884632
+		},
+		{
+			"name": "LookUpTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 732330006160242
 		}
 	],
 	"behaviorTypes": [

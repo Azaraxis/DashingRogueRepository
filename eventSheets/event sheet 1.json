@@ -592,14 +592,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "player",
-									"sid": 945699495535953,
-									"disabled": true
-								}
-							],
+							"actions": [],
 							"sid": 741250013176449,
 							"children": [
 								{
@@ -626,11 +619,6 @@
 									],
 									"actions": [
 										{
-											"callFunction": "respawn",
-											"sid": 568228607678186,
-											"disabled": true
-										},
-										{
 											"id": "set-animation-frame",
 											"objectClass": "player",
 											"sid": 340312099501347,
@@ -655,14 +643,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "player",
-									"sid": 934106234703751,
-									"disabled": true
-								}
-							],
+							"actions": [],
 							"sid": 978476532204165,
 							"children": [
 								{
@@ -694,23 +675,61 @@
 												"animation": "\"Run\"",
 												"from": "beginning"
 											}
-										},
-										{
-											"callFunction": "respawn",
-											"sid": 576279859024331,
-											"disabled": true
-										},
-										{
-											"id": "start-animation",
-											"objectClass": "player",
-											"sid": 143528120158591,
-											"disabled": true,
-											"parameters": {
-												"from": "current-frame"
-											}
 										}
 									],
 									"sid": 670147273211135,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "player",
+									"sid": 243938202407235,
+									"parameters": {
+										"animation": "\"DashUp\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 907034439481779,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 772465465199597,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "player",
+											"sid": 823431548923377,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "player",
+											"sid": 540022407230589,
+											"disabled": true,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 783423967690642,
 									"isOrBlock": true
 								}
 							]
@@ -2151,23 +2170,214 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 961811368188472,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 470957585786410,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 497208642225831,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "player",
+							"sid": 632096323409250,
+							"parameters": {
+								"instance-variable": "LookUpTimer",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 362401042227646
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 633752047908079,
+							"parameters": {
+								"variable": "won"
+							},
+							"isInverted": true
+						},
+						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 245317166591080
+							"sid": 961000808546431
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 665441171421443,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player",
+							"sid": 995699561141663,
+							"parameters": {
+								"instance-variable": "LookUpTimer",
+								"comparison": 3,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "Camera",
-							"sid": 886890948610871,
+							"sid": 223852465393255,
 							"parameters": {
 								"x": "lerp(Self.X,player.X,0.1)",
-								"y": "lerp(Self.y,player.y,0.1)"
+								"y": "lerp(Self.y,player.y-225,0.1)"
 							}
 						}
 					],
-					"sid": 362401042227646
+					"sid": 952277971630212
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 790062879203336
+						}
+					],
+					"actions": [],
+					"sid": 536045779614678,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "player",
+									"sid": 349254218844226,
+									"parameters": {
+										"instance-variable": "LookUpTimer",
+										"comparison": 4,
+										"value": "0"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 715039852020504,
+									"parameters": {
+										"key": 38
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Camera",
+									"sid": 972306906955906,
+									"parameters": {
+										"x": "lerp(Self.X,player.X,0.1)",
+										"y": "lerp(Self.y,player.y,0.1)"
+									}
+								}
+							],
+							"sid": 606683156945778,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 894609510079687,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 988582183111475,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 897934128959082,
+							"parameters": {
+								"key": 38
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 953614986871756,
+							"parameters": {
+								"key": 40
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 630119011671319,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "player",
+							"sid": 569528396265861,
+							"behaviorType": "Platform",
+							"isInverted": true
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "player",
+							"sid": 446502596770383,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player",
+							"sid": 226256767831100,
+							"parameters": {
+								"instance-variable": "LookUpTimer",
+								"value": "0.5"
+							}
+						}
+					],
+					"sid": 977597236579568,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -3301,7 +3511,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 419145514317445,
+							"sid": 808401394793274,
 							"parameters": {
 								"audio-file": "foot1",
 								"loop": "not-looping",

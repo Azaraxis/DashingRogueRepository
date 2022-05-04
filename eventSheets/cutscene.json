@@ -1222,7 +1222,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 260242611010161,
+							"sid": 270834092445949,
 							"parameters": {
 								"audio-file": "foot1",
 								"loop": "not-looping",
@@ -3497,35 +3497,24 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "titleManager",
-									"sid": 996843000587653,
-									"parameters": {
-										"instance-variable": "harder"
-									},
-									"isInverted": true
-								},
-								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 981602339802738,
+									"sid": 557804615089819,
 									"parameters": {
 										"variable": "deathCounter",
-										"comparison": 3,
+										"comparison": 4,
 										"value": "50"
-									},
-									"isInverted": true
+									}
 								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 758810627865493,
+									"sid": 451904359793605,
 									"parameters": {
 										"variable": "GameTimePlayed",
-										"comparison": 3,
+										"comparison": 4,
 										"value": "300"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
@@ -3810,6 +3799,81 @@
 				}
 			],
 			"sid": 977174068083054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 745396440448596,
+					"parameters": {
+						"key": 84
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 180313570967876,
+					"parameters": {
+						"variable": "GameTimePlayed",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 602017131874510
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 327455428615376,
+					"parameters": {
+						"key": 89
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 955691746068147,
+					"parameters": {
+						"variable": "deathCounter",
+						"value": "50"
+					}
+				}
+			],
+			"sid": 126241986358015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 793380533641591,
+					"parameters": {
+						"key": 85
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "titleManager",
+					"sid": 931394912692148,
+					"parameters": {
+						"instance-variable": "harder",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 873226871231666
 		}
 	],
 	"sid": 666884442467552

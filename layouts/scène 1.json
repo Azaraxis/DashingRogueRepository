@@ -139,7 +139,8 @@
 						"FootstepsBool": false,
 						"landingAudioBool": false,
 						"noDash": false,
-						"noAnim": false
+						"noAnim": false,
+						"LookUpTimer": 0.5
 					},
 					"behaviors": {
 						"Platform": {
