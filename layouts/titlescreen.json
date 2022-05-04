@@ -668,7 +668,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 868,
 					"instanceVariables": {},
@@ -698,7 +699,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 869,
 					"instanceVariables": {},

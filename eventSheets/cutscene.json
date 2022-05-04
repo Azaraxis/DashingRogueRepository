@@ -2761,9 +2761,52 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 333655453986322,
+							"parameters": {
+								"variable": "Ending"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "titleManager",
+							"sid": 639638574764382,
+							"parameters": {
+								"instance-variable": "harder"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 575169810341983,
+							"parameters": {
+								"variable": "deathCounter",
+								"comparison": 3,
+								"value": "50"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 402232164535224,
+							"parameters": {
+								"variable": "GameTimePlayed",
+								"comparison": 3,
+								"value": "300"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 540471918582175
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-layer-opacity",
 							"objectClass": "System",
-							"sid": 827089902691163,
+							"sid": 484964246407068,
 							"parameters": {
 								"layer": "LayerIndex(\"UI\")",
 								"comparison": 0,
@@ -2773,12 +2816,12 @@
 						{
 							"id": "trigger-once-while-true",
 							"objectClass": "System",
-							"sid": 674628608266118
+							"sid": 115815113034985
 						},
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 559715216498143,
+							"sid": 210170549903267,
 							"parameters": {
 								"variable": "cutsceneTriggered"
 							}
@@ -2786,7 +2829,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 272454115285290,
+							"sid": 714268972777159,
 							"parameters": {
 								"variable": "dialogTreeNum",
 								"comparison": 0,
@@ -2796,7 +2839,7 @@
 						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 333655453986322,
+							"sid": 299522182237376,
 							"parameters": {
 								"variable": "Ending"
 							}
@@ -2806,7 +2849,7 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 403655225057978,
+							"sid": 355288227661026,
 							"parameters": {
 								"variable": "RogueOrLadytalk",
 								"value": "false"
@@ -2815,7 +2858,7 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "theDialogText",
-							"sid": 375339477466173,
+							"sid": 872575019716696,
 							"parameters": {
 								"text": "ENDdialog1",
 								"duration": "0.1*len(ENDdialog1)"
@@ -2824,7 +2867,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 323165724245612,
+							"sid": 588678165444619,
 							"parameters": {
 								"seconds": "0.1*len(ENDdialog1)"
 							}
@@ -2832,14 +2875,14 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 523770131095483,
+							"sid": 217680167052855,
 							"parameters": {
 								"variable": "nextAvailable",
 								"value": "true"
 							}
 						}
 					],
-					"sid": 540471918582175
+					"sid": 916581449242181
 				},
 				{
 					"eventType": "block",
@@ -3365,7 +3408,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Lady",
-							"sid": 838160427823780,
+							"sid": 688075825705228,
 							"parameters": {
 								"animation": "\"IdleInvis\"",
 								"from": "beginning"
@@ -3374,7 +3417,7 @@
 						{
 							"id": "set-boolean-instvar",
 							"objectClass": "Lady",
-							"sid": 205866253415057,
+							"sid": 423414270021163,
 							"parameters": {
 								"instance-variable": "goInvis",
 								"value": "true"
@@ -3383,35 +3426,132 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 207983421129403,
+							"sid": 559179560406515,
 							"parameters": {
 								"audio-file": "sounds_dash",
 								"loop": "not-looping",
 								"volume": "-20",
 								"tag-optional": "\"\""
 							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Lady",
-							"sid": 413365741119958,
-							"parameters": {
-								"object": "Particles",
-								"layer": "Lady.LayerNumber",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "Particles",
-							"sid": 383861229841323,
-							"parameters": {
-								"angle": "270"
-							}
 						}
 					],
-					"sid": 583530166136912
+					"sid": 583530166136912,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "titleManager",
+									"sid": 967419973272247,
+									"parameters": {
+										"instance-variable": "harder"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 613162957716283,
+									"parameters": {
+										"variable": "deathCounter",
+										"comparison": 3,
+										"value": "50"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 489252158253958,
+									"parameters": {
+										"variable": "GameTimePlayed",
+										"comparison": 3,
+										"value": "300"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Lady",
+									"sid": 918359852711960,
+									"parameters": {
+										"object": "NoBitchesParticles",
+										"layer": "Lady.LayerNumber",
+										"image-point": "1",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "NoBitchesParticles",
+									"sid": 185685043773642,
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 751301142809133,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "titleManager",
+									"sid": 996843000587653,
+									"parameters": {
+										"instance-variable": "harder"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 981602339802738,
+									"parameters": {
+										"variable": "deathCounter",
+										"comparison": 3,
+										"value": "50"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 758810627865493,
+									"parameters": {
+										"variable": "GameTimePlayed",
+										"comparison": 3,
+										"value": "300"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Lady",
+									"sid": 916869471644535,
+									"parameters": {
+										"object": "Particles",
+										"layer": "Lady.LayerNumber",
+										"image-point": "1",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Particles",
+									"sid": 609680443169678,
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 227529009814375
+						}
+					]
 				},
 				{
 					"eventType": "block",

@@ -1,0 +1,37 @@
+{
+	"name": "dashingRogueNoBitches",
+	"plugin-id": "Sprite",
+	"sid": 823318920902623,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 1280,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9616478,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 558968573919458,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

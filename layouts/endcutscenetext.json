@@ -680,6 +680,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "dashingRogueNoBitches",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1125,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 875,
+						"y": -158,
+						"width": 208.3266665599965,
+						"height": 208.3266665599965,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 103883418369385,
@@ -778,6 +807,51 @@
 					"world": {
 						"x": 1405.1877643384125,
 						"y": 463.8327760841865,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NoBitchesParticles",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 60,
+						"type": "one-shot",
+						"object": 823318920902623,
+						"live-preview": false,
+						"speed": 75,
+						"size": 16,
+						"opacity": 100,
+						"grow-rate": 25,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -50,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 1.35
+					},
+					"uid": 1126,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1551.979248046875,
+						"y": 394.59149169921875,
 						"width": 100,
 						"height": 100,
 						"originX": 0,

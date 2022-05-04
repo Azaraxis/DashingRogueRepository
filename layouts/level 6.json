@@ -812,6 +812,96 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "spawnflower",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 279,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 682.9886108055784,
+						"y": -123.76207876433455,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Flower_Particles",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 60,
+						"type": "one-shot",
+						"object": 538247493946158,
+						"live-preview": false,
+						"speed": 150,
+						"size": 10,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -75,
+						"gravity": 100,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "particle-stopped",
+						"timeout": 2
+					},
+					"uid": 647,
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 902.978770385494,
+						"y": 828.6561717561365,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0,
+						"blendMode": "source-atop"
+					}
 				}
 			],
 			"sid": 534539924965165,
@@ -970,7 +1060,8 @@
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,
-						"id": ""
+						"id": "",
+						"class": ""
 					},
 					"uid": 413,
 					"instanceVariables": {},
@@ -1149,7 +1240,52 @@
 			"name": "fadein",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "rose2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 648,
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 899.7271758173134,
+						"y": 725.7495233100487,
+						"width": 12.178989116790717,
+						"height": 10.843208443830008,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 320699624261760,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

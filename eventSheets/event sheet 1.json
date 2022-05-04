@@ -2988,9 +2988,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "checkpointsText",
-									"sid": 522443755542973,
+									"sid": 356103968577612,
 									"parameters": {
-										"text": "\"[outline=#000000]Checkpoints: Enabled\""
+										"text": "\"Checkpoints: Enabled\""
 									}
 								}
 							],
@@ -3012,9 +3012,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "checkpointsText",
-									"sid": 397415394552998,
+									"sid": 867132659109455,
 									"parameters": {
-										"text": "\"[outline=#000000]Checkpoints: Disabled\""
+										"text": "\"Checkpoints: Disabled\""
 									}
 								}
 							],
@@ -3546,7 +3546,8 @@
 								"layer": "layerNum",
 								"x": "960",
 								"y": "530",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -3778,7 +3779,8 @@
 								"layer": "5",
 								"x": "ExitDoor.x",
 								"y": "ExitDoor.Y",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{
@@ -4266,7 +4268,8 @@
 						"layer": "0",
 						"x": "player.X",
 						"y": "player.Y",
-						"create-hierarchy": false
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				},
 				{
@@ -4278,7 +4281,8 @@
 						"layer": "0",
 						"x": "sceneCamera.ImagePointX(89)",
 						"y": "sceneCamera.ImagePointY(-142)",
-						"create-hierarchy": false
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				},
 				{
@@ -4694,6 +4698,41 @@
 			],
 			"sid": 221824531265967,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 783676129734436,
+					"parameters": {
+						"object": "rose"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "rose",
+					"sid": 404025560772549,
+					"parameters": {
+						"object": "Flower_Particles",
+						"layer": "rose.LayerNumber",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Flower_Particles",
+					"sid": 839792621064377,
+					"parameters": {
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 319808349832486
 		}
 	],
 	"sid": 325422612367472
