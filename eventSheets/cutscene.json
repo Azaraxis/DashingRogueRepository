@@ -3488,6 +3488,32 @@
 									"parameters": {
 										"angle": "270"
 									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Lady",
+									"sid": 632604524776734,
+									"parameters": {
+										"object": "dashingRogueNoBitches",
+										"layer": "Lady.LayerNumber-1",
+										"image-point": "2",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "dashingRogueNoBitches",
+									"sid": 121017074798690,
+									"disabled": true,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "dashingRogueNoBitches",
+									"sid": 117011416978458,
+									"behaviorType": "Fade"
 								}
 							],
 							"sid": 751301142809133,
@@ -3496,6 +3522,11 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 919541988148609
+								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
@@ -3613,7 +3644,64 @@
 							"sid": 971330382862129
 						}
 					],
-					"sid": 894066891250765
+					"sid": 894066891250765,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "titleManager",
+									"sid": 460043753535106,
+									"parameters": {
+										"instance-variable": "harder"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 832970249324825,
+									"parameters": {
+										"variable": "deathCounter",
+										"comparison": 3,
+										"value": "50"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 335153289238313,
+									"parameters": {
+										"variable": "GameTimePlayed",
+										"comparison": 3,
+										"value": "300"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "dashingRogueNoBitches",
+									"sid": 536977790417732,
+									"disabled": true,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 670270142543693,
+									"disabled": true,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								}
+							],
+							"sid": 313810196984796,
+							"isOrBlock": true
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -3823,7 +3911,8 @@
 					}
 				}
 			],
-			"sid": 602017131874510
+			"sid": 602017131874510,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3848,7 +3937,8 @@
 					}
 				}
 			],
-			"sid": 126241986358015
+			"sid": 126241986358015,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -3873,7 +3963,8 @@
 					}
 				}
 			],
-			"sid": 873226871231666
+			"sid": 873226871231666,
+			"disabled": true
 		}
 	],
 	"sid": 666884442467552

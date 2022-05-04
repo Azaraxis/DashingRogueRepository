@@ -2301,6 +2301,16 @@
 										"x": "lerp(Self.X,player.X,0.1)",
 										"y": "lerp(Self.y,player.y,0.1)"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Camera",
+									"sid": 513325515853587,
+									"disabled": true,
+									"parameters": {
+										"x": "player.X",
+										"y": "player.Y"
+									}
 								}
 							],
 							"sid": 606683156945778,

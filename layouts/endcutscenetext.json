@@ -693,12 +693,23 @@
 					},
 					"uid": 1125,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0.5,
+								"wait-time": 1,
+								"fade-out-time": 2.5,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 875,
-						"y": -158,
-						"width": 208.3266665599965,
-						"height": 208.3266665599965,
+						"x": 928.2497793169423,
+						"y": -160.75022068305776,
+						"width": 63.80676545974001,
+						"height": 63.80676545974001,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
